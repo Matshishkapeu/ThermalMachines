@@ -1,0 +1,12 @@
+************************
+Thermal machines: Basics
+************************
+
+We will see in this section how a process can take place with respect to principles of thermodynamics. In other words, we will see what are the basic principles to make a thermal machine working with respect to first principle (conservation principle) and second principle (evolution principle) of thermodynamics. Generalities on energy conversion are first presented. Then reference thermodynamics cycles are build and explained.
+
+.. toctree::
+  :maxdepth: 1
+  :caption: Contents:
+
+  chap2_1EnergyConversion
+  chap2_2Cycles

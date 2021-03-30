@@ -1,0 +1,234 @@
+****************************************
+Reciprocating internal combustion engine
+****************************************
+
+A **reciprocating internal combustion engine** (RICE) converts chemical energy of a fuel into mechanical work and thermal energy. We find two class of RICE:
+
+  * **Spark-ignition engines** (SI) that use a spark to ignitate combustion of *gasoline fuel*.
+  * **Compression ignition engines** (CI) that compress the mixture *diesel fuel* + *air* until the auto-ignition point.
+
+Spark-ignition engines (SI RICE)
+================================
+
+Overview
+--------
+a SI RICE is composed with:
+
+  - a **combustion chamber** where chemical reaction occurs,
+  - a **cylinder** prolongating the combustion chamber,
+  - a **piston** moving in the cylinder to vary the combustion chamber volume,
+  - a **connecting rod** connecting the piston to the *crankshaft*. This system transforms the reciprocating movement of piston into a rotating one.
+  - an **intake valve** and an *exhaust valve* to ensure fuel-air mixture intake and combustion gases exhaust.
+  - a **spark plug** that generate a spark to ignitiate combustion.
+
+The :numref:`Fig:chap1:SparkEngine` represents a schematic view of a SI RICE.
+
+.. _Fig:chap1:SparkEngine:
+
+.. figure:: ./_static/fig/chap4/SparkEngine.png
+  :scale: 30%
+  :align: center
+
+  Schematic representation of a Spark-ignition engine.
+
+The 4-stroke thermodynamic cycle occurs inside the combustion chamber as the piston is moving from *top dead center* (TDC) to *bottom dead center* (BDC) and reversely:
+
+  1. **Intake stroke**: the *intake valve* is open and the piston is moving from TDC to BDC allowing entry of fuel-air mixture (the charge) in the combustion chamber.
+  2. **Compression stroke**: both valves are closed as the piston is moving from BDC to TDC, ensuring compression of the mixture drawing work from the *crankshaft*. Just before the piston reach the TDC, the *spark plug* ignites the combustion.
+  3. **Working stroke**: Combustion is increasing temperature and pressure inside the *combution chamber* and the piston is pushed to BDC providing work on the *crankshaft* (more than in the compression stroke).
+  4. **Exhaust stroke**: the *exhaust valve* is open and the piston is moving from BDC to TDC pushing combustion gases outside of the *combustion chamber*.
+
+.. _Fig:chap1:4Strokes:
+
+.. figure:: ./_static/fig/chap4/4Strokes.png
+  :scale: 35%
+  :align: center
+
+  Schematic evolution in the SI RICE engine during the 4 strokes of the piston.
+
+The 4 strokes of the piston constitute a complete thermodynamic cycle. It also corresponds to two complete rotations of the *crankshaft*.
+
+Definitions
+-----------
+The **compression ratio** is defined as the ratio between the maximum cylinder volume and the minimum cylinder volume:
+
+.. math::
+  :label: compRatio
+
+  r = \frac{V_{BDC}}{V_{TDC}}
+
+The **displacement volume** is the volume inside the cylinder displaced by the piston between BDC and TDC:
+
+.. math::
+  :label: dispVol
+
+  V_d = V_{BDC} - V_{TDC}
+
+The **mean effective pressure** (PME) is the equivalent mean pressure acting along the piston stroke to obtain the real work.
+
+.. math::
+  :label: PME
+
+  PME = \frac{w_{net}}{V_d}
+
+.. admonition:: remark
+
+  The PME is a practical value that permits to compare easily engines with the same *displacement volume*.
+
+Beau de Rochas (Otto) cycle
+---------------------------
+French ingeneer *Beau de Rochas* proposed the SI RICE in 1862, and the German engineer *Otto* build it in 1876.
+
+.. _Fig:chap1:OttoCycle:
+
+.. figure:: ./_static/fig/chap4/OttoCycle.png
+  :scale: 30%
+  :align: center
+
+  Real SI RICE compared to idealised *Beau de Rochas* cycle
+
+Simplifications consist on considering 4 reversible transformations:
+
+  1. Compressions is isentropic.
+  2. Combustion is replaced by a constant volume heating.
+  3. Expansion is isentropic.
+  4. Heat exhausting is performed at constant volume.
+
+As for any heat engine (:eq:`thEfficiency`), the thermal efficiency of *Beau de Rochas* cycle is:
+
+.. math::
+
+  \eta_{BdR} = 1 - \frac{|q_{41}|}{|q_{23}|}
+
+Considering the working fluid as an **ideal gas**, transformations 4-1 and 2-3 being at volume constant we obtain:
+
+.. math::
+
+  \eta_{BdR} = 1 - \frac{T_4-T_1}{T_3-T_2}
+
+Because transformations 1-2 and 3-4 are isentropic and transformations 2-3 and 4-1 are isochore we can easily write:
+
+.. math::
+
+  \frac{T_1}{T_2} = \frac{V_2}{V_1}^{\gamma - 1} = \frac{V_3}{V_4}^{\gamma - 1} = \frac{T_4}{T_3}
+
+and the thermal efficiency becomes:
+
+.. math::
+  :label: thEffBdRIG
+
+  \eta_{BdR} = 1 - r^{1-\gamma}
+
+Thermal efficiency for the *Beau de Rochas* cycle only depends on the *compression ratio* (:eq:`compRatio`) and *heat capacities* ratio :math:`\gamma = c_p/c_v`.
+
+.. _Fig:chap1:etaBdR:
+
+.. figure:: ./_static/fig/chap4/etaBdR.png
+  :scale: 25%
+  :align: center
+
+  *Beau de Rochas* efficiency as a function of *compression ratio* in Gasoline engines.
+
+The thermal efficiency rises with the compression ratio. Passed a value of :math:`r`, the *combustion chamber* size and the pressure and temperature increase may cause auto-ignition of the mixture in an uncontrolled maneer (before the Spark declenchement). This uncontrolled combustion generates shock waves in the combustion chamber leading to engine deterioration. This is known as **engine knocking**.
+Typical zone of *compression ratio* for Gasoline engines are between 7 and 10 corresponding to maximum theoretical *thermal efficiency* of :math:`0.6`. Real SI RICE engines *thermal efficiencies* do not exceed :math:`0.3`.
+
+Compression-ignition engine (CI RICE)
+=====================================
+The fundamental difference with SI RICE is that only air penetrates during the *intake stroke* of the piston. Then during the *compression stroke*, air is compressed over the auto-ignition temperature. Diesel fuel is atomised from an **injector** directly in the combustion chamber and ignites spontaneously.
+This process reduces considerably *engine knocking*, allowing higher *compression ratio*, and consequentely better thermal efficiency.
+
+Diesel cycle
+------------
+In 1890, the German engineer *Rudolf Diesel* developped the first CI RICE. The theoretical idealised cycle corresponding to a CI RICE is the **Diesel** cycle.
+
+.. _Fig:chap1:DieselCycle:
+
+.. figure:: ./_static/fig/chap4/DieselCycle.png
+  :scale: 30%
+  :align: center
+
+  Real CI RICE compared to idealised *Diesel* cycle
+
+Simplifications consist on considering 4 reversible transformations:
+
+  1. Compressions is isentropic.
+  2. Combustion is replaced by a constant pressure heating.
+  3. Expansion is isentropic.
+  4. Heat exhausting is performed at constant volume.
+
+As for any heat engine (:eq:`thEfficiency`), the thermal efficiency of *Diesel* cycle is:
+
+.. math::
+
+  \eta_{Diesel} = 1 - \frac{|q_{41}|}{|q_{23}|}
+
+Considering the working fluid as an **ideal gas**, transformation 4-1 being at constant volume and 2-3 being at constant pressure:
+
+.. math::
+
+  \eta_{Diesel} = 1 - \frac{1}{\gamma}\frac{T_4-T_1}{T_3-T_2}
+
+Because transformations 1-2 and 3-4 are isentropic we can write:
+
+.. math::
+
+  \frac{T_1}{T_2} = \frac{V_2}{V_1}^{\gamma - 1} = {\left( \frac{V_2}{V_3} \right) }^{\gamma - 1} {\left( \frac{V_3}{V_1} \right) }^{\gamma - 1} = {\left( \frac{V_2}{V_3} \right) }^{\gamma - 1} \frac{T_4}{T_3}
+
+Then:
+
+.. math::
+
+  \frac{T_4}{T_1} = {\left( \frac{V_3}{V_2} \right) }^{\gamma - 1} \frac{T_3}{T_2}
+
+Because transformation 2-3 is isobare, we have :math:`\frac{T_3}{T_2}=\frac{V_3}{V_2}=r_c`
+
+Finally, the thermal efficiency becomes:
+
+.. math::
+  :label: thEffDieselIG
+
+  \eta_{Diesel} = 1 - r^{1-\gamma}\left[ \frac{1}{\gamma} \frac{r_c^{\gamma} - 1}{r_c - 1}   \right]
+
+The term in [] is greater than 1, such that we determine easily that for the same *compression ratio*, we have:
+
+.. math::
+
+  \eta_{BdR} \geq \eta_{Diesel}
+
+The equality occurs for :math:`r_c = 1`
+
+.. _Fig:chap1:etaDiesel:
+
+.. figure:: ./_static/fig/chap4/etaDiesel.png
+  :scale: 25%
+  :align: center
+
+  *Diesel* cycle thermal efficiency as a function of *compression rate* in Diesel engines (for different :math:`r_c=V_3/V_2`).
+
+.. admonition:: Remark
+
+  For a same *compression ratio*, the thermal efficiency of Diesel engines is lower than for Gasoline engines. But, Gasoline engines accept a higher *compression ratio*.
+  As a result, Diesel engines real thermal efficiency may reach :math:`0.4`.
+
+Turbocharger
+============
+A way to improve the power delivered by a RICE consists in increasing the quantity of air entering the combustion chamber during the *intake stroke* of the piston. This can be done by adding a *compressor* between atmosphere and the RICE.
+This compressor can be powered by the engine *crankshaft* directly. In that case we talk about **supercharger**. When the *compressor* is coupled to a *turbine* driven by exhaust gases, we talk about **turbocharger**.
+
+.. _Fig:chap1:turbocharger:
+
+.. figure:: ./_static/fig/chap4/turbocharger.png
+  :scale: 25%
+  :align: center
+
+  *Turbocharger* combining a compressor powered by a turbine. The turbine is driven by exhaust combustion gases.
+
+The cycle of the heat engine is modified. For example, we present the turbocharged Diesel cycle.
+
+.. _Fig:chap1:turbochargedDieselCycle:
+
+.. figure:: ./_static/fig/chap4/turbochargedDieselCycle.png
+  :scale: 25%
+  :align: center
+
+  Idealized Diesel cycle using a turbocharger.

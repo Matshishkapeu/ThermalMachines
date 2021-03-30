@@ -1,0 +1,169 @@
+**************
+Steam turbines
+**************
+
+In the preceding section, gas turbines have been studied. We have seen that gas turbine cycles are generally linking two isentropes to other transformations (isobare, isochores, etc.). It is indeed diffult to approach isothermal transformations in such cyles (only approach with an important number of compression/expansion stages :numref:`Sec:chap4:multiStageGasTurbine`).
+When using phase change it becomes easier as isobare are also isothermes in the equilibirum two-phase flow. Machine using phase change are named **steam turbines** and they are commonly found in power plants (nuclear or not) where they use *water* as working fluid.
+
+.. _Fig:chap4:steamTurbine:
+
+.. figure:: ./_static/fig/chap4/steamTurbine.png
+  :scale: 30%
+  :align: center
+
+  Component of a simple steam turbine.
+
+Vapor Carnot cycle
+==================
+The better thermal efficiency for thermal engine is obtain thanks to the *Carnot* cycle
+
+.. _Fig:chap4:CarnotVapor:
+
+.. figure:: ./_static/fig/chap4/CarnotVapor.png
+  :scale: 30%
+  :align: center
+
+  *Carnot* cycle using phase change for a steam turbine. The cycle is included under the saturation curve.
+
+As seen in :numref:`Sec:chap2:Carnot` the maximum efficiency with phase change between :math:`T_{cond}` and :math:`T_{evap}` is:
+
+.. math::
+
+  \eta_{th,C} = 1 - \frac{T_{cond}}{T_{evap}}
+
+.. important::
+
+  The *Carnot* cycle cannot been used without modifications because of technical difficulties:
+
+    * It is very difficult to compress at constant entropy a two-phase mixture :math:`\rightarrow` The fluid is entirely condensed to be compress by a pump: We obtain the *Rankine cycle* (:numref:`Sec:chap4:rankineCycle`).
+    * Presence of liquid droplets in the turbine will erode the blades :math:`\rightarrow` The fluid is then entirely evaporated and the vapor is overheated: We obtain the *Hirn cycle* (:numref:`Sec:chap4:hirnCycle`).
+
+.. _Sec:chap4:rankineCycle:
+
+Rankine cycle
+=============
+To prevent the presence of liquid-vapor mixture during the compression, the fluid is entirely condensed.
+
+.. _Fig:chap4:rankineCycle:
+
+.. figure:: ./_static/fig/chap4/rankineCycle.png
+  :scale: 30%
+  :align: center
+
+  *Rankine* cycle for a steam turbine.
+
+As for any heat engine (:eq:`thEfficiency`), the thermal efficiency for a steam turbine is:
+
+.. math::
+
+  \eta_{th} = 1 - \frac{|q_{41}|}{|q_{23}|}
+
+Because no machine is working in transformations 2-3 and 4-1, application of the balance energy equation reads:
+
+.. math::
+
+  |q_{23}| = \dot{m} (h_3-h_2) \qquad \text{ and } \qquad |q_{41}| = \dot{m} (h_4-h_1) 
+
+such that the thermal efficiency of steam turbines becomes:
+
+.. math::
+  :label: thEffSteamTurb
+
+  \eta_{th} = 1 - \frac{h_4-h_1}{h_3-h_2}
+
+.. caution::
+
+  The fluid can not be considered as an **ideal gas** since a phase change occurs from liquid to vapor and reversely. In practice calculs are performed thanks to *thermodynamics tables*.
+
+.. _Sec:chap4:hirnCycle:
+
+Hirn cycle
+==========
+To limit a two important quantity of liquid droplets in the turbine, the vapor is overheated.
+
+.. _Fig:chap4:hirnCycle:
+
+.. figure:: ./_static/fig/chap4/hirnCycle.png
+  :scale: 30%
+  :align: center
+
+  *Hirn* cycle for a steam turbine.
+
+Expression of thermal efficiency :eq:`thEffSteamTurb` remains unchanged.
+
+Improving the *Hirn* cycle
+--------------------------
+
+The net specific technical work during cycle is obtain thanks to the first principle applied to the cycle:
+
+.. math::
+
+  w_{t,net} = -q_{cycle}
+
+The net specific work **supplied** by the steam turbine is thus represented by the aera inside the *Hirn* cycle in the (T,s) plane.
+
+.. _Fig:chap4:hirnTechWork:
+
+.. figure:: ./_static/fig/chap4/hirnTechWork.png
+  :scale: 30%
+  :align: center
+
+  The specific technical work supplied by the steam turbine corresponds to the aera inluded in the *Hirn* cycle.
+
+As seen before, phase change induces the use of *Hirn* cycle to prevent the presence of two-phase mixtures in the pump and in the turbine. This implies also that some portion of heat echanges in the *Hirn* cycle are not isothermal transformations (:math:`2-2^l` and :math:`2^v-3`). Consequentely, the thermal efficiency is not as good as it can be.
+Nevertheless, some improvements permit to increase the thermal efficiency of steam turbines and are represented in :numref:`Fig:chap4:hirnImprovements`.
+
+.. _Fig:chap4:hirnImprovements:
+
+.. figure:: ./_static/fig/chap4/hirnImprovements.png
+  :scale: 30%
+  :align: center
+
+  Possible improvements in the *Hirn* cycle. Pink hashed zone represents earned specific technical work.
+
+Analyse of these improvements reveal that:
+
+  - **Decrease condenser pressure**: By decreasing the pressure in the condenser, the temperature decreases. This improvement is limited by the requested temperature needed for ensuring heat transfers between the working fluid and the cold sink (generally the exterior temperature). When water is used as working fluid, this temperature can not decrease below 25°C, corresponding to a condensation pressure of nearly 3200 Pa. Moreover, with the lower the pressure is, the more the infiltration risks are higher.
+  - **Increase vapor temperature**: Overheating the vapor in the boiler increases the thermal efficiency and reduces the quantity of liquid droplets in the turbine. Nevertheless, it is limited by mechanical properties of blades in the turbine. The typical maximum value is 600°C.
+  - **Increase boiler pressure**: This also improves the thermal efficiency of the steam turbine. It has the drawback to increase the amount of liquid droplets in the turbine. Today's typicall pressure in the boiler reaches 300 Bar in power plants (less for nuclear plants).
+
+Hirn cycle with reheat
+======================
+Increasing the average tempearture in the boiler represent an interesting direction to improve the thermal efficiency of steam turbines but is limited by the maximum temperature admitted by the turbine.
+A better way to improve the thermal efficiency is to use a multi-stage expansion with reheat between the turbines.
+
+.. _Fig:chap4:hirnReheat:
+
+.. figure:: ./_static/fig/chap4/hirnReheat.png
+  :scale: 30%
+  :align: center
+
+  *Hirn* cycle with reheat between a high and low pressure turbine.
+
+The thermal efficiency becomes:
+
+.. math::
+
+  \eta_{th,reheat} = 1 - \frac{|q_{71}|}{|q_{23}|+|q_{56}|} = 1 - \frac{h_7-h_1}{h_3-h_2+h_6-h_5}
+
+In the bigger installations, reheat allows an increase in thermal efficiency of 5%.
+
+Regenerative cycle
+===================
+In the *Rankine* (or *Hirn*) cycle, thermal efficiency is lower than the *Carnot*'s one because of the transformation :math:`2-2^l` which is not at constant temperature. The temperature of the fluid entering the boiler is low. In order to increase the thermal efficiency, it is possible to increase this temperature by a **regenerative** process. This is done by extracting a part of the steam from the turbine after partial expansion. This extracted steam is then used in a **heater** (or **regenerator**) to increase the liquid temperature before entering the boiler.
+
+.. _Fig:chap4:hirnRegen:
+
+.. figure:: ./_static/fig/chap4/hirnRegen.png
+  :scale: 30%
+  :align: center
+
+  Regenerative *Hirn* cycle. A part of fluid (:math:`\dot{m}_R`) is extracted from the turbine to increase the liquid temperature before entering the boiler.
+
+The thermal efficiency of the regenerative cycle is:
+
+.. math::
+
+  \eta_{th,regen} = 1 - \frac{|q_{41}|}{|q_{23}|} = 1 - \frac{(\dot{m}-\dot{m}_R)(h_4-h_1)}{\dot{m}(h_3-h_2)}
+
+If the number of extraction is increased, the thermal efficiency increases. In the bigger installation, 7 or 8 extractions occur.

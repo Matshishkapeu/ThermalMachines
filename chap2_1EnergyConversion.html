@@ -1,0 +1,401 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>2.1. Energy conversion &mdash; Thermal machines 1.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="2.2. Cycles" href="chap2_2Cycles.html" />
+    <link rel="prev" title="2. Thermal machines: Basics" href="chap2_thermMachinesBasics_Chap.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> Thermal machines
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="chap1_balanceEquations_Chap.html">1. Balance equations</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="chap2_thermMachinesBasics_Chap.html">2. Thermal machines: Basics</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">2.1. Energy conversion</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#definitions">2.1.1. Definitions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#energy-converter">2.1.1.1. Energy converter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#energy-reservoirs">2.1.1.2. Energy reservoirs</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#thermal-energy-converters">2.1.2. Thermal energy converters</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#monotherm-thermal-energy-converters">2.1.2.1. Monotherm thermal energy converters</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#thermal-energy-converters-with-two-ter">2.1.2.2. Thermal energy converters with two TER</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="chap2_2Cycles.html">2.2. Cycles</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="chap3_CompExpGas_Chap.html">3. Compression / Expansion of Gas and vapors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chap4_ThermalEngines_Chap.html">4. Heat engines</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chap5_ThermalGenerators_Chap.html">5. Heat pumps and refrigerators</a></li>
+<li class="toctree-l1"><a class="reference internal" href="zBibliography.html">6. References</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Thermal machines</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="chap2_thermMachinesBasics_Chap.html"><span class="section-number">2. </span>Thermal machines: Basics</a> &raquo;</li>
+        
+      <li><span class="section-number">2.1. </span>Energy conversion</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/chap2_1EnergyConversion.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="energy-conversion">
+<span id="sec-chap2-energyconversion"></span><h1><span class="section-number">2.1. </span>Energy conversion<a class="headerlink" href="#energy-conversion" title="Permalink to this headline">¶</a></h1>
+<p>Definitions of <em>energy converters</em> and <em>energy reservoirs</em> are given first, then the specific case of thermal energy converters (thermal machines) are studied.</p>
+<div class="section" id="definitions">
+<h2><span class="section-number">2.1.1. </span>Definitions<a class="headerlink" href="#definitions" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="energy-converter">
+<h3><span class="section-number">2.1.1.1. </span>Energy converter<a class="headerlink" href="#energy-converter" title="Permalink to this headline">¶</a></h3>
+<p>An <strong>energy converter</strong> is a thermodynamic system able to transfer energy from a system in a given form to another system in another form.</p>
+<p>This energy conversion should remain in time thanks to a <strong>cyclic operation</strong> of the converter.</p>
+<div class="admonition-examples-of-energy-converters admonition">
+<p class="admonition-title">Examples of energy converters</p>
+<ul class="simple">
+<li><p>An electric resistance converts <em>electrical energy</em> to <em>heat energy</em>.</p></li>
+<li><p>A thermo-alternator group from an hydraulic power plant converts <em>kinetic and potential energies</em> of water in <em>electrical energy</em>.</p></li>
+<li><p>A car engine converts <em>chemical energy</em> into <em>mechanical energy</em>.</p></li>
+<li><p>etc.</p></li>
+</ul>
+</div>
+<p>An energy converter is said perfect if he follows a <em>reversible</em> cycle.</p>
+</div>
+<div class="section" id="energy-reservoirs">
+<h3><span class="section-number">2.1.1.2. </span>Energy reservoirs<a class="headerlink" href="#energy-reservoirs" title="Permalink to this headline">¶</a></h3>
+<p>A <strong>reservoir</strong> (source or sink) associated to a given energy type is a system with an infinite size such that if he exchange energy, the <em>intensive variable</em> corresponding to this energy type remains unchanged.</p>
+<div class="admonition-examples-of-energy-reservoirs admonition">
+<p class="admonition-title">Examples of energy reservoirs</p>
+<ul class="simple">
+<li><p>A lake upstream from a dam represents a reservoir of potential energy since its can provide energy to a turbine (<img class="math" src="_images/math/3184d8ce23723e8f9804257e58d4254eab7d85af.svg" alt="\delta{e}_p = gz dM" style="vertical-align: -5px"/>) with a mass change (<img class="math" src="_images/math/7f81e36472f32f9704a40807c1de2da175c8f3c3.svg" alt="dM" style="vertical-align: 0px"/>) while remaining its surface at the same altitude (<img class="math" src="_images/math/3b4650ce80124f11a51c1746f9b09911e99d20e0.svg" alt="gz" style="vertical-align: -3px"/>).</p></li>
+<li><p>Outside air represents a reservoir of thermal energy since it can, during winter, draw heat energy from a building (<img class="math" src="_images/math/8811ab870a39b9871879595d7a6afa899f7470bc.svg" alt="\delta Q = T dS" style="vertical-align: -3px"/>) with an entropy variation (<img class="math" src="_images/math/1385f5edafa6a57e6c28facf9984a0db0936ef6a.svg" alt="dS" style="vertical-align: 0px"/>) while its temperature (<img class="math" src="_images/math/dc31f5200fe7898166440e27e0e502868ae402f4.svg" alt="T" style="vertical-align: 0px"/>) remains constant.</p></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="section" id="thermal-energy-converters">
+<h2><span class="section-number">2.1.2. </span>Thermal energy converters<a class="headerlink" href="#thermal-energy-converters" title="Permalink to this headline">¶</a></h2>
+<p>Energy converters under interest in this course are <strong>thermo-mecanical</strong> energy converters. They are classed in three families:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>Heat engines</strong>: they are converting <em>thermal energy</em> into <em>mechanical energy</em>. We can cite for example reciprocating internal combustion engines (car engines), steam locomotive, gas turbine, turboreactors, etc.</p></li>
+<li><p><strong>Heat pumps</strong>: they are converting <em>thermal energy</em> from <em>mechanical energy</em>, providing <em>thermal energy</em> to a hot sink.</p></li>
+<li><p><strong>Refrigerators</strong>: they are converting <em>thermal energy</em> from <em>mechanical energy</em>, drawing thermal energy from a cold source.</p></li>
+</ul>
+</div></blockquote>
+<div class="figure align-center" id="id1">
+<span id="fig-chap2-thermalmachines"></span><a class="reference internal image-reference" href="_images/thermalMachines.png"><img alt="_images/thermalMachines.png" src="_images/thermalMachines.png" style="width: 528.3px; height: 270.3px;" /></a>
+<p class="caption"><span class="caption-number">Figure 2.1:  </span><span class="caption-text">3 kind of thermal machines</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</div>
+<p>Thus thermal energy converters are exchanging <em>thermal energy</em> between thermal energy reservoirs (TER) and draws or produces <em>mechanical energy</em>.</p>
+<p>The energy is transmitted between the different elements of a <em>thermal converter</em> thanks to a <strong>working fluid</strong> also named <strong>refrigerant</strong> or <strong>coolant</strong>. This can be a gas (air, carbon dioxyde, helium, etc.) or a liquid that can vaporize (water, ammonia, freon, etc.) that follows a thermodynamic cycle.</p>
+<p>During this cycle, the final state <img class="math" src="_images/math/a7d7a6c9ef4f83e5dcb1ec9e4e8f2b1c316b2785.svg" alt="f" style="vertical-align: -3px"/> of the working fluid is the same as its initial <img class="math" src="_images/math/7d932693f1681ad803973bc12d044ee73ae422cd.svg" alt="i" style="vertical-align: 0px"/> one such that its internal energy variation is nul:</p>
+<div class="math" id="equation-energycycle">
+<p><span class="eqno">(2.1)<a class="headerlink" href="#equation-energycycle" title="Permalink to this equation">¶</a></span><img src="_images/math/26db26b377f1cb01858e10c19edbff802f26a2a7.svg" alt="\Delta [E]_{cycle} = E_f - E_i = 0"/></p>
+</div><p>We also have no variation of entropy:</p>
+<div class="math" id="equation-entropycycle">
+<p><span class="eqno">(2.2)<a class="headerlink" href="#equation-entropycycle" title="Permalink to this equation">¶</a></span><img src="_images/math/9c31ced6a189d9d95362fd27c465a89fedc7d97c.svg" alt="\Delta [S]_{cycle} = S_f - S_i = 0"/></p>
+</div><p>Thanks to the first and second principle of thermodynamics, we are going to analyse the possibilities if we put the system in contact with one or more TER.</p>
+<p>Let us consider that our system exchange thermal energies with <img class="math" src="_images/math/fca97c34599a4c7389abdb23260fdc11729fe611.svg" alt="n" style="vertical-align: 0px"/> TER. The thermal energy <img class="math" src="_images/math/99870bb7025ab7def2b68bbf45773f9a51dd4123.svg" alt="Q_k" style="vertical-align: -3px"/> is associated to the TER <img class="math" src="_images/math/bfbf113898898b0c954a9954960556f668556864.svg" alt="k" style="vertical-align: 0px"/> at temperature <img class="math" src="_images/math/44e16e566a078f4bac5d9ed16e31e8ffb1e5daf1.svg" alt="T_k" style="vertical-align: -2px"/>.</p>
+<p>The general application of the first principle reads:</p>
+<div class="math" id="equation-firstppecycle">
+<p><span class="eqno">(2.3)<a class="headerlink" href="#equation-firstppecycle" title="Permalink to this equation">¶</a></span><img src="_images/math/af4cf4d439503245f492fd28713db776e061c080.svg" alt="\Delta [E]_{cycle} = 0 = W + \sum_k^n Q_k"/></p>
+</div><p>where <img class="math" src="_images/math/c8e845d94aeb9162f1d1112f9e176900d116f75c.svg" alt="W" style="vertical-align: 0px"/> represents the mechanical energy echanged during the cycle.</p>
+<p>The second principle reads:</p>
+<div class="math">
+<p><img src="_images/math/092df57dfe6c49e709c96a76084f570d17840932.svg" alt="\Delta [S]_{cycle} = 0 = \sum_k^n \frac{Q_k}{T_k} + S_c"/></p>
+</div><div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Because the creation of entropy during the cycle is necessarly positive or nul, we thus have :</p>
+<div class="math" id="equation-secondppecycle">
+<p><span class="eqno">(2.4)<a class="headerlink" href="#equation-secondppecycle" title="Permalink to this equation">¶</a></span><img src="_images/math/a9ba9718363c550954ed7b748caacdd0acbefb19.svg" alt="\sum_k^n \frac{Q_k}{T_k} \le 0 \text{ (0 if reversible cycle)}"/></p>
+</div><p>Relation <a class="reference internal" href="#equation-secondppecycle">Eq.2.4</a> is the traduction of second principle for cycles. It is known as the <strong>Clausius relation</strong>.</p>
+</div>
+<div class="section" id="monotherm-thermal-energy-converters">
+<h3><span class="section-number">2.1.2.1. </span>Monotherm thermal energy converters<a class="headerlink" href="#monotherm-thermal-energy-converters" title="Permalink to this headline">¶</a></h3>
+<p>If the system exchange <em>thermal energy</em> with a unique TER</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Equation <a class="reference internal" href="#equation-secondppecycle">Eq.2.4</a> traduces that <img class="math" src="_images/math/972c82992b216cbf14c4b8b5c8899100e52fb33f.svg" alt="Q \le 0" style="vertical-align: -3px"/>, that is to say that the system provides thermal energy to the TER.</p></li>
+<li><p>Equation <a class="reference internal" href="#equation-firstppecycle">Eq.2.3</a> traduces that <img class="math" src="_images/math/e2b15fceee9aa4b138b14d0ee4241a8f2970f438.svg" alt="W = -Q \ge 0" style="vertical-align: -3px"/>, thus the system is absorbing mechanical energy.</p></li>
+</ul>
+</div></blockquote>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Thermal machine exchanging thermal energy with only one TER is necessarilly a <strong>heat pump</strong></p>
+</div>
+<div class="figure align-center" id="id2">
+<span id="fig-chap2-heatpumpmonoter"></span><a class="reference internal image-reference" href="_images/heatPumpMonoTER.png"><img alt="_images/heatPumpMonoTER.png" src="_images/heatPumpMonoTER.png" style="width: 282.3px; height: 274.5px;" /></a>
+<p class="caption"><span class="caption-number">Figure 2.2:  </span><span class="caption-text">A heat pump with a unique TER</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+</div>
+<p>Examples of such system can be found in nature as for example friction between bodies are consumming <em>mechanical energy</em> to supply <em>thermal energy</em> (heating).</p>
+</div>
+<div class="section" id="thermal-energy-converters-with-two-ter">
+<h3><span class="section-number">2.1.2.2. </span>Thermal energy converters with two TER<a class="headerlink" href="#thermal-energy-converters-with-two-ter" title="Permalink to this headline">¶</a></h3>
+<p>We consider that the system is now connected to two TER at different temperatures <img class="math" src="_images/math/f849365e25534a358a3295b0088a4078a8c70c25.svg" alt="T_H" style="vertical-align: -2px"/> for the hot one and <img class="math" src="_images/math/225ac4bdc2299592497f0abd8d0f1548301d154a.svg" alt="T_C" style="vertical-align: -2px"/> for the cold one Thanks to equations <a class="reference internal" href="#equation-firstppecycle">Eq.2.3</a> and <a class="reference internal" href="#equation-secondppecycle">Eq.2.4</a> We thus have the two relations:</p>
+<div class="math" id="equation-firstppecycle2">
+<p><span class="eqno">(2.5)<a class="headerlink" href="#equation-firstppecycle2" title="Permalink to this equation">¶</a></span><img src="_images/math/c28a877ebebc8ac00b81a6493b01d7396d05166d.svg" alt="W + Q_C + Q_H = 0"/></p>
+</div><p>and</p>
+<div class="math" id="equation-secondppecycle2">
+<p><span class="eqno">(2.6)<a class="headerlink" href="#equation-secondppecycle2" title="Permalink to this equation">¶</a></span><img src="_images/math/8dc8b93f40d85faf00776a73de1b22e91d1b7663.svg" alt="\frac{Q_C}{T_C} + \frac{Q_H}{T_H} \le 0"/></p>
+</div><div class="section" id="case-1-w-0">
+<h4><span class="section-number">2.1.2.2.1. </span>Case 1: <img class="math" src="_images/math/102d92f42fd5bcfabe3386b5ab51665583e6dcfd.svg" alt="W &lt; 0" style="vertical-align: 0px"/><a class="headerlink" href="#case-1-w-0" title="Permalink to this headline">¶</a></h4>
+<p>The thermal converter is a <strong>heat engine</strong>.</p>
+<p>With equation <a class="reference internal" href="#equation-firstppecycle2">Eq.2.5</a>, we obtain that:</p>
+<div class="math">
+<p><img src="_images/math/8df5fe5ab0668efa47fb54b6bfef2a181ab45c3b.svg" alt="-Q_C - Q_H = W &lt; 0"/></p>
+</div><p>Or</p>
+<div class="math" id="equation-heats">
+<p><span class="eqno">(2.7)<a class="headerlink" href="#equation-heats" title="Permalink to this equation">¶</a></span><img src="_images/math/b4084486d9555d5392de5e2d383f751a246825f2.svg" alt="-\frac{Q_C}{T_C} - \frac{Q_H}{T_C} &lt; 0"/></p>
+</div><p>Addig relations <a class="reference internal" href="#equation-secondppecycle2">Eq.2.6</a> and <a class="reference internal" href="#equation-heats">Eq.2.7</a> brings:</p>
+<div class="math">
+<p><img src="_images/math/ae01d2448a5881524ad232c5e203ac0fa54592eb.svg" alt="Q_H (\frac{1}{T_H} -\frac{1}{T_C}) &lt; 0"/></p>
+</div><p>And because <img class="math" src="_images/math/5ac8d3eab5a1415b3fee6cbbf66559a378ed8246.svg" alt="T_H&gt;T_C" style="vertical-align: -2px"/>, necessarily we obtain that <img class="math" src="_images/math/d13a79cacc36ba4ba2c02b472f49e55c00701be0.svg" alt="Q_H&gt;0" style="vertical-align: -3px"/>. In other words, the machine is absorbing thermal energy to the hot source and provides thermal energy to the cold sink with:</p>
+<div class="math">
+<p><img src="_images/math/8e5d3ea1aad1a40cfbb05ee139588b340103c25d.svg" alt="Q_H &gt; -Q_C &gt; 0"/></p>
+</div><div class="figure align-center" id="id3">
+<span id="fig-chap2-heatengine"></span><a class="reference internal image-reference" href="_images/heatEngine.png"><img alt="_images/heatEngine.png" src="_images/heatEngine.png" style="width: 240.89999999999998px; height: 326.09999999999997px;" /></a>
+<p class="caption"><span class="caption-number">Figure 2.3:  </span><span class="caption-text">Heat Engine between two TER.</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>A <strong>heat engine</strong> necessarily absorbs thermal energy to a <em>hot source</em> and releases thermal energy to a <em>cold sink</em>.</p>
+</div>
+</div>
+<div class="section" id="case-2-w-0">
+<h4><span class="section-number">2.1.2.2.2. </span>Case 2: <img class="math" src="_images/math/511164e7a9d27c0759a74979d91ad394dd663b72.svg" alt="W = 0" style="vertical-align: 0px"/><a class="headerlink" href="#case-2-w-0" title="Permalink to this headline">¶</a></h4>
+<p>It is easy to show that in this case, the thermal energy is spontaneously exchanged from the hot source to the cold sink with the relation:</p>
+<div class="math">
+<p><img src="_images/math/4db39b2940c642a5889a2e8fb3b702557660bf1c.svg" alt="Q_H = -Q_C &gt; 0"/></p>
+</div></div>
+<div class="section" id="case-3-w-0">
+<h4><span class="section-number">2.1.2.2.3. </span>Case 3: <img class="math" src="_images/math/62f4703131c4ecf1c8c6b9762c48e90709e895b6.svg" alt="W &gt; 0" style="vertical-align: 0px"/><a class="headerlink" href="#case-3-w-0" title="Permalink to this headline">¶</a></h4>
+<p>The thermal converter is absorbing mechanical energy.</p>
+<p>With equation <a class="reference internal" href="#equation-firstppecycle2">Eq.2.5</a>, we obtain that:</p>
+<div class="math">
+<p><img src="_images/math/ec16c12c7742824a50d9c5195daf158bbfca2027.svg" alt="-Q_C - Q_H = W &gt; 0"/></p>
+</div><p>Several possibilities occur:</p>
+<div class="section" id="q-h-0-the-converter-absorbs-thermal-energy-from-the-hot-source">
+<h5><span class="section-number">2.1.2.2.3.1. </span><img class="math" src="_images/math/43f0bc1958725cc47af2dad39fa4f8eced08549f.svg" alt="Q_H &gt; 0" style="vertical-align: -3px"/>: the converter absorbs thermal energy from the hot source<a class="headerlink" href="#q-h-0-the-converter-absorbs-thermal-energy-from-the-hot-source" title="Permalink to this headline">¶</a></h5>
+<p>In that case, we have</p>
+<div class="math" id="equation-ineg">
+<p><span class="eqno">(2.8)<a class="headerlink" href="#equation-ineg" title="Permalink to this equation">¶</a></span><img src="_images/math/30de35e3e60aa5254802b3016e75398d7c244076.svg" alt="Q_C &lt; - Q_H &lt; 0"/></p>
+</div><p>The converter supplies thermal heat to the cold sink.</p>
+<p>But equation <a class="reference internal" href="#equation-secondppecycle2">Eq.2.6</a> brings:</p>
+<div class="math">
+<p><img src="_images/math/1f992f5065850ecc72c56b2b4340b4f6eb5230a1.svg" alt="-\frac{|Q_C|}{T_C} + \frac{|Q_H|}{T_H} \le 0"/></p>
+</div><p>Or</p>
+<div class="math">
+<p><img src="_images/math/d0fc7ab54b57cc08e6c2d9f11e423022aae6e688.svg" alt="|Q_H| \le |Q_C|\frac{{T_H}}{T_C}"/></p>
+</div><p>If the transformation is reversible, we have <img class="math" src="_images/math/f86fec344e810c50def4aef9728ffc7a608b4490.svg" alt="|Q_H| = |Q_C|\frac{{T_H}}{T_C} &gt; |Q_C|" style="vertical-align: -8px"/> that is incompatible with <a class="reference internal" href="#equation-ineg">Eq.2.8</a>.</p>
+</div>
+<div class="section" id="q-h-0-the-converter-supplies-thermal-energy-to-the-hot-source">
+<h5><span class="section-number">2.1.2.2.3.2. </span><img class="math" src="_images/math/b28bc09e7727adf5d949b024f0843cfdf88b0b4f.svg" alt="Q_H &lt; 0" style="vertical-align: -3px"/>: the converter supplies thermal energy to the hot source<a class="headerlink" href="#q-h-0-the-converter-supplies-thermal-energy-to-the-hot-source" title="Permalink to this headline">¶</a></h5>
+<p>if <img class="math" src="_images/math/4d1476c650749e6457a7c3dc9e0556fcf29ec00d.svg" alt="Q_C &lt; 0" style="vertical-align: -3px"/>, the machine is providing <img class="math" src="_images/math/954e5c2182c09cd9c2b09c2bca2022d6c771ecdf.svg" alt="-Q_C-Q_H = W" style="vertical-align: -3px"/>. This is a non interesting case for a <em>heat pump</em>.</p>
+<p>if <img class="math" src="_images/math/db2881a3fb18b790911615da31b055a0cd4a6100.svg" alt="Q_C &gt; 0" style="vertical-align: -3px"/>, the machine is absorbing thermal energy from the cold source and supplies thermal energy to the hot sink. This can be a <em>heat pump</em> or a <em>refrigerator</em>.</p>
+<div class="figure align-center" id="id4">
+<span id="fig-chap2-heatgenerator"></span><a class="reference internal image-reference" href="_images/heatGenerator.png"><img alt="_images/heatGenerator.png" src="_images/heatGenerator.png" style="width: 322.5px; height: 374.7px;" /></a>
+<p class="caption"><span class="caption-number">Figure 2.4:  </span><span class="caption-text">Two different heat generators: the heat pump and the refrogerator.</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>A <strong>heat pump</strong> or a <strong>refrigerators</strong> absorbs thermal energy to a <em>cold source</em> and releases thermal energy to a <em>hot sink</em> and necessarily riquires a <em>mechanical energy</em>.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="chap2_2Cycles.html" class="btn btn-neutral float-right" title="2.2. Cycles" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="chap2_thermMachinesBasics_Chap.html" class="btn btn-neutral float-left" title="2. Thermal machines: Basics" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2019, Fabien Petitpas, AMU, Polytech Marseille ME
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

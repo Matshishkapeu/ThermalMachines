@@ -1,0 +1,22 @@
+****************************
+Heat pumps and refrigerators
+****************************
+
+**Heat pumps** and **refrigerators** are *thermal energy converters*: they use mechanical energy to move thermal energy from a cold source to a hot sink.
+
+The *Carnot heat generator* (seen in section :ref:`Sec:chap2:CarnotHeatGen`) presents the maximum thermal efficiency but *Real heat generators* are generally not exchanging thermal energy using isothermal transformations.
+
+This chapter treats:
+
+  1) Gas heat pump and refrigeration cycle (reverse Brayton cycle)
+  2) Vapor compression heat pumps and refrigerators
+
+.. toctree::
+  :maxdepth: 1
+  :caption: Contents:
+
+  chap5_1GasGenerator
+  chap5_2VaporCompMachines
+
+
+

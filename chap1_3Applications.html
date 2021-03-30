@@ -1,0 +1,328 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>1.2. Applications &mdash; Thermal machines 1.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="2. Thermal machines: Basics" href="chap2_thermMachinesBasics_Chap.html" />
+    <link rel="prev" title="1.1. Balance equations for open systems" href="chap1_2BalanceForControlVolume.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> Thermal machines
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="chap1_balanceEquations_Chap.html">1. Balance equations</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="chap1_2BalanceForControlVolume.html">1.1. Balance equations for open systems</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">1.2. Applications</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#acceleration-in-a-nozzle">1.2.1. Acceleration in a nozzle</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#heat-exchanger">1.2.2. Heat exchanger</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#compressor-turbine">1.2.3. Compressor/Turbine</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#throttling-valves">1.2.4. Throttling Valves</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="chap2_thermMachinesBasics_Chap.html">2. Thermal machines: Basics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chap3_CompExpGas_Chap.html">3. Compression / Expansion of Gas and vapors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chap4_ThermalEngines_Chap.html">4. Heat engines</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chap5_ThermalGenerators_Chap.html">5. Heat pumps and refrigerators</a></li>
+<li class="toctree-l1"><a class="reference internal" href="zBibliography.html">6. References</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Thermal machines</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="chap1_balanceEquations_Chap.html"><span class="section-number">1. </span>Balance equations</a> &raquo;</li>
+        
+      <li><span class="section-number">1.2. </span>Applications</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/chap1_3Applications.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="applications">
+<h1><span class="section-number">1.2. </span>Applications<a class="headerlink" href="#applications" title="Permalink to this headline">¶</a></h1>
+<p>Balance equations presented in <a class="reference internal" href="chap1_2BalanceForControlVolume.html#sec-chap1-balanceequations"><span class="std std-numref">Section 1.1: </span></a> are applied here to the constituting elements of engineering machines: nozzles, heat exchangers, compressors and turbines, etc. These elements are made for continuous processes (steady flow) and generally present one fluid entry and one fluid exit.</p>
+<div class="figure align-center" id="id1">
+<span id="fig-chap1-twofluidsec"></span><a class="reference internal image-reference" href="_images/twoFluidSec.png"><img alt="_images/twoFluidSec.png" src="_images/twoFluidSec.png" style="width: 305.8px; height: 200.60000000000002px;" /></a>
+<p class="caption"><span class="caption-number">Figure 1.3:  </span><span class="caption-text">A fluid system with one entry and one exit</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</div>
+<p>In that specific case, balance equations <a class="reference internal" href="chap1_2BalanceForControlVolume.html#equation-massequation">Eq.1.9</a> and <a class="reference internal" href="chap1_2BalanceForControlVolume.html#equation-energyequation">Eq.1.10</a> simplify in:</p>
+<div class="math" id="equation-masstwofluidsec">
+<p><span class="eqno">(1.16)<a class="headerlink" href="#equation-masstwofluidsec" title="Permalink to this equation">¶</a></span><img src="_images/math/12b2185335bb85c9ab45fb64a7cf4782a3ba69a2.svg" alt="\dot{m_2} = - \dot{m_1} = \dot{m}"/></p>
+</div><p>and</p>
+<div class="math" id="equation-energytwofluidsec">
+<p><span class="eqno">(1.17)<a class="headerlink" href="#equation-energytwofluidsec" title="Permalink to this equation">¶</a></span><img src="_images/math/744671ca1c47b0ebf799afc67456208642c21bb5.svg" alt="\dot{m} (h_{t,2} - h_{t,1}) = \dot{Q} + \dot{W}_{t}"/></p>
+</div><div class="section" id="acceleration-in-a-nozzle">
+<h2><span class="section-number">1.2.1. </span>Acceleration in a nozzle<a class="headerlink" href="#acceleration-in-a-nozzle" title="Permalink to this headline">¶</a></h2>
+<p><strong>Nozzles</strong> can be found in gas turbine or on aircrafts/rocket engines. They are basic components used to accelerate/decelerate a flow.</p>
+<div class="figure align-center" id="id2">
+<span id="fig-chap1-nozzle"></span><a class="reference internal image-reference" href="_images/nozzle.png"><img alt="_images/nozzle.png" src="_images/nozzle.png" style="width: 702.0px; height: 282.59999999999997px;" /></a>
+<p class="caption"><span class="caption-number">Figure 1.4:  </span><span class="caption-text">Left: subsonic convergent nozzle, Middle: subsonic divergent nozzle, Right: Ariane’5 Vulcain engine nozzle.</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+</div>
+<p>In nozzle systems:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>It is commonly accepted that no thermal energy is exchanged (<img class="math" src="_images/math/b8f4a408665b3c2e50e54df5283a7e3121088b55.svg" alt="\dot{Q}=0" style="vertical-align: -3px"/>) due to important fluid velocities.</p></li>
+<li><p>Moreover, no working machine is present (<img class="math" src="_images/math/a5235d24c0cb0d4b7894eb493b14e7d1ffa5c949.svg" alt="\dot{W}_{t}" style="vertical-align: -2px"/>)</p></li>
+<li><p>Potential energy is negligible.</p></li>
+</ul>
+</div></blockquote>
+<p>such that relation <a class="reference internal" href="#equation-energytwofluidsec">Eq.1.17</a> becomes:</p>
+<div class="math" id="equation-nozzleeq">
+<p><span class="eqno">(1.18)<a class="headerlink" href="#equation-nozzleeq" title="Permalink to this equation">¶</a></span><img src="_images/math/f313d5b183ee7f384e693e7ef73ee7841d60f122.svg" alt="h_{2} - h_{1} = - \frac{1}{2}(u_2^2-u_1^2)"/></p>
+</div></div>
+<div class="section" id="heat-exchanger">
+<h2><span class="section-number">1.2.2. </span>Heat exchanger<a class="headerlink" href="#heat-exchanger" title="Permalink to this headline">¶</a></h2>
+<p><strong>Heat exchangers</strong> allow to exchange a thermal energy between two fluids without mixing. The simpler heat exchanger is the <em>double-tube</em> presented in <a class="reference internal" href="#fig-chap1-heatexchanger"><span class="std std-numref">Figure 1.5: </span></a>.</p>
+<div class="figure align-center" id="id3">
+<span id="fig-chap1-heatexchanger"></span><a class="reference internal image-reference" href="_images/heatExchanger.png"><img alt="_images/heatExchanger.png" src="_images/heatExchanger.png" style="width: 598.1999999999999px; height: 222.0px;" /></a>
+<p class="caption"><span class="caption-number">Figure 1.5:  </span><span class="caption-text">Double-tube heat exchanger. The cold fluid is absorbing thermal energy provided by the hot fluid.</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
+</div>
+<p>In heat exchanger systems:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Kinetic energy variation is commonly negligible.</p></li>
+<li><p>Potential energy is negligible.</p></li>
+<li><p>No working machine is present (<img class="math" src="_images/math/a5235d24c0cb0d4b7894eb493b14e7d1ffa5c949.svg" alt="\dot{W}_{t}" style="vertical-align: -2px"/>)</p></li>
+</ul>
+</div></blockquote>
+<p>Such that for example if considering the cold fluid system, the balance energy equation <a class="reference internal" href="#equation-energytwofluidsec">Eq.1.17</a> becomes:</p>
+<div class="math" id="equation-heatexchangeeq">
+<p><span class="eqno">(1.19)<a class="headerlink" href="#equation-heatexchangeeq" title="Permalink to this equation">¶</a></span><img src="_images/math/4c1d2c7d5146e8bd7a5054fd1f094ee0502fcc9f.svg" alt="\dot{m}_C (h_{2}^C - h_{1}^C) = \dot{Q}"/></p>
+</div><p>If the heat exchanger is insulated, the hot fluid system balance energy will read:</p>
+<div class="math">
+<p><img src="_images/math/6476e8c8e276b9e21f7703075af8dc6c81b707d5.svg" alt="\dot{m}_H (h_{2}^H - h_{1}^H) = -\dot{Q}"/></p>
+</div></div>
+<div class="section" id="compressor-turbine">
+<h2><span class="section-number">1.2.3. </span>Compressor/Turbine<a class="headerlink" href="#compressor-turbine" title="Permalink to this headline">¶</a></h2>
+<p>These elements contains a rotary mechanical device to convert flow energy into mechanical work (turbine) and reversely (compressor). The mechanical work is transmitted thanks to a shaft.</p>
+<div class="figure align-center" id="id4">
+<span id="fig-chap1-compturb"></span><a class="reference internal image-reference" href="_images/compTurb.png"><img alt="_images/compTurb.png" src="_images/compTurb.png" style="width: 705.0px; height: 244.2px;" /></a>
+<p class="caption"><span class="caption-number">Figure 1.6:  </span><span class="caption-text">Left: schematic representation of a compressor and a turbine. Right: multi-stage compressor.</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
+</div>
+<p>In these elements, this is commonly accepted that:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Kinetic energy variation is negligible.</p></li>
+<li><p>Potential energy negligible.</p></li>
+<li><p>No heat exchanges unless they are cooled (or heated) <img class="math" src="_images/math/06ef3f0bad77bd2fde5617f59b89cdfbc6762332.svg" alt="\dot{Q} =0" style="vertical-align: -3px"/>.</p></li>
+</ul>
+</div></blockquote>
+<p>Balance energy equation becomes:</p>
+<div class="math" id="equation-turbcompeq">
+<p><span class="eqno">(1.20)<a class="headerlink" href="#equation-turbcompeq" title="Permalink to this equation">¶</a></span><img src="_images/math/38506be9c6028eb33c7737420f454ddf3d8eef9a.svg" alt="\dot{m} (h_{2} - h_{1}) = \dot{W}_{t}"/></p>
+</div><p>In a <strong>turbine</strong>, a work is produced on the shaft (<img class="math" src="_images/math/ddc871c427698be75e6674c56c06f6ec8eaee092.svg" alt="W_t &lt; 0" style="vertical-align: -2px"/> because lost by the turbine), and the flow enthalpy is decreasing because of fluid expansion resulting in a lower pressure at the turbine exit than at the entry.</p>
+<p>In a <strong>compressor</strong>, as for a pump or a ventilator, the fluid’s enthalpy is increasing because of fluid compression resulting in an increase of flow pressure as a work is provided on the shaft (<img class="math" src="_images/math/c1f4b326f434322f6278dc939084e546ab8b6b80.svg" alt="W_t &gt; 0" style="vertical-align: -2px"/> because earned by the compressor).</p>
+</div>
+<div class="section" id="throttling-valves">
+<span id="sec-chap1-laminating"></span><h2><span class="section-number">1.2.4. </span>Throttling Valves<a class="headerlink" href="#throttling-valves" title="Permalink to this headline">¶</a></h2>
+<p><strong>Throttling valves</strong> produce a pressure drop in a flow. It can be obtained thanks to adjustable valve or thanks to a porous.</p>
+<div class="figure align-center" id="id5">
+<span id="fig-chap1-laminating"></span><a class="reference internal image-reference" href="_images/laminating.png"><img alt="_images/laminating.png" src="_images/laminating.png" style="width: 443.6px; height: 207.20000000000002px;" /></a>
+<p class="caption"><span class="caption-number">Figure 1.7:  </span><span class="caption-text">A high pressure gas is expanded through a hole. This kind of expansion is isenthalpic.</span><a class="headerlink" href="#id5" title="Permalink to this image">¶</a></p>
+</div>
+<p>Common hypothesis are:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>No heat echanges (insulated walls),</p></li>
+<li><p>No working machine,</p></li>
+<li><p>Kinetic energy variation is negligible.</p></li>
+</ul>
+</div></blockquote>
+<p>Such that the first principle reduces to:</p>
+<div class="math" id="equation-isenthalpicexpansion">
+<p><span class="eqno">(1.21)<a class="headerlink" href="#equation-isenthalpicexpansion" title="Permalink to this equation">¶</a></span><img src="_images/math/273090edac18110b03314735089c0d062fff1265.svg" alt="h_1 = h_2"/></p>
+</div><p>If the fluid can be considered as ideal gas, the isenthalpic expansion is also isothermal:</p>
+<div class="math">
+<p><img src="_images/math/21ff4bc85cd322bf87128f6da37345b2379b25f7.svg" alt="T_1 = T_2"/></p>
+</div></div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="chap2_thermMachinesBasics_Chap.html" class="btn btn-neutral float-right" title="2. Thermal machines: Basics" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="chap1_2BalanceForControlVolume.html" class="btn btn-neutral float-left" title="1.1. Balance equations for open systems" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2019, Fabien Petitpas, AMU, Polytech Marseille ME
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

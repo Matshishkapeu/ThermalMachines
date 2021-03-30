@@ -1,0 +1,39 @@
+Thermal machines
+================
+
+A **thermal machine** is a device that permits energy conversion. It consists generally in a set of components such as compressors, turbines, combustion chambers, pumps, heat exchangers, valves, etc. Components of a thermal machine may be crossed by a working fluid (gas or liquid) and then represent open subsystems that can exchange heat and work.
+
+A thermal machine may be:
+
+  * A heat engine: it converts thermal energy to produce a mechanical work.
+  * A refrigerator or a heat pump: it uses a mechanical work to transfer thermal energy from a source to a sink.
+
+This course presents the basics requisities for an engineer to understand, study and developp *thermal machines*. It is dedicated to engineer student with a background in thermodynamics for closed systems and basics of fluid mechanics.
+
+The course contains 5 chapters:
+
+   * The first section is a recall of thermodynamics and introduction to fluid mechanics courses. Balance equations are recalled and applied to a control volume representing a component of a thermal machine.
+   * The second section presents the basics of energy conversion using thermal machines as well as reference thermodynamics cycles.
+   * The third section is devoted to the specific notion of compression/expansion of a gas and how to optimize these thermodynamics transformations.
+   * The fourth section is describing classical heat engines: internal reciprocating heat engines, gas turbines and steam turbines.
+   * The fifth section is devoted to heat pumps and refrigerators.
+
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Contents:
+   :numbered:
+
+   chap1_balanceEquations_Chap
+   chap2_thermMachinesBasics_Chap
+   chap3_CompExpGas_Chap
+   chap4_ThermalEngines_Chap
+   chap5_ThermalGenerators_Chap
+   zBibliography
+   
+
+Table of contents
+=================
+
+* :ref:`genindex`
+* :ref:`search`

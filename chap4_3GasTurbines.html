@@ -1,0 +1,454 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>4.2. Gas Turbines &mdash; Thermal machines 1.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="4.3. Steam turbines" href="chap4_4SteamTurbines.html" />
+    <link rel="prev" title="4.1. Reciprocating internal combustion engine" href="chap4_1RICE.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> Thermal machines
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="chap1_balanceEquations_Chap.html">1. Balance equations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chap2_thermMachinesBasics_Chap.html">2. Thermal machines: Basics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chap3_CompExpGas_Chap.html">3. Compression / Expansion of Gas and vapors</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="chap4_ThermalEngines_Chap.html">4. Heat engines</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="chap4_1RICE.html">4.1. Reciprocating internal combustion engine</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">4.2. Gas Turbines</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#overview">4.2.1. Overview</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#applications-of-gas-turbine">4.2.1.1. Applications of gas turbine</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#brayton-cycle">4.2.2. Brayton cycle</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#real-gas-turbine-cycle">4.2.3. Real gas turbine cycle</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#regeneration">4.2.4. Regeneration</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#regenerator-effectiveness">4.2.4.1. Regenerator effectiveness</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#thermal-efficiency">4.2.4.2. Thermal efficiency</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#intercooling-and-reheat">4.2.5. Intercooling and reheat</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#turbojets">4.2.6. Turbojets</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="chap4_4SteamTurbines.html">4.3. Steam turbines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chap4_5Cogeneration.html">4.4. Combined cycles / Cogeneration</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="chap5_ThermalGenerators_Chap.html">5. Heat pumps and refrigerators</a></li>
+<li class="toctree-l1"><a class="reference internal" href="zBibliography.html">6. References</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Thermal machines</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="chap4_ThermalEngines_Chap.html"><span class="section-number">4. </span>Heat engines</a> &raquo;</li>
+        
+      <li><span class="section-number">4.2. </span>Gas Turbines</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/chap4_3GasTurbines.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="gas-turbines">
+<h1><span class="section-number">4.2. </span>Gas Turbines<a class="headerlink" href="#gas-turbines" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="overview">
+<h2><span class="section-number">4.2.1. </span>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
+<p>A <strong>Gas turbine</strong> is generally a <em>continuous internal combustion engine</em> (CICE) that transforms chemical energy of a combustion into mechanical energy, electrical energy or generate thust for propulsion. They are essentially used for transport (maritime or aeronautical) and electricity production. The simpler version of <em>gas turbine</em> is composed with:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>A <strong>compressor</strong> bringing the atmospheric air to higher pressure and temperature.</p></li>
+<li><p>A <strong>combustion chamber</strong> (or a heat exchanger) producing a high pressure and temperature gases.</p></li>
+<li><p>A <strong>turbine</strong> sharing the same <em>shaft</em> as the <em>compressor</em>.</p></li>
+</ul>
+</div></blockquote>
+<div class="figure align-center" id="id1">
+<span id="fig-chap4-gasturbinesimple"></span><a class="reference internal image-reference" href="_images/gasTurbineSimple.png"><img alt="_images/gasTurbineSimple.png" src="_images/gasTurbineSimple.png" style="width: 658.8000000000001px; height: 258.8px;" /></a>
+<p class="caption"><span class="caption-number">Figure 4.9:  </span><span class="caption-text">Simplified open cycle for a gas turbine</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</div>
+<p>The <em>turbine</em> work is used to drive the <em>compressor</em> (<img class="math" src="_images/math/34525990cad81079e38e2107cef05cb9a81c0b7c.svg" alt="\dot{w}_C" style="vertical-align: -2px"/>). The remaining energy (not used for working fluid compresion) is then used in different maneer depending on the application:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>It can be mechanically transmitted to a <em>propeller</em> for motion or to an <em>electical generator</em>. In that case, the <strong>net power</strong> available on the shaft is: <img class="math" src="_images/math/3c160b313bfed51408f55ca300b71e0c98916e7c.svg" alt="|\dot{w}_{net}|=|\dot{w}_{T}|-|\dot{w}_{C}|" style="vertical-align: -4px"/>.</p></li>
+<li><p>It can be used directelly as <em>thrust</em> in a <em>turbojet</em> engine. In that case, the <strong>net power</strong> on shaft is null.</p></li>
+</ul>
+</div></blockquote>
+<div class="section" id="applications-of-gas-turbine">
+<h3><span class="section-number">4.2.1.1. </span>Applications of gas turbine<a class="headerlink" href="#applications-of-gas-turbine" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>Naval propulsion</strong>: The <em>net power</em> available on shaft is used to drive a ship’s <em>propellers</em>. This is the case for the <em>MT30</em> gas turbine from <em>Rolls Royce</em> that equip the <em>Queen Elisabeth</em> and produces 40 MW or for <strong>turboprop</strong> of aircraft’s propellers.</p></li>
+</ul>
+<div class="figure align-center" id="id2">
+<span id="fig-chap4-gasturbinenaval"></span><a class="reference internal image-reference" href="_images/gasTurbineNaval.png"><img alt="_images/gasTurbineNaval.png" src="_images/gasTurbineNaval.png" style="width: 509.5px; height: 181.5px;" /></a>
+<p class="caption"><span class="caption-number">Figure 4.10:  </span><span class="caption-text">Gas turbine for naval propulsion.</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+</div>
+<ul class="simple">
+<li><p><strong>Aeronautical propulsion</strong>: The net power of the <em>turbojet engines</em> is zero so that the turbine output only compensates for the power supplied to the compressor. In this case, the propulsion work is generated by the ejection of the burnt gases in the nozzle at the engine outlet which generates the thrust. The Rolls Royce Trent 900 engine powering the Airbus A380 is an example of this (300kN thrust).</p></li>
+</ul>
+<div class="figure align-center" id="id3">
+<span id="fig-chap4-gasturbineaero"></span><a class="reference internal image-reference" href="_images/gasTurbineAero.png"><img alt="_images/gasTurbineAero.png" src="_images/gasTurbineAero.png" style="width: 562.0px; height: 146.0px;" /></a>
+<p class="caption"><span class="caption-number">Figure 4.11:  </span><span class="caption-text">Gas turbine for aeronautics.</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
+</div>
+<ul class="simple">
+<li><p><strong>Electicity production</strong>: These are the largest gas turbines and their colossal net power (over 400MW) is used to rotate the shaft of an alternator to produce electricity. The Siemens SGT5-8000H turbine generates 450MW of power.</p></li>
+</ul>
+<div class="figure align-center" id="id4">
+<span id="fig-chap4-gasturbineelec"></span><a class="reference internal image-reference" href="_images/gasTurbineElec.png"><img alt="_images/gasTurbineElec.png" src="_images/gasTurbineElec.png" style="width: 542.5px; height: 193.5px;" /></a>
+<p class="caption"><span class="caption-number">Figure 4.12:  </span><span class="caption-text">A thermal powerplant and the Siemens SGT-8000H turbine.</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
+</div>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="brayton-cycle">
+<h2><span class="section-number">4.2.2. </span>Brayton cycle<a class="headerlink" href="#brayton-cycle" title="Permalink to this headline">¶</a></h2>
+<p>In 1870, the american engineer <em>Georges Brayton</em> build the first gas turbine. The ideal corresponding cycle is named <strong>Brayton cycle</strong> (or Joule cycle). This is a closed cycle.</p>
+<div class="figure align-center" id="id5">
+<span id="fig-chap4-braytoncycle"></span><a class="reference internal image-reference" href="_images/BraytonCycle.png"><img alt="_images/BraytonCycle.png" src="_images/BraytonCycle.png" style="width: 568.5px; height: 308.7px;" /></a>
+<p class="caption"><span class="caption-number">Figure 4.13:  </span><span class="caption-text">The Brayton cycle for ideal gas turbine.</span><a class="headerlink" href="#id5" title="Permalink to this image">¶</a></p>
+</div>
+<p>Simplifications consist on considering 4 reversible transformations:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>Compressions is isentropic.</p></li>
+<li><p>Combustion is replaced by a constant pressure heating.</p></li>
+<li><p>Expansion is isentropic.</p></li>
+<li><p>The cycle is closed by a heat exhausting at constant pressure.</p></li>
+</ol>
+</div></blockquote>
+<p>As for any heat engine (<a class="reference internal" href="chap2_2Cycles.html#equation-thefficiency">Eq.2.9</a>), the thermal efficiency of <em>Brayton</em> cycle is:</p>
+<div class="math">
+<p><img src="_images/math/4c47d2694750d7973c18ae73bdf2dece6785cae9.svg" alt="\eta_{Brayton} = 1 - \frac{|q_{41}|}{|q_{23}|}"/></p>
+</div><p>Considering the working fluid as an <strong>ideal gas</strong>, and because no machine is working in transformations 2-3 and 4-1, application of the balance energy equation reads:</p>
+<div class="math">
+<p><img src="_images/math/26c28150dfbd8963cc18fc211d9ac25f0198cff4.svg" alt="|\dot{Q}_{23}| = \dot{m} c_p (T_3-T_2) \qquad \text{ and } \qquad |\dot{Q}_{41}| = \dot{m} c_p (T_4-T_1)"/></p>
+</div><p>such that the thermal efficiency of <em>Brayton cycle</em> becomes:</p>
+<div class="math">
+<p><img src="_images/math/d817db4d0bc7e369641fdffe3533f34b19f14ec3.svg" alt="\eta_{Brayton} = 1 - \frac{T_4-T_1}{T_3-T_2}"/></p>
+</div><p>It is possible to determine gas temperatures after the compressor and the turbine thanks to isentropic relations for ideal gases:</p>
+<div class="math" id="equation-isentropicrelations">
+<p><span class="eqno">(4.6)<a class="headerlink" href="#equation-isentropicrelations" title="Permalink to this equation">¶</a></span><img src="_images/math/a961b02d05fb5335058a69c95426d7f9a8621ae1.svg" alt="\frac{T_1}{T_2} = \frac{p_2}{p_1}^{\frac{1 - \gamma}{\gamma}} = \frac{p_3}{p_4}^{\frac{1 - \gamma}{\gamma}} = \frac{T_4}{T_3}"/></p>
+</div><p>we finally obtain:</p>
+<div class="math" id="equation-theffbraytonig">
+<p><span class="eqno">(4.7)<a class="headerlink" href="#equation-theffbraytonig" title="Permalink to this equation">¶</a></span><img src="_images/math/5708973d62bd9997febadbbfd8663cc283c451fc.svg" alt="\eta_{Brayton} = 1 - r_p^{\frac{1 - \gamma}{\gamma}}"/></p>
+</div><p>where <img class="math" src="_images/math/f2db6382816f4474fde28717c3dbfd86ae542e39.svg" alt="r_p=\frac{p_2}{p_1}" style="vertical-align: -8px"/> is the <strong>pressure ratio</strong> of the gas turbine.</p>
+<div class="admonition-remark admonition">
+<p class="admonition-title">Remark</p>
+<ul class="simple">
+<li><p>It is easy to show that the <em>Brayton</em> thermal efficiency is the same as the <em>Beau de Rochas</em> thermal efficiency (<a class="reference internal" href="chap4_1RICE.html#equation-theffbdrig">Eq.4.4</a>).</p></li>
+<li><p>Real gas turbine thermal efficienc rarely exceed 0.3.</p></li>
+</ul>
+</div>
+<div class="figure align-center" id="id6">
+<span id="fig-chap4-etabrayton"></span><a class="reference internal image-reference" href="_images/etaBrayton.png"><img alt="_images/etaBrayton.png" src="_images/etaBrayton.png" style="width: 500.75px; height: 349.25px;" /></a>
+<p class="caption"><span class="caption-number">Figure 4.14:  </span><span class="caption-text"><em>Brayton</em> efficiency as a function of <em>pressure ration</em>.</span><a class="headerlink" href="#id6" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+<div class="section" id="real-gas-turbine-cycle">
+<span id="sec-chap4-realgasturbinecycle"></span><h2><span class="section-number">4.2.3. </span>Real gas turbine cycle<a class="headerlink" href="#real-gas-turbine-cycle" title="Permalink to this headline">¶</a></h2>
+<p>Real gas turbine cycle is different than those proposed by <em>Brayton</em>. This is due to non reversibility in the compressor and in the turbine and to the pressure drop in pipes.</p>
+<div class="figure align-center" id="id7">
+<span id="fig-chap4-adiabaticcycle"></span><a class="reference internal image-reference" href="_images/adiabaticCycle.png"><img alt="_images/adiabaticCycle.png" src="_images/adiabaticCycle.png" style="width: 620.1px; height: 368.7px;" /></a>
+<p class="caption"><span class="caption-number">Figure 4.15:  </span><span class="caption-text">Gas turbine cycle with reversible/irreversible compression and expansion.</span><a class="headerlink" href="#id7" title="Permalink to this image">¶</a></p>
+</div>
+<p>It is possible to easily account for the adiabatic compressor and adiabatic turbine irreversibilities by using the <strong>isentropic efficiency</strong> of both components (<a class="reference internal" href="chap3_1Transformations.html#sec-chap3-efficiencies"><span class="std std-ref">Real Compressions/Expansions</span></a>). We have:</p>
+<div class="math">
+<p><img src="_images/math/6b015b5f96f31a71f34a34cae82f68b27b3d8db4.svg" alt="\eta_{C}^s = \frac{w_{12,s}}{w_{12,real}} \qquad \text{and} \qquad \eta_{T}^s = \frac{w_{34,real}}{w_{34,s}}"/></p>
+</div><p>that becomes</p>
+<div class="math" id="equation-isentropicefficiencies">
+<p><span class="eqno">(4.8)<a class="headerlink" href="#equation-isentropicefficiencies" title="Permalink to this equation">¶</a></span><img src="_images/math/899ac35afc9e1e50a96c4e75f0c22dbd9d0a9d42.svg" alt="\eta_{C}^s = \frac{T_2^s-T_1}{T_2-T_1} \qquad \text{and} \qquad \eta_{T}^s = \frac{T_4-T_3}{T_4^s - T_3}"/></p>
+</div><p>Considering the working fluid as an <strong>ideal gas</strong>, we have:</p>
+<div class="math" id="equation-isentropictemperatures">
+<p><span class="eqno">(4.9)<a class="headerlink" href="#equation-isentropictemperatures" title="Permalink to this equation">¶</a></span><img src="_images/math/8bda44f40d99b3d60ef34b682b31353fb7a0e0dc.svg" alt="T_2^s = T_1 r_p^{\frac{\gamma-1}{\gamma}} \qquad \text{and} \qquad T_4^s = T_3 r_p^{\frac{1-\gamma}{\gamma}}"/></p>
+</div><div class="admonition important">
+<p class="admonition-title">Important</p>
+<ol class="arabic simple">
+<li><p><img class="math" src="_images/math/d1d29fc03e9547beef89aef8633f80bed226e98c.svg" alt="T_3" style="vertical-align: -2px"/> is the temperature at the turbine entry, chosen to be as big as possible, depending on the turbine blades resistance. Best turbines support a temperature of 1400 °C.</p></li>
+<li><p>Relations <a class="reference internal" href="#equation-isentropictemperatures">Eq.4.9</a> permit the calcul of isentropic temperatures from a known <em>pressure ratio</em>.</p></li>
+<li><p>Relations <a class="reference internal" href="#equation-isentropicefficiencies">Eq.4.8</a> permit the calcul of real temperatures after compressor <img class="math" src="_images/math/e1f69a4c35bf2989e6561e17e38453b8995253bd.svg" alt="T_2" style="vertical-align: -2px"/> and after turbine <img class="math" src="_images/math/a29634b7413102edae60665ac8b531c9006ae2fe.svg" alt="T_4" style="vertical-align: -2px"/> from known <em>isentropic efficiencies</em>.</p></li>
+<li><p>The global thermal efficiency of a gas turbine with adiabatic compressor and turbine is :</p></li>
+</ol>
+<div class="math" id="equation-etarealgasturbine">
+<p><span class="eqno">(4.10)<a class="headerlink" href="#equation-etarealgasturbine" title="Permalink to this equation">¶</a></span><img src="_images/math/e723b480cb43ec56c05f3fe607c3c626f0a1124b.svg" alt="\eta_{real} = 1 - \frac{ \eta_T^s T_3 \left(  r_p^{\frac{1-\gamma}{\gamma}} -1  \right) + T_3 - T_1 } { T_3 - \frac{T_1}{\eta_C^s} \left(  r_p^{\frac{\gamma-1}{\gamma}} -1  \right) - T_1  }"/></p>
+</div></div>
+<p><a class="reference internal" href="#fig-chap4-etareal"><span class="std std-numref">Figure 4.16: </span></a> shows the impact of irreversibilities in adiabatic compressor and turbine on the thermal efficiency of the real gas turbine.</p>
+<div class="figure align-center" id="id8">
+<span id="fig-chap4-etareal"></span><a class="reference internal image-reference" href="_images/etaReal.png"><img alt="_images/etaReal.png" src="_images/etaReal.png" style="width: 510.0px; height: 360.0px;" /></a>
+<p class="caption"><span class="caption-number">Figure 4.16:  </span><span class="caption-text">Thermal efficiency of a real gas turbine. <img class="math" src="_images/math/e9acbf5c03adf1ebd5e94ba68ab7c0c89e06ade9.svg" alt="\gamma = 1.4, T_3/T_1=4" style="vertical-align: -4px"/></span><a class="headerlink" href="#id8" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+<div class="section" id="regeneration">
+<span id="sec-chap4-regeneration"></span><h2><span class="section-number">4.2.4. </span>Regeneration<a class="headerlink" href="#regeneration" title="Permalink to this headline">¶</a></h2>
+<p>An important part of energy is lost with hot exhaust gases. Because the temperature of gases exiting the turbine (<img class="math" src="_images/math/a29634b7413102edae60665ac8b531c9006ae2fe.svg" alt="T_4" style="vertical-align: -2px"/>) is higher than those exiting the compressor (<img class="math" src="_images/math/e1f69a4c35bf2989e6561e17e38453b8995253bd.svg" alt="T_2" style="vertical-align: -2px"/>), a heat exchanger can be used to save a part of the combustion energy. It is named: <strong>regenerator</strong>.</p>
+<div class="figure align-center" id="id9">
+<span id="fig-chap4-braytonregen"></span><a class="reference internal image-reference" href="_images/BraytonRegen.png"><img alt="_images/BraytonRegen.png" src="_images/BraytonRegen.png" style="width: 507.9px; height: 260.09999999999997px;" /></a>
+<p class="caption"><span class="caption-number">Figure 4.17:  </span><span class="caption-text">Gas turbine equipped with a <em>regenerator</em> improving thermal efficiency.</span><a class="headerlink" href="#id9" title="Permalink to this image">¶</a></p>
+</div>
+<p>In the <em>regenerator</em> we suppose that kinetic energy variation are negligible. Moreover, the regenerator is supposed to be adiabatic. The modified <em>Brayton</em> cycle becomes:</p>
+<div class="figure align-center" id="id10">
+<span id="fig-chap4-braytoncycleregen"></span><a class="reference internal image-reference" href="_images/BraytonCycleRegen.png"><img alt="_images/BraytonCycleRegen.png" src="_images/BraytonCycleRegen.png" style="width: 348.9px; height: 365.7px;" /></a>
+<p class="caption"><span class="caption-number">Figure 4.18:  </span><span class="caption-text">Ideal <em>Brayton</em> cycle with regenerator (isentropic in compressor, turbine).</span><a class="headerlink" href="#id10" title="Permalink to this image">¶</a></p>
+</div>
+<div class="section" id="regenerator-effectiveness">
+<h3><span class="section-number">4.2.4.1. </span>Regenerator effectiveness<a class="headerlink" href="#regenerator-effectiveness" title="Permalink to this headline">¶</a></h3>
+<p>Considering the heat exchanger as ideal, the working fluid is entering in the combustion chamber with the same temperature <img class="math" src="_images/math/65924699275c7c782e90d41fd9e882f3ab176706.svg" alt="T_5'" style="vertical-align: -4px"/> as exhaust gases <img class="math" src="_images/math/a29634b7413102edae60665ac8b531c9006ae2fe.svg" alt="T_4" style="vertical-align: -2px"/> such that the <em>maximum heat flux</em> saved using a <em>regenerator</em> is:</p>
+<div class="math">
+<p><img src="_images/math/71c30a62f6836c6acab0ebe72c022a9e517685d5.svg" alt="\dot{Q}_{regen,max} = \dot{m}(h_4-h_2)"/></p>
+</div><p>The <em>real heat flux</em> saved is:</p>
+<div class="math">
+<p><img src="_images/math/2ac2c55353b3e3083246b9460aa2878b7194130c.svg" alt="\dot{Q}_{regen,real} = \dot{m}(h_5-h_2)"/></p>
+</div><p>We defined the <strong>regenerator effectiveness</strong> as:</p>
+<div class="math">
+<p><img src="_images/math/725eb60d9c4a1cbd33e4c1a9ae0828732d50c34e.svg" alt="\epsilon = \frac{\dot{Q}_{regen,real}}{\dot{Q}_{regen,max}} = \frac{h_5-h_2}{h_4-h_2} \leq 1"/></p>
+</div><p>Under ideal gases assumption, the <em>regenerator effectivness</em> becomes:</p>
+<div class="math" id="equation-regeneff">
+<p><span class="eqno">(4.11)<a class="headerlink" href="#equation-regeneff" title="Permalink to this equation">¶</a></span><img src="_images/math/3a4faae96d76d02b9ad5af7193ce738e2f2c49dc.svg" alt="\epsilon = \frac{T_5-T_2}{T_4-T_2} \leq 1"/></p>
+</div><p>Typical value of <img class="math" src="_images/math/c6908095356566956c47d5f117512e5bedb1c5c8.svg" alt="epsilon" style="vertical-align: -3px"/> are lower than <img class="math" src="_images/math/a2e3e3d510ff13d8f57420f21ead9361c3b5d92b.svg" alt="0.7" style="vertical-align: 0px"/>.</p>
+</div>
+<div class="section" id="thermal-efficiency">
+<h3><span class="section-number">4.2.4.2. </span>Thermal efficiency<a class="headerlink" href="#thermal-efficiency" title="Permalink to this headline">¶</a></h3>
+<p>The thermal efficiency of <em>Brayton cycle with regeneration</em> is:</p>
+<div class="math">
+<p><img src="_images/math/826de90d80f01f3d401349fd7ceb6dd98ee03864.svg" alt="\eta_{Brayton,Regen} = 1 - \frac{|q_{61}|}{|q_{53}|}"/></p>
+</div><p>Considering the working fluid as an <strong>ideal gas</strong>, and because no machine is working in transformations 5-3 and 6-1, application of the balance energy equation reads:</p>
+<div class="math">
+<p><img src="_images/math/608449f9545365a60d33e492cd19161d58c19bb3.svg" alt="|\dot{Q}_{53}| = \dot{m} c_p (T_5-T_2) \qquad \text{ and } \qquad |\dot{Q}_{61}| = \dot{m} c_p (T_6-T_1)"/></p>
+</div><p>such that the thermal efficiency of <em>Brayton cycle with regeneration</em> becomes:</p>
+<div class="math">
+<p><img src="_images/math/9ef2f00a6ee1db6631d426c03e444ef37e2dbae9.svg" alt="\eta_{Brayton,Regen} = 1 - \frac{T_6-T_1}{T_3-T_5}"/></p>
+</div><p>It is possible to determine gas temperatures <img class="math" src="_images/math/bac05637cc72e96e5e96d4bb031ba5b26df49ce5.svg" alt="T_5" style="vertical-align: -2px"/> and <img class="math" src="_images/math/9c3e338e431b3c0a33975c15bb549f2e80ec4695.svg" alt="T_6" style="vertical-align: -2px"/> using the <em>regenerator effectiveness</em>:</p>
+<div class="math">
+<p><img src="_images/math/53e466cdac63f0b6a020641fd53c983f2d5b197c.svg" alt="T_5 = \epsilon T_4 + (1-\epsilon) T_2"/></p>
+</div><div class="math">
+<p><img src="_images/math/c477395afd8fe70bf95233c7f549448f9dbb9a86.svg" alt="T_6 = T_4 - T_5 + T_2 = \epsilon T_2 + (1-\epsilon) T_4"/></p>
+</div><p>The thermal efficiency becomes:</p>
+<div class="math">
+<p><img src="_images/math/513a23b2ba82bf65509e9652e39b4657d22a1f20.svg" alt="\eta_{Brayton,Regen} = 1 - \frac{(1-\epsilon)T_4+\epsilon T_2-T_1}{T_3-\epsilon T_4 - (1-\epsilon) T_2}"/></p>
+</div><p>For ideal adiabatic compression and expansion, isentropic relations <a class="reference internal" href="#equation-isentropicrelations">Eq.4.6</a> can be used and the thermal efficiency of <em>Brayton cycle with regeneration</em> finally becomes:</p>
+<div class="math" id="equation-theffbraytonregenig">
+<p><span class="eqno">(4.12)<a class="headerlink" href="#equation-theffbraytonregenig" title="Permalink to this equation">¶</a></span><img src="_images/math/9d1e780a562986725d74197a9591cccebc47d40d.svg" alt="\eta_{Brayton,Regen} = 1 - \frac{(1-\epsilon)T_3 r_p^{\frac{1-\gamma}{\gamma}} - T_1(1- \epsilon r_p^{\frac{\gamma-1}{\gamma}})}{T_3(1- \epsilon r_p^{\frac{1-\gamma}{\gamma}}) - (1-\epsilon)T_1 r_p^{\frac{\gamma-1}{\gamma}}}"/></p>
+</div><p>where <img class="math" src="_images/math/f2db6382816f4474fde28717c3dbfd86ae542e39.svg" alt="r_p=\frac{p_2}{p_1}" style="vertical-align: -8px"/> is the <strong>pressure ratio</strong> of the gas turbine.</p>
+<p>In the limit case of ideal regenerator (<img class="math" src="_images/math/933a64a6fb3efd39078ffd59c5fd05bceea06aec.svg" alt="\epsilon =1" style="vertical-align: 0px"/>), the thermal efficiency becomes:</p>
+<div class="math" id="equation-theffbraytonregenigideal">
+<p><span class="eqno">(4.13)<a class="headerlink" href="#equation-theffbraytonregenigideal" title="Permalink to this equation">¶</a></span><img src="_images/math/5457e1474dce10823380504efc081568626ff8a8.svg" alt="\eta_{Brayton,Regen,ideal} = 1 - \frac{T_1}{T_3}  r_p^{\frac{\gamma-1}{\gamma}}"/></p>
+</div><div class="figure align-center" id="id11">
+<span id="fig-chap4-etabraytonregenideal"></span><a class="reference internal image-reference" href="_images/etaBraytonRegenIdeal.png"><img alt="_images/etaBraytonRegenIdeal.png" src="_images/etaBraytonRegenIdeal.png" style="width: 581.6999999999999px; height: 409.5px;" /></a>
+<p class="caption"><span class="caption-number">Figure 4.19:  </span><span class="caption-text">Ideal <em>Brayton</em> cycle with regenerator thermal efficiency (isentropic in compressor, turbine). The thermal efficiency is better with regenerator for low <em>pressure ratio</em>.</span><a class="headerlink" href="#id11" title="Permalink to this image">¶</a></p>
+</div>
+<div class="admonition-remark admonition">
+<p class="admonition-title">Remark</p>
+<p>When adiabatic compression (compressor) and expansion (turbine) are not reversible, thermal efficiency of the cycle can be obtain using definition of <em>isentropic efficiencies</em> (<a class="reference internal" href="#equation-isentropicefficiencies">Eq.4.8</a>)</p>
+</div>
+</div>
+</div>
+<div class="section" id="intercooling-and-reheat">
+<span id="sec-chap4-multistagegasturbine"></span><h2><span class="section-number">4.2.5. </span>Intercooling and reheat<a class="headerlink" href="#intercooling-and-reheat" title="Permalink to this headline">¶</a></h2>
+<p>As shown in <a class="reference internal" href="chap3_2Optimisation.html#sec-chap3-optimisation"><span class="std std-numref">Section 3.2: </span></a>, we can optimize compression by using multi-stage compression with <strong>intercooling</strong> and optimize expansion using multi-stage expansion with <strong>reheat</strong>.</p>
+<div class="figure align-center" id="id12">
+<span id="fig-chap4-intercoolingandreheat"></span><a class="reference internal image-reference" href="_images/intercoolingAndReheat.png"><img alt="_images/intercoolingAndReheat.png" src="_images/intercoolingAndReheat.png" style="width: 369.9px; height: 318.9px;" /></a>
+<p class="caption"><span class="caption-number">Figure 4.20:  </span><span class="caption-text"><em>Brayton</em> cycle using multi-stage compression with intercooling and multi-stage expansion with reheat.</span><a class="headerlink" href="#id12" title="Permalink to this image">¶</a></p>
+</div>
+<p>As the number of reversible compressions and expansions stages increase, the two isobares are linked to two isotherms and the thermal efficiency becomes equal to Carnot’s thermal efficiency.</p>
+<p>Practically, two or three stages are used for both compression/expansion. Intercooling is often ensured by external air. Because comburant (air) is in excess during combustion, reheat can be ensured by injecting fuel between expansion stages.</p>
+</div>
+<div class="section" id="turbojets">
+<h2><span class="section-number">4.2.6. </span>Turbojets<a class="headerlink" href="#turbojets" title="Permalink to this headline">¶</a></h2>
+<p>In turbojets, the technical work provided from the turbine is used to compensate the power supplied to the compressor. Then, burnt gases are exhausted at a pressure greater than the atmospheric pressure. They can be expanded in a nozzle to produce a thrust.</p>
+<div class="figure align-center" id="id13">
+<span id="fig-chap4-turbojetsimple"></span><a class="reference internal image-reference" href="_images/turbojetSimple.png"><img alt="_images/turbojetSimple.png" src="_images/turbojetSimple.png" style="width: 520.5px; height: 270.3px;" /></a>
+<p class="caption"><span class="caption-number">Figure 4.21:  </span><span class="caption-text">Schematic representation of a simple turbojet.</span><a class="headerlink" href="#id13" title="Permalink to this image">¶</a></p>
+</div>
+<p>The thrust provided by the turbojet can be determine by momentum balance:</p>
+<div class="math" id="equation-thrust">
+<p><span class="eqno">(4.14)<a class="headerlink" href="#equation-thrust" title="Permalink to this equation">¶</a></span><img src="_images/math/6f34bd245e67d7eb8e94afa993116a7e03af3e43.svg" alt="F = \dot{m} (V_{out}-V_{in})"/></p>
+</div></div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="chap4_4SteamTurbines.html" class="btn btn-neutral float-right" title="4.3. Steam turbines" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="chap4_1RICE.html" class="btn btn-neutral float-left" title="4.1. Reciprocating internal combustion engine" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2019, Fabien Petitpas, AMU, Polytech Marseille ME
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

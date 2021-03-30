@@ -1,0 +1,10 @@
+References
+==========
+
+Y. Cengel, M. Boles (2015). Thermodynamics, An engineering Approach. *McGraw-Hill Education*.
+
+E. Koller (2005). Machines thermiques. *Dunod*.
+
+A. Lallemand (2018). Thermomécanique des milieux fluides: application aux machines hydrauliques et thermiques. *Ellipses editions*.
+
+C. Sedes, H. Génoche (1993). Thermodynamique appliquée. *Elsevier Masson*.

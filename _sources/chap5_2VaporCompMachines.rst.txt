@@ -1,0 +1,41 @@
+**************************
+Vapor compression machines
+**************************
+
+The major part of heat pumps and refrigerators are working using phase change. During the compression, the fluid is vapor so they are named **Vapor compression machines**.
+
+.. _Fig:chap5:vaporCompMachine:
+
+.. figure:: ./_static/fig/chap5/vaporCompMachine.png
+  :scale: 30%
+  :align: center
+
+  Vapor compression machine (Heat pump or Refrigerator) cycle.
+
+Compared to the *reverse Hirn cycle*, the differences are:
+
+  * In the compressor (generally a reciprocating compressor with piston), liquid may not be admitted. Point 1 shoul be at least saturated vapor.
+  * The energy that can be obtained by using an expansion machine in transformation 3-4 is low compared to those necessary to compress vapor during transformation 1-2. Thus, it is replaced by a simple expansion valve (throttle valve) where the expansion becomes at constant enthalpy. This process is called **laminating** (:numref:`Sec:chap1:laminating`).
+
+As for any heat pump or refrigerator, (:eq:`COPr`, and :eq:`COPhp`) the *coefficients of performance* of *vapor compression machines* are:
+
+.. math::
+
+  COP_{R} = \frac{1}{\frac{|q_{23}|}{|q_{41}|}-1} \qquad \text{and} \qquad COP_{HP} = \frac{1}{1-\frac{|q_{41}|}{|q_{23}|}}
+
+Because no machine is working in transformations 2-3 and 4-1, application of the balance energy equation reads:
+
+.. math::
+
+  |q_{23}| = \dot{m} (h_3-h_2) \qquad \text{ and } \qquad |q_{41}| = \dot{m} (h_4-h_1) 
+
+such that the thermal efficiency of *vapor compression machines* becomes:
+
+.. math::
+  :label: COPVaporCompMach
+
+  COP_{R} = \frac{1}{\frac{h_2-h_3}{h_1-h_4}-1} \qquad \text{and} \qquad COP_{HP} = \frac{1}{1-\frac{h_1-h_4}{h_2-h_3}}
+
+.. caution::
+
+  The fluid can not be considered as an **ideal gas** since a phase change occurs from liquid to vapor and reversely. In practice calculs are performed thanks to *thermodynamics tables*.

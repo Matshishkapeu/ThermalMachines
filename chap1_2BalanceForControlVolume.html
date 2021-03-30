@@ -1,0 +1,406 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>1.1. Balance equations for open systems &mdash; Thermal machines 1.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="1.2. Applications" href="chap1_3Applications.html" />
+    <link rel="prev" title="1. Balance equations" href="chap1_balanceEquations_Chap.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> Thermal machines
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="chap1_balanceEquations_Chap.html">1. Balance equations</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">1.1. Balance equations for open systems</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#prerequisities">1.1.1. Prerequisities</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#general-balance-equation">1.1.1.1. General balance equation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#steady-flow">1.1.1.2. Steady flow</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#one-dimensional-hypothesis-in-fluid-sections-of-mathcal-c">1.1.1.3. One dimensional hypothesis in fluid sections of <img class="math" src="_images/math/6cb110ec4fe60b72cd30c38c08689578856442ec.svg" alt="\mathcal{C}" style="vertical-align: 0px"/></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#mass">1.1.2. Mass</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#momentum">1.1.3. Momentum</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#energy">1.1.4. Energy</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#expression-of-rate-of-pressure-forces-work">1.1.4.1. Expression of rate of pressure forces work</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#entropy">1.1.5. Entropy</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="chap1_3Applications.html">1.2. Applications</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="chap2_thermMachinesBasics_Chap.html">2. Thermal machines: Basics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chap3_CompExpGas_Chap.html">3. Compression / Expansion of Gas and vapors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chap4_ThermalEngines_Chap.html">4. Heat engines</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chap5_ThermalGenerators_Chap.html">5. Heat pumps and refrigerators</a></li>
+<li class="toctree-l1"><a class="reference internal" href="zBibliography.html">6. References</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Thermal machines</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="chap1_balanceEquations_Chap.html"><span class="section-number">1. </span>Balance equations</a> &raquo;</li>
+        
+      <li><span class="section-number">1.1. </span>Balance equations for open systems</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/chap1_2BalanceForControlVolume.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="balance-equations-for-open-systems">
+<span id="sec-chap1-balanceequations"></span><h1><span class="section-number">1.1. </span>Balance equations for open systems<a class="headerlink" href="#balance-equations-for-open-systems" title="Permalink to this headline">¶</a></h1>
+<p>This section is a recall of results obtained in thermodynamics and fluid mechanics. We are going to obtain balance equations of mass, energy and entropy for an open system.</p>
+<div class="section" id="prerequisities">
+<h2><span class="section-number">1.1.1. </span>Prerequisities<a class="headerlink" href="#prerequisities" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="general-balance-equation">
+<h3><span class="section-number">1.1.1.1. </span>General balance equation<a class="headerlink" href="#general-balance-equation" title="Permalink to this headline">¶</a></h3>
+<p>Let us consider a material volume (closed system) <img class="math" src="_images/math/12d8c01de6dfe0fe7f0a8a311eb8794a72b649c3.svg" alt="\mathcal{V}" style="vertical-align: 0px"/> as defined in <a class="reference internal" href="#fig-chap1-volumecontrol"><span class="std std-numref">Figure 1.1: </span></a>.</p>
+<div class="figure align-center" id="id1">
+<span id="fig-chap1-volumecontrol"></span><a class="reference internal image-reference" href="_images/volumeControl.png"><img alt="_images/volumeControl.png" src="_images/volumeControl.png" style="width: 372.3px; height: 361.5px;" /></a>
+<p class="caption"><span class="caption-number">Figure 1.1:  </span><span class="caption-text">A material volume representing a closed system.</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</div>
+<p>For any extensive variable <img class="math" src="_images/math/498442de486a0d574c156001187a5914f057de8e.svg" alt="\phi" style="vertical-align: -3px"/> associated to the intensive variable <img class="math" src="_images/math/318f7f79fac840818ba9affceb3a287a5f328f97.svg" alt="\eta" style="vertical-align: -3px"/> in this volume, we have:</p>
+<div class="math" id="equation-defext">
+<p><span class="eqno">(1.1)<a class="headerlink" href="#equation-defext" title="Permalink to this equation">¶</a></span><img src="_images/math/604182bf955a577eb9a7db6c37c85d1755e13514.svg" alt="\phi=\int_{\mathcal{V}}\eta dV"/></p>
+</div><p>And the general balance equation of <img class="math" src="_images/math/498442de486a0d574c156001187a5914f057de8e.svg" alt="\phi" style="vertical-align: -3px"/> in the material volume <img class="math" src="_images/math/12d8c01de6dfe0fe7f0a8a311eb8794a72b649c3.svg" alt="\mathcal{V}" style="vertical-align: 0px"/> is:</p>
+<div class="math" id="equation-genbalance">
+<p><span class="eqno">(1.2)<a class="headerlink" href="#equation-genbalance" title="Permalink to this equation">¶</a></span><img src="_images/math/199edc865fcf641346c63b269712cdcf42c09c93.svg" alt="\frac{d\phi}{dt} = \dot{\phi_E} + \dot{\phi_C}"/></p>
+</div><p>where:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><img class="math" src="_images/math/b60fea8ee48bf5ef93053f08a9088ef04e677863.svg" alt="\dot{\phi_E}" style="vertical-align: -3px"/> represents the sum of all quantities of <img class="math" src="_images/math/498442de486a0d574c156001187a5914f057de8e.svg" alt="\phi" style="vertical-align: -3px"/> exchanged by time unit <img class="math" src="_images/math/8a7f443e6155d2f2af4b16017c62300e8dbd7d4e.svg" alt="dt" style="vertical-align: 0px"/> between the control volume and exterior <strong>but not linked with flow</strong>.</p></li>
+<li><p><img class="math" src="_images/math/d892d8c72841ae2ad86020803a9c28df1c648309.svg" alt="\dot{\phi_C}" style="vertical-align: -3px"/> represents the creation of quantity <img class="math" src="_images/math/498442de486a0d574c156001187a5914f057de8e.svg" alt="\phi" style="vertical-align: -3px"/> by time unit <img class="math" src="_images/math/8a7f443e6155d2f2af4b16017c62300e8dbd7d4e.svg" alt="dt" style="vertical-align: 0px"/> in the control volume.</p></li>
+</ul>
+</div></blockquote>
+<p>Introducing equation <a class="reference internal" href="#equation-defext">Eq.1.1</a> in <a class="reference internal" href="#equation-genbalance">Eq.1.2</a>:</p>
+<div class="math" id="equation-genbalance2">
+<p><span class="eqno">(1.3)<a class="headerlink" href="#equation-genbalance2" title="Permalink to this equation">¶</a></span><img src="_images/math/dc49cca4ce7f58ddc5236840302078086c7343b1.svg" alt="\frac{d}{dt} \int_{\mathcal{V}}\eta dV = \dot{\phi_E} + \dot{\phi_C}"/></p>
+</div><p>Thanks to the transport theorem, equation <a class="reference internal" href="#equation-genbalance2">Eq.1.3</a> becomes:</p>
+<div class="math" id="equation-intgenbalance">
+<p><span class="eqno">(1.4)<a class="headerlink" href="#equation-intgenbalance" title="Permalink to this equation">¶</a></span><img src="_images/math/c771e4964383f00566088ad332b704637a675a77.svg" alt="\int_{\mathcal{V}} \frac{\partial \eta}{\partial t} dV + \int_{\mathcal{C}} \eta \vec{u}\cdot\vec{n} dC = \dot{\phi_E} + \dot{\phi_C}"/></p>
+</div><p>where:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><img class="math" src="_images/math/6cb110ec4fe60b72cd30c38c08689578856442ec.svg" alt="\mathcal{C}" style="vertical-align: 0px"/> represent the contour surrounding the control volume <img class="math" src="_images/math/12d8c01de6dfe0fe7f0a8a311eb8794a72b649c3.svg" alt="\mathcal{V}" style="vertical-align: 0px"/>.</p></li>
+<li><p><img class="math" src="_images/math/d0755124c4f65066e74e177f7c7e891850bff4c7.svg" alt="\vec{u}" style="vertical-align: 0px"/> is the local fluid velocity.</p></li>
+<li><p><img class="math" src="_images/math/dae73e0521b74101784a0b094170aff41c0b603c.svg" alt="\vec{n}" style="vertical-align: 0px"/> is the local normal (directed to the exterior).</p></li>
+</ul>
+</div></blockquote>
+<p>For a machine with a fix control volume <img class="math" src="_images/math/0d2982e76e4fec3cda76f688cc5adbaf58bf8a5e.svg" alt="V_{machine}" style="vertical-align: -2px"/>, thanks to the transport theorem we also may write:</p>
+<div class="math" id="equation-fixcontrolvolume">
+<p><span class="eqno">(1.5)<a class="headerlink" href="#equation-fixcontrolvolume" title="Permalink to this equation">¶</a></span><img src="_images/math/9aeb41486a8cd623a1baddeba552efe70e51f713.svg" alt="\frac{d}{dt} \int_{V_{machine}} \eta dV = \int_{V_{machine}} \frac{\partial \eta}{\partial t} dV"/></p>
+</div><p>If we consider the machine volume exactly fits the material volume at instant <img class="math" src="_images/math/5e83717e2f187f72a9abf7adba131514e44d358b.svg" alt="t" style="vertical-align: 0px"/>, we can write:</p>
+<div class="math">
+<p><img src="_images/math/cb11cb5a5d676d1ba27a1f00399d010572c38fee.svg" alt="\int_{V_{machine}} \frac{\partial \eta}{\partial t} dV = \int_{\mathcal{V}} \frac{\partial \eta}{\partial t} dV \qquad \text{and} \qquad \int_{C_{machine}} \eta \vec{u}\cdot\vec{n} dC = \int_{\mathcal{C}} \eta \vec{u}\cdot\vec{n} dC"/></p>
+</div><div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>And thanks to <a class="reference internal" href="#equation-intgenbalance">Eq.1.4</a>, we finally obtain the general balance equation for a fix control volume:</p>
+<div class="math" id="equation-intgenbalancecontrolvolume">
+<p><span class="eqno">(1.6)<a class="headerlink" href="#equation-intgenbalancecontrolvolume" title="Permalink to this equation">¶</a></span><img src="_images/math/74810d8545308a3f4cbea129940a429c14192b3e.svg" alt="\int_{V_{machine}} \frac{\partial \eta}{\partial t} dV + \int_{C_{machine}} \eta \vec{u}\cdot\vec{n} dC = \dot{\phi_E} + \dot{\phi_C}"/></p>
+</div></div>
+</div>
+<div class="section" id="steady-flow">
+<h3><span class="section-number">1.1.1.2. </span>Steady flow<a class="headerlink" href="#steady-flow" title="Permalink to this headline">¶</a></h3>
+<p>In practical engineering problems, when studying thermodynamic cycles of thermal machines, the flow is steady. In that case equation <a class="reference internal" href="#equation-intgenbalance">Eq.1.4</a> becomes:</p>
+<div class="math" id="equation-intgenbalancesteady">
+<p><span class="eqno">(1.7)<a class="headerlink" href="#equation-intgenbalancesteady" title="Permalink to this equation">¶</a></span><img src="_images/math/f23f1d5ac04b129477f2e7416d3f9a3725ff22dc.svg" alt="\int_{C_{machine}} \eta \vec{u}\cdot\vec{n} dC = \dot{\phi_E} + \dot{\phi_C}"/></p>
+</div></div>
+<div class="section" id="one-dimensional-hypothesis-in-fluid-sections-of-mathcal-c">
+<h3><span class="section-number">1.1.1.3. </span>One dimensional hypothesis in fluid sections of <img class="math" src="_images/math/6cb110ec4fe60b72cd30c38c08689578856442ec.svg" alt="\mathcal{C}" style="vertical-align: 0px"/><a class="headerlink" href="#one-dimensional-hypothesis-in-fluid-sections-of-mathcal-c" title="Permalink to this headline">¶</a></h3>
+<p>It is also common in thermal machines study to consider that flow variables are constant in inflow and outflow sections of the control volume.</p>
+<div class="figure align-center" id="id2">
+<span id="fig-chap1-volumecontrol2"></span><a class="reference internal image-reference" href="_images/volumeControl2.png"><img alt="_images/volumeControl2.png" src="_images/volumeControl2.png" style="width: 440.09999999999997px; height: 275.7px;" /></a>
+<p class="caption"><span class="caption-number">Figure 1.2:  </span><span class="caption-text">Component of a thermal machine with two fluid sections.</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+</div>
+<p>Thus, for a steady flow assumption with one dimensional hypothesis in fluid sections, we simply obtain:</p>
+<div class="math" id="equation-intgenbalancesteady1d">
+<p><span class="eqno">(1.8)<a class="headerlink" href="#equation-intgenbalancesteady1d" title="Permalink to this equation">¶</a></span><img src="_images/math/f9dd018960d6310b5fdf68dc543c6dd7bfdf3cf2.svg" alt="\sum_{k=1}^n \eta_k \vec{u}_k\cdot\vec{n}_k C_{k} = \dot{\phi_E} + \dot{\phi_C}"/></p>
+</div><p>Where the contour <img class="math" src="_images/math/9975f833764f6b9cb0100093b81f85b526511916.svg" alt="C_{machine}" style="vertical-align: -2px"/> has been splited in <img class="math" src="_images/math/fca97c34599a4c7389abdb23260fdc11729fe611.svg" alt="n" style="vertical-align: 0px"/> fluid contours of section <img class="math" src="_images/math/153f0cd593511d402b7eb009d0a57e91affc904b.svg" alt="\mathcal{C}_{k}" style="vertical-align: -2px"/>.</p>
+<p>We then apply this balance equation to mass, energy and entropy extensive variables.</p>
+</div>
+</div>
+<div class="section" id="mass">
+<h2><span class="section-number">1.1.2. </span>Mass<a class="headerlink" href="#mass" title="Permalink to this headline">¶</a></h2>
+<p>Applying equation <a class="reference internal" href="#equation-intgenbalancesteady1d">Eq.1.8</a> to mass conservation is very simple as we use:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><img class="math" src="_images/math/31ec5212435035a0daea1f677382fbc25944b391.svg" alt="\phi = M" style="vertical-align: -3px"/>: the mass in the control volume,</p></li>
+<li><p><img class="math" src="_images/math/eeeea8ddf6e20fd858d502196e18abb9ec0722c5.svg" alt="\eta = \rho" style="vertical-align: -3px"/>: the specific mass,</p></li>
+<li><p><img class="math" src="_images/math/95c30f909c035d43e93612b5d5d94c4f5c123ab2.svg" alt="\dot{\phi_E} = 0" style="vertical-align: -3px"/>: the mass being only exchanged thanks to the flow,</p></li>
+<li><p><img class="math" src="_images/math/62d3e148b285d5385c6348120da8188e8c993e8b.svg" alt="\dot{\phi_C} = 0" style="vertical-align: -3px"/>: there is no chemical, phase change or nuclear reactions in the control volume.</p></li>
+</ul>
+</div></blockquote>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>The <strong>mass balance</strong> for an open system simply reads:</p>
+<div class="math" id="equation-massequation">
+<p><span class="eqno">(1.9)<a class="headerlink" href="#equation-massequation" title="Permalink to this equation">¶</a></span><img src="_images/math/fd4849b012d4e7a5b82a96a042131fe4be789c4b.svg" alt="\sum_{k} \dot{m_k}  = 0"/></p>
+</div><p>Where <img class="math" src="_images/math/9262759b4e3165c906c06c3e7f984f991d1b1653.svg" alt="\dot{m_k} = \rho_k \vec{u}\cdot\vec{n} C_{k}" style="vertical-align: -3px"/> is the mass flow rate throught <img class="math" src="_images/math/7f13f7cfb996359bf693f0c6694eefe18c79b68c.svg" alt="C_{k}" style="vertical-align: -2px"/>.</p>
+</div>
+</div>
+<div class="section" id="momentum">
+<h2><span class="section-number">1.1.3. </span>Momentum<a class="headerlink" href="#momentum" title="Permalink to this headline">¶</a></h2>
+<p>Momentum balance can be usefull to determine forces acting on solid walls into systems. This is not the aim of present course, and the interested student is encouraged to go back in his fluid mechanics course to catch details on that point.</p>
+</div>
+<div class="section" id="energy">
+<h2><span class="section-number">1.1.4. </span>Energy<a class="headerlink" href="#energy" title="Permalink to this headline">¶</a></h2>
+<p>We apply equation <a class="reference internal" href="#equation-intgenbalancesteady1d">Eq.1.8</a> to energy conservation:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><img class="math" src="_images/math/4c5779f26e44646f9d6470629ad3de62b5c4b4ba.svg" alt="\phi = E" style="vertical-align: -3px"/>: the total energy in the control volume,</p></li>
+<li><p><img class="math" src="_images/math/1b3e23d1f7219e4fdcc694bcd9475ed619429ac1.svg" alt="\eta = \rho e_t" style="vertical-align: -3px"/>: the volumic total energy,</p></li>
+<li><p><img class="math" src="_images/math/b60fea8ee48bf5ef93053f08a9088ef04e677863.svg" alt="\dot{\phi_E}" style="vertical-align: -3px"/>: the sum of all exchanged energies per time unit</p></li>
+<li><p><img class="math" src="_images/math/62d3e148b285d5385c6348120da8188e8c993e8b.svg" alt="\dot{\phi_C} = 0" style="vertical-align: -3px"/>: there is no energy creation in the control volume.</p></li>
+</ul>
+</div></blockquote>
+<p>The specific total energy <img class="math" src="_images/math/6a2a9df6686db96381c1e79c7cf1eb7d26832a2b.svg" alt="e_t" style="vertical-align: -2px"/> in the volume control contains:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>the specific internal energy <img class="math" src="_images/math/c9f11bc645347e19cd3cd3fde1898374e3ad9858.svg" alt="\epsilon" style="vertical-align: 0px"/>,</p></li>
+<li><p>the specific kinetic energy <img class="math" src="_images/math/3f3fbda1bd71e7aceec297b57722d02ca2cd4c52.svg" alt="1/2 u^2" style="vertical-align: -4px"/>,</p></li>
+<li><p>the potential specific energy <img class="math" src="_images/math/1d9849bef184e239c0dc9c251622785b17560622.svg" alt="e_p" style="vertical-align: -5px"/>,</p></li>
+</ul>
+</div></blockquote>
+<p>The term <img class="math" src="_images/math/b60fea8ee48bf5ef93053f08a9088ef04e677863.svg" alt="\dot{\phi_E}" style="vertical-align: -3px"/> contains different contributions, we will retain:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>the rate of pressure forces work <img class="math" src="_images/math/616434108eabe85313cfdcc2355c619be4611187.svg" alt="\dot{W_p}" style="vertical-align: -5px"/></p></li>
+<li><p>the heat flux <img class="math" src="_images/math/f8cd3b83fb9b6e9cf36da69285711f61657909e2.svg" alt="\dot{Q}" style="vertical-align: -3px"/></p></li>
+<li><p>the rate of <em>technical work</em> echanged with a machine (pumps, turbines, etc.)</p></li>
+</ul>
+</div></blockquote>
+<p>such that we obtain:</p>
+<div class="math" id="equation-energyequation">
+<p><span class="eqno">(1.10)<a class="headerlink" href="#equation-energyequation" title="Permalink to this equation">¶</a></span><img src="_images/math/f709dd52e99f1c62146d2e595507e8bafe3a9fa5.svg" alt="\sum_{k}  \dot{m}_k e_{t,k} = \dot{W_p} + \dot{Q} + \dot{W}_{t}"/></p>
+</div><div class="section" id="expression-of-rate-of-pressure-forces-work">
+<h3><span class="section-number">1.1.4.1. </span>Expression of rate of pressure forces work<a class="headerlink" href="#expression-of-rate-of-pressure-forces-work" title="Permalink to this headline">¶</a></h3>
+<p>In the control volume, pressure forces only acts on fluid contours such that we can write:</p>
+<div class="math" id="equation-ratepressure">
+<p><span class="eqno">(1.11)<a class="headerlink" href="#equation-ratepressure" title="Permalink to this equation">¶</a></span><img src="_images/math/b2e7e681ef3c2e669b41e8f3098c332295d0e32d.svg" alt="\dot{W_p} = \frac{1}{dt}\sum_{k} \vec{F}_{p,k}\cdot \vec{dl}_k"/></p>
+</div><p>With the pressure force <img class="math" src="_images/math/2a3beba6cf3306d5b0486e3c8a8a033279d451fb.svg" alt="\vec{F}_{p,k} = -p_k \mathcal{C}_{k} \vec{n_k}" style="vertical-align: -5px"/> and the elementary displacement <img class="math" src="_images/math/eaf4eb4649438aba41695d5f9047ccb4f1a02743.svg" alt="\vec{dl}_k = \vec{u}_k dt" style="vertical-align: -2px"/>, we obtain:</p>
+<div class="math" id="equation-ratepressure2">
+<p><span class="eqno">(1.12)<a class="headerlink" href="#equation-ratepressure2" title="Permalink to this equation">¶</a></span><img src="_images/math/6a2a93919164314fc61df60366489fe9639eaf1d.svg" alt="\dot{W_p} = -\sum_{k} p_k C_{k} \vec{n_k}\cdot \vec{u}_k"/></p>
+</div><p>Thanks to this expression, equation <a class="reference internal" href="#equation-energyequation">Eq.1.10</a> becomes:</p>
+<div class="math" id="equation-energyequation2">
+<p><span class="eqno">(1.13)<a class="headerlink" href="#equation-energyequation2" title="Permalink to this equation">¶</a></span><img src="_images/math/0025a8786e586fadc91608ad2423ee80b12378f4.svg" alt="\sum_{k}  \dot{m}_k (e_{t,k}+\frac{p_k}{\rho_k}) = \dot{Q} + \dot{W}_{t}"/></p>
+</div><div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>We define <img class="math" src="_images/math/4a0e644befcda2e8f3df00e4c3d6694d6b0b5769.svg" alt="h_t = e_{t,k}+\frac{p_k}{\rho_k}" style="vertical-align: -8px"/> the <strong>total specific enthalpy</strong> (or the <strong>stagnation enthalpy</strong>). Thus we have the final usefull form of energy balance for thermodynamic machines that traduces the <strong>first principle of thermodynamics for an open system</strong>:</p>
+<div class="math" id="equation-energyequation3">
+<p><span class="eqno">(1.14)<a class="headerlink" href="#equation-energyequation3" title="Permalink to this equation">¶</a></span><img src="_images/math/1080e31cfbdec65ea811cd351c6a5b81396c82ee.svg" alt="\sum_{k}  \dot{m}_k h_{t,k} = \dot{Q} + \dot{W}_{t}"/></p>
+</div><ul class="simple">
+<li><p><img class="math" src="_images/math/f8cd3b83fb9b6e9cf36da69285711f61657909e2.svg" alt="\dot{Q}" style="vertical-align: -3px"/> represents the heat exchanges between the system and its surrounding.</p></li>
+<li><p><img class="math" src="_images/math/a5235d24c0cb0d4b7894eb493b14e7d1ffa5c949.svg" alt="\dot{W}_{t}" style="vertical-align: -2px"/> is called <em>technical work</em> and is exchanged between the system and a machine.</p></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="section" id="entropy">
+<h2><span class="section-number">1.1.5. </span>Entropy<a class="headerlink" href="#entropy" title="Permalink to this headline">¶</a></h2>
+<p>We apply equation <a class="reference internal" href="#equation-intgenbalancesteady1d">Eq.1.8</a> to entropy extensive variable:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><img class="math" src="_images/math/4b5156b9fd62857aa4d5aa23bb0563033f7fd965.svg" alt="\phi = S" style="vertical-align: -3px"/>: the entropy in the control volume,</p></li>
+<li><p><img class="math" src="_images/math/b5514ebf363d8bc189bcf22e50923907c8d72e6a.svg" alt="\eta = \rho s" style="vertical-align: -3px"/>: the volumic entropy,</p></li>
+<li><p><img class="math" src="_images/math/e73c2cf5b3bd499c993abc19e36c8afb5752894e.svg" alt="\dot{\phi_E} = \sum_i \frac{\dot{Q}_i}{T_i}" style="vertical-align: -7px"/>: the rate of exchanged entropies.</p></li>
+<li><p><img class="math" src="_images/math/ad9904ed6781cf83537645e7ef2d74b405a7127f.svg" alt="\dot{\phi_C} = \dot{S_c}" style="vertical-align: -3px"/>: the rate of entropy creation thanks to non reversible processes (internal or external).</p></li>
+</ul>
+</div></blockquote>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>We thus obtain the <strong>entropy balance equation</strong> for an open system:</p>
+<div class="math" id="equation-entropyequation">
+<p><span class="eqno">(1.15)<a class="headerlink" href="#equation-entropyequation" title="Permalink to this equation">¶</a></span><img src="_images/math/66bad287536841641091c839b68a252cc5518002.svg" alt="\sum_{k}  \dot{m}_k s_{k} = \sum_i \frac{\dot{Q}_i}{T_i} + \dot{S_c}"/></p>
+</div></div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="chap1_3Applications.html" class="btn btn-neutral float-right" title="1.2. Applications" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="chap1_balanceEquations_Chap.html" class="btn btn-neutral float-left" title="1. Balance equations" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2019, Fabien Petitpas, AMU, Polytech Marseille ME
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+******************************
+Combined cycles / Cogeneration
+******************************
+
+Combined cycles
+===============
+In Gas turbine, an important part of energy is loss with exhausted combustion gases. This energy can possibly used as hot source for a vapor turbine. We then talk about **combined cycle**.
+
+Cogeneration
+============
+Finally, whatever the heat engine is, thermal energy is provided to a cold sink. **Cogeneration** consists in using these residual energy for a heating system. By the way, the installation produces mechanical work and heat. The global efficiency of a cogenerative installation may be evaluated by:
+
+.. math::
+
+  \eta_{cogen} = \frac{-\dot{W}_t + |\dot{Q}_{recup}|}{\dot{Q}_C}
+
+With :math:`|\dot{Q}_{recup}|\leq \dot{Q}_C`.
+
+These installation may reach 70 to 80% or efficiency.

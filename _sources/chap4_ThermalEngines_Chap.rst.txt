@@ -1,0 +1,26 @@
+************
+Heat engines
+************
+
+**Heat engine** are *thermal energy converters*: they are producing a mechanical energy from thermal energy.
+The *Carnot heat engine* (seen in :numref:`Sec:chap2:Carnot`) presents the maximum thermal efficiency but *Real heat engines* are generally not exchanging thermal energy using isothermal transformations.
+
+1) Thermal energy is generally obtained thanks to the combustion of a fuel with an oxidizer:
+
+  * if the comustion occurs in the *working fluid*, we talk about **internal combustion heat engines**: this is the case for *car engines* or for *gas turbines* and *turbojets*.
+  * if the combuston occurs outside, it is then tansmitted to the *working fluid* thanks to a *heat exchanger*. We talk about **external combustion heat engines**: this is the case for *Stirling engine* for example.
+
+2) As they are following a cycle, the fluid flow can be:
+
+  * Discontinuous: We talk about **reciprocating internal combustion engines** as for the *spark-ignition engine* (gasoline engines) or for the *compression-ignition engine* (diesel engines).
+  * Continuous: We talk about **continuous combustion engines**. This is the case for *gas turbines* and *turbojets*.
+
+.. toctree::
+  :maxdepth: 1
+  :caption: Contents:
+
+  chap4_1RICE
+  chap4_3GasTurbines
+  chap4_4SteamTurbines
+  chap4_5Cogeneration
+   

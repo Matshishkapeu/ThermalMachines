@@ -1,0 +1,390 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>3.1. Compressions/Expansions &mdash; Thermal machines 1.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="3.2. Optimisation of Compression/Expansion" href="chap3_2Optimisation.html" />
+    <link rel="prev" title="3. Compression / Expansion of Gas and vapors" href="chap3_CompExpGas_Chap.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> Thermal machines
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="chap1_balanceEquations_Chap.html">1. Balance equations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chap2_thermMachinesBasics_Chap.html">2. Thermal machines: Basics</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="chap3_CompExpGas_Chap.html">3. Compression / Expansion of Gas and vapors</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">3.1. Compressions/Expansions</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#expression-of-technical-work">3.1.1. Expression of technical work</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#reversible-compression-expansion">3.1.2. Reversible compression/expansion</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#isothermal-transformation">3.1.2.1. Isothermal transformation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#isentropic-transformation">3.1.2.2. Isentropic transformation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#polytropic-transformation">3.1.2.3. Polytropic transformation</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#real-compressions-expansions">3.1.3. Real Compressions/Expansions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#adiabatic-transformations-isentropic-efficiencies">3.1.3.1. Adiabatic transformations/ isentropic efficiencies</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#non-adibatic-transformations-polytropic-efficiencies">3.1.3.2. Non adibatic transformations/ polytropic efficiencies</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="chap3_2Optimisation.html">3.2. Optimisation of Compression/Expansion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chap3_3Overview.html">3.3. Overview of comp/exp systems</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="chap4_ThermalEngines_Chap.html">4. Heat engines</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chap5_ThermalGenerators_Chap.html">5. Heat pumps and refrigerators</a></li>
+<li class="toctree-l1"><a class="reference internal" href="zBibliography.html">6. References</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Thermal machines</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="chap3_CompExpGas_Chap.html"><span class="section-number">3. </span>Compression / Expansion of Gas and vapors</a> &raquo;</li>
+        
+      <li><span class="section-number">3.1. </span>Compressions/Expansions</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/chap3_1Transformations.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="compressions-expansions">
+<h1><span class="section-number">3.1. </span>Compressions/Expansions<a class="headerlink" href="#compressions-expansions" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="expression-of-technical-work">
+<span id="sec-chap3-technicalwork"></span><h2><span class="section-number">3.1.1. </span>Expression of technical work<a class="headerlink" href="#expression-of-technical-work" title="Permalink to this headline">¶</a></h2>
+<p>For a <strong>closed system</strong> (cf. thermodynamics course), the work of reversible pressure forces for a transformation between state 1 and 2 expresses as:</p>
+<div class="math" id="equation-workclosedsystem">
+<p><span class="eqno">(3.1)<a class="headerlink" href="#equation-workclosedsystem" title="Permalink to this equation">¶</a></span><img src="_images/math/0095e37c97c8fb01d4e4a80c2f62529aea19ddd9.svg" alt="w_{12} = -\int_1^2 pdv"/></p>
+</div><p>For an <strong>open system</strong> (crossed by a fluid flow), the balance energy equation has been obtained in <a class="reference internal" href="chap1_2BalanceForControlVolume.html#sec-chap1-balanceequations"><span class="std std-numref">Section 1.1: </span></a> and reads per unit of mass crossing the system:</p>
+<div class="math" id="equation-balanceenergyspecific">
+<p><span class="eqno">(3.2)<a class="headerlink" href="#equation-balanceenergyspecific" title="Permalink to this equation">¶</a></span><img src="_images/math/4ee79cef38c2ab7fd0e5ee11f9b93eaff7995861.svg" alt="h_2 - h_1 = w_{t,12} + q_{12}"/></p>
+</div><p>During the transformation and thanks to the <em>Gibbs equation</em>, we also have:</p>
+<div class="math" id="equation-gibbs">
+<p><span class="eqno">(3.3)<a class="headerlink" href="#equation-gibbs" title="Permalink to this equation">¶</a></span><img src="_images/math/ed0a41b13035a2687672c7e8729b87b4d753eab9.svg" alt="dh = Tds + vdp"/></p>
+</div><p>Such that between state 1 and 2:</p>
+<div class="math" id="equation-gibbsint">
+<p><span class="eqno">(3.4)<a class="headerlink" href="#equation-gibbsint" title="Permalink to this equation">¶</a></span><img src="_images/math/c08ef41b3c22de9dabf0ffcc7c0efe1077ee3857.svg" alt="h_2 - h_1 = \int_1^2 Tds + \int_1^2 vdp"/></p>
+</div><p>Relations <a class="reference internal" href="#equation-balanceenergyspecific">Eq.3.2</a> and <a class="reference internal" href="#equation-gibbsint">Eq.3.4</a> applied to a reversible transformation allows to express the technical work <img class="math" src="_images/math/32680814b8ddaa418cebd6978ae352d4f941e71a.svg" alt="w_t" style="vertical-align: -2px"/>:</p>
+<div class="math" id="equation-techworkint">
+<p><span class="eqno">(3.5)<a class="headerlink" href="#equation-techworkint" title="Permalink to this equation">¶</a></span><img src="_images/math/0fbf85ae30cefb3b3f84b8720d6104d4ec01568b.svg" alt="w_{t,12} = \int_1^2 vdp"/></p>
+</div><div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>For a <strong>reversible transformation</strong>:</p>
+<ul>
+<li><p>The specific pressure work in a <em>closed system</em> expresses as:</p>
+<blockquote>
+<div><div class="math">
+<p><img src="_images/math/7a837d01e5aaacbb2b726318b80f2e581e9dc023.svg" alt="w_{12} = - \int_1^2 pdv"/></p>
+</div></div></blockquote>
+</li>
+<li><p>The specific technical work in an <em>open system</em> expresses as:</p>
+<blockquote>
+<div><div class="math">
+<p><img src="_images/math/0fbf85ae30cefb3b3f84b8720d6104d4ec01568b.svg" alt="w_{t,12} = \int_1^2 vdp"/></p>
+</div></div></blockquote>
+</li>
+</ul>
+</div>
+<p>According to the system under study, the work will be:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>The opposite of the aera under the curve in (p,v) plane for <em>closed systems</em></p></li>
+<li><p>The aera on the left of the curve in the (p,v) plane for <em>open systems</em></p></li>
+</ul>
+</div></blockquote>
+<div class="figure align-center" id="id1">
+<span id="fig-chap3-workinclapeyron"></span><a class="reference internal image-reference" href="_images/workInClapeyron.png"><img alt="_images/workInClapeyron.png" src="_images/workInClapeyron.png" style="width: 387.3px; height: 294.3px;" /></a>
+<p class="caption"><span class="caption-number">Figure 3.1:  </span><span class="caption-text">work for a closed system transformation between state 1 and 2 (pink aera) and for an open system between same states (green stripes aera).</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+<div class="section" id="reversible-compression-expansion">
+<h2><span class="section-number">3.1.2. </span>Reversible compression/expansion<a class="headerlink" href="#reversible-compression-expansion" title="Permalink to this headline">¶</a></h2>
+<p>Reversible compressions (or expansions) can be:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Isotherme: <img class="math" src="_images/math/b70afd77a8f68e386335856460636b043cfec3eb.svg" alt="T=cte" style="vertical-align: 0px"/></p></li>
+<li><p>Polytropic: <img class="math" src="_images/math/fdef488edcf46af337908b2fac0c1c2e560b7034.svg" alt="pv^k=cte" style="vertical-align: -3px"/></p></li>
+<li><p>Isentropic: <img class="math" src="_images/math/80db19aa8e31d7c3c81a109ee6d1a61785096d47.svg" alt="s=cte" style="vertical-align: 0px"/></p></li>
+</ul>
+</div></blockquote>
+<p>A representation of these transformations in the <em>Clapeyron</em> diagram is presented in figure <a class="reference internal" href="#fig-chap3-compclapeyron"><span class="std std-numref">Figure 3.2: </span></a></p>
+<div class="figure align-center" id="id2">
+<span id="fig-chap3-compclapeyron"></span><a class="reference internal image-reference" href="_images/compClapeyron.png"><img alt="_images/compClapeyron.png" src="_images/compClapeyron.png" style="width: 559.5px; height: 282.9px;" /></a>
+<p class="caption"><span class="caption-number">Figure 3.2:  </span><span class="caption-text">Isotherme, Polytropic and Isentropic reversible compressions in (p,v).</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+</div>
+<p>For <strong>ideal gas</strong> equation of state, the expressions of specific works are recalled hereafter.</p>
+<div class="section" id="isothermal-transformation">
+<h3><span class="section-number">3.1.2.1. </span>Isothermal transformation<a class="headerlink" href="#isothermal-transformation" title="Permalink to this headline">¶</a></h3>
+<div class="math" id="equation-workigisothermal">
+<p><span class="eqno">(3.6)<a class="headerlink" href="#equation-workigisothermal" title="Permalink to this equation">¶</a></span><img src="_images/math/ded46bb017a8b9b1b5ddd7e850572bb76c4d84b7.svg" alt="w_{12}^T = w_{t,12}^T = rT ln \left( \frac{p_2}{p_1} \right)"/></p>
+</div></div>
+<div class="section" id="isentropic-transformation">
+<h3><span class="section-number">3.1.2.2. </span>Isentropic transformation<a class="headerlink" href="#isentropic-transformation" title="Permalink to this headline">¶</a></h3>
+<div class="math" id="equation-workigisent">
+<p><span class="eqno">(3.7)<a class="headerlink" href="#equation-workigisent" title="Permalink to this equation">¶</a></span><img src="_images/math/a64d78ee2ca435f219536d4e9dd3b03ecb399e94.svg" alt="w_{12}^s = \frac{rT_1}{\gamma-1} \left[ \left( \frac{p_2}{p_1} \right)^{\frac{\gamma-1}{\gamma}} -1  \right]"/></p>
+</div><p>and</p>
+<div class="math" id="equation-techworkigisent">
+<p><span class="eqno">(3.8)<a class="headerlink" href="#equation-techworkigisent" title="Permalink to this equation">¶</a></span><img src="_images/math/0728b23c094366a9b1d3cc8f2f820e9618aab39f.svg" alt="w_{t,12}^s = \frac{\gamma rT_1}{\gamma-1} \left[ \left( \frac{p_2}{p_1} \right)^{\frac{\gamma-1}{\gamma}} -1  \right]"/></p>
+</div></div>
+<div class="section" id="polytropic-transformation">
+<h3><span class="section-number">3.1.2.3. </span>Polytropic transformation<a class="headerlink" href="#polytropic-transformation" title="Permalink to this headline">¶</a></h3>
+<div class="math" id="equation-workigpolyp">
+<p><span class="eqno">(3.9)<a class="headerlink" href="#equation-workigpolyp" title="Permalink to this equation">¶</a></span><img src="_images/math/3f13cf950f86440625f90c526531b25dc7f19560.svg" alt="w_{12}^p = \frac{rT_1}{k-1} \left[ \left( \frac{p_2}{p_1} \right)^{\frac{k-1}{k}} -1  \right]"/></p>
+</div><p>and</p>
+<div class="math" id="equation-techworkigpolyp">
+<p><span class="eqno">(3.10)<a class="headerlink" href="#equation-techworkigpolyp" title="Permalink to this equation">¶</a></span><img src="_images/math/79086b044ed3eca4f7211f86f1fa4f1d9b490cad.svg" alt="w_{t,12}^p = \frac{krT_1}{k-1} \left[ \left( \frac{p_2}{p_1} \right)^{\frac{k-1}{k}} -1  \right]"/></p>
+</div></div>
+</div>
+<div class="section" id="real-compressions-expansions">
+<span id="sec-chap3-efficiencies"></span><h2><span class="section-number">3.1.3. </span>Real Compressions/Expansions<a class="headerlink" href="#real-compressions-expansions" title="Permalink to this headline">¶</a></h2>
+<p>If during a real compression (or expansion) the transformation remains <em>irreversible</em>, calculs are performed thanks to associated reversible transformations and the knowledge of corresponding <em>efficiencies</em> that are known as manufacturer’s data.</p>
+<p>For a <em>compression</em>, real work (positive) is always greater than the corresponding theoretical reversible transformation, such that we define the <strong>compression efficiency</strong> of a compressor by:</p>
+<div class="math" id="equation-compefficiency">
+<p><span class="eqno">(3.11)<a class="headerlink" href="#equation-compefficiency" title="Permalink to this equation">¶</a></span><img src="_images/math/117b51f2b046be5fe26c71f5c82ccbb149f6265b.svg" alt="\eta_{C} = \frac{w_{t,rev}}{w_{t,real}} \leq 1"/></p>
+</div><p>For an <em>expansion</em>, the reversed situation appears as the technical work provided by the machine is always lower than the corresponding theoretical reversible transformation such that we define the <strong>expansion efficiency</strong> of a turbine by:</p>
+<div class="math" id="equation-turbefficiency">
+<p><span class="eqno">(3.12)<a class="headerlink" href="#equation-turbefficiency" title="Permalink to this equation">¶</a></span><img src="_images/math/d4259dc3ca4b6bb42bb80faf4b6b7c434f2043ea.svg" alt="\eta_{T} = \frac{w_{t,real}}{w_{t,rev}} \leq 1"/></p>
+</div><p>Thus depending on insulating of compressor/turbine, one will talk about isentropic, isothermic or polytropic efficiency.</p>
+<div class="section" id="adiabatic-transformations-isentropic-efficiencies">
+<h3><span class="section-number">3.1.3.1. </span>Adiabatic transformations/ isentropic efficiencies<a class="headerlink" href="#adiabatic-transformations-isentropic-efficiencies" title="Permalink to this headline">¶</a></h3>
+<p>When the compression/expansion machine is <em>thermically insulated</em>, we use the <strong>isentropic efficiency</strong> that provides the ratio between the real work and those associated to the corresponding reversbile transformation (isentropic). The real transformation induces an increase of the entropy.</p>
+<div class="figure align-center" id="id3">
+<span id="fig-chap3-isentropicefficiency"></span><a class="reference internal image-reference" href="_images/isentropicEfficiency.png"><img alt="_images/isentropicEfficiency.png" src="_images/isentropicEfficiency.png" style="width: 284.7px; height: 320.7px;" /></a>
+<p class="caption"><span class="caption-number">Figure 3.3:  </span><span class="caption-text">Adiabatic compression and expansion. Comparaison between isentropic path and real path.</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
+</div>
+<p>Because the transformations are adiabatics, the <em>isentropic efficiencies</em> for compressors or turbines become:</p>
+<div class="math" id="equation-isentropicefficiencies">
+<p><span class="eqno">(3.13)<a class="headerlink" href="#equation-isentropicefficiencies" title="Permalink to this equation">¶</a></span><img src="_images/math/8effe82804aa69d7e8a046af83d6651a1f60baea.svg" alt="\eta_{C}^S = \frac{h_{t,1}^S-h_{t,0}}{h_{t,1}-h_{t,0}} \qquad \text{and} \qquad \eta_{T}^S = \frac{h_{t,2}-h_{t,0}}{h_{t,2}^S-h_{t,0}}"/></p>
+</div><div class="admonition-simplifications admonition">
+<p class="admonition-title">Simplifications</p>
+<ul class="simple">
+<li><p>When Kinetic energy variations are negligible</p></li>
+<li><p>When the working fluid is consiered as an <em>ideal gas</em></p></li>
+</ul>
+<p><em>Isentropic efficiencies</em> become:</p>
+<div class="math">
+<p><img src="_images/math/746a68975b8afcc413686fee79394fe05bf5bf1f.svg" alt="\eta_{C}^S = \frac{T_{1}^S-T_{0}}{T_{1}-T_{0}} \qquad \text{and} \qquad \eta_{T}^S = \frac{T_{2}-T_{0}}{T_{2}^S-T_{0}}"/></p>
+</div><p>Using <em>Laplace</em> relations for isentropic transformation, we get:</p>
+<div class="math" id="equation-isentropicefficienciesig">
+<p><span class="eqno">(3.14)<a class="headerlink" href="#equation-isentropicefficienciesig" title="Permalink to this equation">¶</a></span><img src="_images/math/c81ace0f43b5d7da0fe0e08fd4f02cf8532a6576.svg" alt="\eta_{C}^S = \frac{T_{0} r_p^{\frac{\gamma-1}{\gamma}}-T_{0}}{T_{1}-T_{0}} \qquad \text{and} \qquad \eta_{T}^S = \frac{T_{2}-T_{0}}{T_{0} r_p^{\frac{\gamma-1}{\gamma}}-T_{0}}"/></p>
+</div><p>Then, it is possible to determine easily the final temperature of the working fluid by knowledge of the pressure ratio (<img class="math" src="_images/math/18e8d474c0d3668b9f91f811411028fed8353ad4.svg" alt="r_p = p_{final}/p_{init}" style="vertical-align: -5px"/>) and isentropic efficiencies.</p>
+</div>
+</div>
+<div class="section" id="non-adibatic-transformations-polytropic-efficiencies">
+<h3><span class="section-number">3.1.3.2. </span>Non adibatic transformations/ polytropic efficiencies<a class="headerlink" href="#non-adibatic-transformations-polytropic-efficiencies" title="Permalink to this headline">¶</a></h3>
+<p>When the compression/expansion is not <em>thermically insulated</em>, isentropic efficiencies are no longer valid and we use the <strong>polytropic efficiency</strong> providing the ratio between the real work and those associated to the corresponding reversible polytropic transformation leading to the same thermodynamic state at the end of compression/expansion.</p>
+<div class="figure align-center" id="id4">
+<span id="fig-chap3-polytropicefficiency"></span><a class="reference internal image-reference" href="_images/polytropicEfficiency.png"><img alt="_images/polytropicEfficiency.png" src="_images/polytropicEfficiency.png" style="width: 606.3px; height: 383.09999999999997px;" /></a>
+<p class="caption"><span class="caption-number">Figure 3.4:  </span><span class="caption-text">Non adiabatic compressions and expansions. Comparaison between polytropic path (lines) and real path (dash lines).</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
+</div>
+<p>Possible transformation with heat exchanges during compression/expansions can lead to different possibilities summarized in <a class="reference internal" href="#fig-chap3-polytropicefficiency"><span class="std std-numref">Figure 3.4: </span></a>. Whatever the case is, we have for the polytropic (<img class="math" src="_images/math/2b449adf8e7e9062b514cc5038a5f2a6b73d4952.svg" alt="p" style="vertical-align: -3px"/>) and real transformation:</p>
+<div class="math">
+<p><img src="_images/math/cc55923c243a2ffd15549333a9db55c852f8076a.svg" alt="w_{t}^P = (h_{t,i}-h_{t,0}) - q_P \qquad \text{and} \qquad w_{t} = (h_{t,i}-h_{t,0}) - q"/></p>
+</div><p>Such that the <em>polytropic efficiencies</em> express as:</p>
+<div class="math" id="equation-polytropicefficiencies">
+<p><span class="eqno">(3.15)<a class="headerlink" href="#equation-polytropicefficiencies" title="Permalink to this equation">¶</a></span><img src="_images/math/5f6820e80afbd4ea2bcf06f4ba879df76ccb66cb.svg" alt="\eta_{C}^P = \frac{(h_{t,1}-h_{t,0})-q_P}{(h_{t,1}-h_{t,0})-q} \qquad \text{and} \qquad \eta_{T}^P = \frac{(h_{t,2}-h_{t,0}) - q}{(h_{t,2}-h_{t,0}) -q_P}"/></p>
+</div><div class="admonition-simplifications admonition">
+<p class="admonition-title">Simplifications</p>
+<ul class="simple">
+<li><p>When Kinetic energy variations are negligible</p></li>
+<li><p>When the working fluid is consiered as an <em>ideal gas</em></p></li>
+</ul>
+<p>The technical work for a polytropic transformation is given by relation <a class="reference internal" href="#equation-techworkigpolyp">Eq.3.10</a>, and the real technical work expresses as:</p>
+<div class="math">
+<p><img src="_images/math/584eddc48a838ce2a64882f9ed0505e4d4f5581a.svg" alt="w_t = (h_{t,i}-h_{t,0}) - q = \frac{\gamma r}{\gamma -1} T_0 (r_p^{\frac{k-1}{k}}-1) - q"/></p>
+</div><p><em>Polytropic efficiencies</em> thus become:</p>
+<div class="math" id="equation-polytropicefficienciesig">
+<p><span class="eqno">(3.16)<a class="headerlink" href="#equation-polytropicefficienciesig" title="Permalink to this equation">¶</a></span><img src="_images/math/100ff6c494b783fedb565c8444db26b1d471f318.svg" alt="\eta_{C}^P = \frac{ \frac{k}{k-1} (r_p^{\frac{k-1}{k}}-1)} { \frac{\gamma }{\gamma -1} (r_p^{\frac{k-1}{k}}-1) - \frac{q (\gamma-1)}{r T_0} } \qquad \text{and} \qquad \eta_{T}^P = \frac{  \frac{\gamma }{\gamma -1} (r_p^{\frac{k-1}{k}}-1) - \frac{q (\gamma-1)}{r T_0} } {\frac{k}{k-1} (r_p^{\frac{k-1}{k}}-1)}"/></p>
+</div></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="chap3_2Optimisation.html" class="btn btn-neutral float-right" title="3.2. Optimisation of Compression/Expansion" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="chap3_CompExpGas_Chap.html" class="btn btn-neutral float-left" title="3. Compression / Expansion of Gas and vapors" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2019, Fabien Petitpas, AMU, Polytech Marseille ME
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

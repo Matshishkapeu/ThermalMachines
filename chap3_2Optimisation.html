@@ -1,0 +1,312 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>3.2. Optimisation of Compression/Expansion &mdash; Thermal machines 1.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="3.3. Overview of comp/exp systems" href="chap3_3Overview.html" />
+    <link rel="prev" title="3.1. Compressions/Expansions" href="chap3_1Transformations.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> Thermal machines
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="chap1_balanceEquations_Chap.html">1. Balance equations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chap2_thermMachinesBasics_Chap.html">2. Thermal machines: Basics</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="chap3_CompExpGas_Chap.html">3. Compression / Expansion of Gas and vapors</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="chap3_1Transformations.html">3.1. Compressions/Expansions</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">3.2. Optimisation of Compression/Expansion</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#compression-optimisation">3.2.1. Compression optimisation</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#continuous-cooling">3.2.1.1. Continuous cooling</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#multi-stage-cooling">3.2.1.2. Multi-stage cooling</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#turbine-optimisation">3.2.2. Turbine optimisation</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="chap3_3Overview.html">3.3. Overview of comp/exp systems</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="chap4_ThermalEngines_Chap.html">4. Heat engines</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chap5_ThermalGenerators_Chap.html">5. Heat pumps and refrigerators</a></li>
+<li class="toctree-l1"><a class="reference internal" href="zBibliography.html">6. References</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Thermal machines</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="chap3_CompExpGas_Chap.html"><span class="section-number">3. </span>Compression / Expansion of Gas and vapors</a> &raquo;</li>
+        
+      <li><span class="section-number">3.2. </span>Optimisation of Compression/Expansion</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/chap3_2Optimisation.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="optimisation-of-compression-expansion">
+<span id="sec-chap3-optimisation"></span><h1><span class="section-number">3.2. </span>Optimisation of Compression/Expansion<a class="headerlink" href="#optimisation-of-compression-expansion" title="Permalink to this headline">¶</a></h1>
+<p>As presented in <a class="reference internal" href="chap3_1Transformations.html#sec-chap3-technicalwork"><span class="std std-numref">Section 3.1.1: </span></a>, the technical work can be represented by the aera on the left of the curve corresponding to the reversible transformation in the <em>Clapeyron</em> diagramm.</p>
+<div class="figure align-center" id="id1">
+<span id="fig-chap3-optimisationwork"></span><a class="reference internal image-reference" href="_images/optimisationWork.png"><img alt="_images/optimisationWork.png" src="_images/optimisationWork.png" style="width: 606.9px; height: 351.3px;" /></a>
+<p class="caption"><span class="caption-number">Figure 3.5:  </span><span class="caption-text">For a compression, the required technical work is minimum for the isothermal transformation. For an expansion, the provided technical work is maximum for the isothermal transformation.</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</div>
+<p>The lower mechanical work needed for a compressor is the better and the bigger is the mechanical work supplied by a turbine is the better.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>As shown on <a class="reference internal" href="#fig-chap3-optimisationwork"><span class="std std-numref">Figure 3.5: </span></a>, it is clear that:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>For a compressor, optimisation will be obtain by <strong>cooling</strong></p></li>
+<li><p>For a turbine, optimisation will be obtain by <strong>heating</strong></p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="compression-optimisation">
+<h2><span class="section-number">3.2.1. </span>Compression optimisation<a class="headerlink" href="#compression-optimisation" title="Permalink to this headline">¶</a></h2>
+<p>The minimum <em>technical work</em> for a compressor corresponds to isothermal transformation. There are two techniques to approach isothermal transformation in a compressor:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Continuous cooling of the compressor</p></li>
+<li><p>Multi-stage compressions with intercooling</p></li>
+</ul>
+</div></blockquote>
+<div class="section" id="continuous-cooling">
+<h3><span class="section-number">3.2.1.1. </span>Continuous cooling<a class="headerlink" href="#continuous-cooling" title="Permalink to this headline">¶</a></h3>
+<p><strong>Continuous cooling</strong> can be performed with surrounding the compressor with a cooling pipe. It is possible to quantify the cooling interest of a compression by comparison between the technical work needed for an isentropic and those obtained for an isothermal transformation. We define the <strong>theoretical cooling efficiency</strong>:</p>
+<div class="math" id="equation-coolingefficiency">
+<p><span class="eqno">(3.17)<a class="headerlink" href="#equation-coolingefficiency" title="Permalink to this equation">¶</a></span><img src="_images/math/cc062c2beefc707290c8bca52a2793e4edde27e2.svg" alt="e_{th,cool} = \frac{w_{t}^S}{w_t^T}"/></p>
+</div><p>Under <em>ideal gas</em> assumption, using relations <a class="reference internal" href="chap3_1Transformations.html#equation-techworkigisent">Eq.3.8</a> and <a class="reference internal" href="chap3_1Transformations.html#equation-workigisothermal">Eq.3.6</a>, it becomes:</p>
+<div class="math" id="equation-coolingefficiencyig">
+<p><span class="eqno">(3.18)<a class="headerlink" href="#equation-coolingefficiencyig" title="Permalink to this equation">¶</a></span><img src="_images/math/309cf24ffac6c883d26bc7b8e0e9e1d00db9f8bd.svg" alt="e_{th,cool} = \frac{\gamma}{\gamma-1} \frac{r_p^{\frac{\gamma-1}{\gamma}}-1}{ln (r_p)}"/></p>
+</div><p>Where <img class="math" src="_images/math/8ba396cb79e1517cf8e11aa1d7d7d16842060fe3.svg" alt="r_p=p_2/p_1" style="vertical-align: -5px"/> represent the compression <em>pressure ratio</em>.</p>
+<div class="figure align-center" id="id2">
+<span id="fig-chap3-coolingefficiency"></span><a class="reference internal image-reference" href="_images/coolingEfficiency.png"><img alt="_images/coolingEfficiency.png" src="_images/coolingEfficiency.png" style="width: 594.3px; height: 236.1px;" /></a>
+<p class="caption"><span class="caption-number">Figure 3.6:  </span><span class="caption-text">For a pressure ratio of 14, the mechanical energy earned for an isothermal compression is 50% compared to an isentropic one.</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+</div>
+<p>Efficiency of cooling is theroretical since it is difficult to ensure an isothermal compression using continuous cooling and heat transfer through the compressor carter.</p>
+</div>
+<div class="section" id="multi-stage-cooling">
+<h3><span class="section-number">3.2.1.2. </span>Multi-stage cooling<a class="headerlink" href="#multi-stage-cooling" title="Permalink to this headline">¶</a></h3>
+<p><strong>Multi-stage cooling</strong> is often used for multi-stage compression. It consists in cooling the fluid using a heat exchanger between two compression stages.</p>
+<div class="figure align-center" id="id3">
+<span id="fig-chap3-twostagescompression"></span><a class="reference internal image-reference" href="_images/twoStagesCompression.png"><img alt="_images/twoStagesCompression.png" src="_images/twoStagesCompression.png" style="width: 595.5px; height: 317.09999999999997px;" /></a>
+<p class="caption"><span class="caption-number">Figure 3.7:  </span><span class="caption-text">Two-stage compression. Transformations in compressors are polytropic (adiabatic or not) and a constant pressure heat exchange occurs between the two stages of compression. The earned work is clearly visible on the <em>Clapeyron</em> diagramm.</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
+</div>
+<p>How to choose the compression ratio of each stage ?</p>
+<p>The technical work for the global two-stage compression is:</p>
+<div class="math">
+<p><img src="_images/math/c08306273cf4f5f8e4c92b4f092f4a4fe4c1538c.svg" alt="w_{t} = w_{t}^{C_1} + w_{t}^{C_2}"/></p>
+</div><p>If the two compression stages perform a polytropic compression, thanks to <a class="reference internal" href="chap3_1Transformations.html#equation-techworkigpolyp">Eq.3.10</a> we get:</p>
+<div class="math">
+<p><img src="_images/math/b045c42f982e632cab45437d3c80b5bad480cfad.svg" alt="w_{t} = \frac{krT_0}{k-1} \left[ \left( \frac{p_X}{p_0} \right)^{\frac{k-1}{k}} -1  \right] + \frac{krT_0}{k-1} \left[ \left( \frac{p_1}{p_X} \right)^{\frac{k-1}{k}} -1  \right]"/></p>
+</div><p>Derivation of this expression using <img class="math" src="_images/math/42ff01949579f1ada74475c466afb329e732ddde.svg" alt="p_X" style="vertical-align: -3px"/> variable leads to:</p>
+<div class="math">
+<p><img src="_images/math/2782690b96f434df655640914da5b72964b7f6e8.svg" alt="\frac{d w_{t}}{d p_X} = \frac{krT_0}{k-1} p_X^{\frac{1}{k-1}} \left[ p_0^{\frac{-k}{k-1}} - p_1^{\frac{k}{k-1}} p_X^{\frac{-2k}{k-1}}  \right]"/></p>
+</div><p>such that the technical work is minimum for:</p>
+<div class="math">
+<p><img src="_images/math/93998262728172ddf7ee12deebc0f91752c22f1d.svg" alt="p_X = (p_0 p_1)^{1/2} \qquad \text{i.e.} \qquad  \frac{p_X}{p_0} = \frac{p_1}{p_X}"/></p>
+</div><p>This result can be extand to multi-stages compressions.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>The pressure ratio in each stage of a <strong>multi-stage compression with intercooling</strong> should be equal in order to minimize the technical work.</p>
+</div>
+<div class="figure align-center" id="id4">
+<span id="fig-chap3-multistagescompression"></span><a class="reference internal image-reference" href="_images/multiStagesCompression.png"><img alt="_images/multiStagesCompression.png" src="_images/multiStagesCompression.png" style="width: 623.6999999999999px; height: 313.5px;" /></a>
+<p class="caption"><span class="caption-number">Figure 3.8:  </span><span class="caption-text">Multi-stage compression with intercooling.</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+</div>
+<div class="section" id="turbine-optimisation">
+<h2><span class="section-number">3.2.2. </span>Turbine optimisation<a class="headerlink" href="#turbine-optimisation" title="Permalink to this headline">¶</a></h2>
+<p>The maximum <em>technical work</em> for a turbine correspond to isothermal transformation. This is generally obtain by multi-stage expansions with <strong>reheat</strong>.</p>
+<p>Conclusions are similar than those obtain with multi-stage compression with intercooling and are not developped here.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="chap3_3Overview.html" class="btn btn-neutral float-right" title="3.3. Overview of comp/exp systems" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="chap3_1Transformations.html" class="btn btn-neutral float-left" title="3.1. Compressions/Expansions" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2019, Fabien Petitpas, AMU, Polytech Marseille ME
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,402 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>4.1. Reciprocating internal combustion engine &mdash; Thermal machines 1.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="4.2. Gas Turbines" href="chap4_3GasTurbines.html" />
+    <link rel="prev" title="4. Heat engines" href="chap4_ThermalEngines_Chap.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> Thermal machines
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="chap1_balanceEquations_Chap.html">1. Balance equations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chap2_thermMachinesBasics_Chap.html">2. Thermal machines: Basics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chap3_CompExpGas_Chap.html">3. Compression / Expansion of Gas and vapors</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="chap4_ThermalEngines_Chap.html">4. Heat engines</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">4.1. Reciprocating internal combustion engine</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#spark-ignition-engines-si-rice">4.1.1. Spark-ignition engines (SI RICE)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#overview">4.1.1.1. Overview</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#definitions">4.1.1.2. Definitions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#beau-de-rochas-otto-cycle">4.1.1.3. Beau de Rochas (Otto) cycle</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#compression-ignition-engine-ci-rice">4.1.2. Compression-ignition engine (CI RICE)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#diesel-cycle">4.1.2.1. Diesel cycle</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#turbocharger">4.1.3. Turbocharger</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="chap4_3GasTurbines.html">4.2. Gas Turbines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chap4_4SteamTurbines.html">4.3. Steam turbines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chap4_5Cogeneration.html">4.4. Combined cycles / Cogeneration</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="chap5_ThermalGenerators_Chap.html">5. Heat pumps and refrigerators</a></li>
+<li class="toctree-l1"><a class="reference internal" href="zBibliography.html">6. References</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Thermal machines</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="chap4_ThermalEngines_Chap.html"><span class="section-number">4. </span>Heat engines</a> &raquo;</li>
+        
+      <li><span class="section-number">4.1. </span>Reciprocating internal combustion engine</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/chap4_1RICE.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="reciprocating-internal-combustion-engine">
+<h1><span class="section-number">4.1. </span>Reciprocating internal combustion engine<a class="headerlink" href="#reciprocating-internal-combustion-engine" title="Permalink to this headline">¶</a></h1>
+<p>A <strong>reciprocating internal combustion engine</strong> (RICE) converts chemical energy of a fuel into mechanical work and thermal energy. We find two class of RICE:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>Spark-ignition engines</strong> (SI) that use a spark to ignitate combustion of <em>gasoline fuel</em>.</p></li>
+<li><p><strong>Compression ignition engines</strong> (CI) that compress the mixture <em>diesel fuel</em> + <em>air</em> until the auto-ignition point.</p></li>
+</ul>
+</div></blockquote>
+<div class="section" id="spark-ignition-engines-si-rice">
+<h2><span class="section-number">4.1.1. </span>Spark-ignition engines (SI RICE)<a class="headerlink" href="#spark-ignition-engines-si-rice" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="overview">
+<h3><span class="section-number">4.1.1.1. </span>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h3>
+<p>a SI RICE is composed with:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>a <strong>combustion chamber</strong> where chemical reaction occurs,</p></li>
+<li><p>a <strong>cylinder</strong> prolongating the combustion chamber,</p></li>
+<li><p>a <strong>piston</strong> moving in the cylinder to vary the combustion chamber volume,</p></li>
+<li><p>a <strong>connecting rod</strong> connecting the piston to the <em>crankshaft</em>. This system transforms the reciprocating movement of piston into a rotating one.</p></li>
+<li><p>an <strong>intake valve</strong> and an <em>exhaust valve</em> to ensure fuel-air mixture intake and combustion gases exhaust.</p></li>
+<li><p>a <strong>spark plug</strong> that generate a spark to ignitiate combustion.</p></li>
+</ul>
+</div></blockquote>
+<p>The <a class="reference internal" href="#fig-chap1-sparkengine"><span class="std std-numref">Figure 4.1: </span></a> represents a schematic view of a SI RICE.</p>
+<div class="figure align-center" id="id1">
+<span id="fig-chap1-sparkengine"></span><a class="reference internal image-reference" href="_images/SparkEngine.png"><img alt="_images/SparkEngine.png" src="_images/SparkEngine.png" style="width: 440.09999999999997px; height: 504.9px;" /></a>
+<p class="caption"><span class="caption-number">Figure 4.1:  </span><span class="caption-text">Schematic representation of a Spark-ignition engine.</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</div>
+<p>The 4-stroke thermodynamic cycle occurs inside the combustion chamber as the piston is moving from <em>top dead center</em> (TDC) to <em>bottom dead center</em> (BDC) and reversely:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p><strong>Intake stroke</strong>: the <em>intake valve</em> is open and the piston is moving from TDC to BDC allowing entry of fuel-air mixture (the charge) in the combustion chamber.</p></li>
+<li><p><strong>Compression stroke</strong>: both valves are closed as the piston is moving from BDC to TDC, ensuring compression of the mixture drawing work from the <em>crankshaft</em>. Just before the piston reach the TDC, the <em>spark plug</em> ignites the combustion.</p></li>
+<li><p><strong>Working stroke</strong>: Combustion is increasing temperature and pressure inside the <em>combution chamber</em> and the piston is pushed to BDC providing work on the <em>crankshaft</em> (more than in the compression stroke).</p></li>
+<li><p><strong>Exhaust stroke</strong>: the <em>exhaust valve</em> is open and the piston is moving from BDC to TDC pushing combustion gases outside of the <em>combustion chamber</em>.</p></li>
+</ol>
+</div></blockquote>
+<div class="figure align-center" id="id2">
+<span id="fig-chap1-4strokes"></span><a class="reference internal image-reference" href="_images/4Strokes.png"><img alt="_images/4Strokes.png" src="_images/4Strokes.png" style="width: 763.3499999999999px; height: 351.04999999999995px;" /></a>
+<p class="caption"><span class="caption-number">Figure 4.2:  </span><span class="caption-text">Schematic evolution in the SI RICE engine during the 4 strokes of the piston.</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+</div>
+<p>The 4 strokes of the piston constitute a complete thermodynamic cycle. It also corresponds to two complete rotations of the <em>crankshaft</em>.</p>
+</div>
+<div class="section" id="definitions">
+<h3><span class="section-number">4.1.1.2. </span>Definitions<a class="headerlink" href="#definitions" title="Permalink to this headline">¶</a></h3>
+<p>The <strong>compression ratio</strong> is defined as the ratio between the maximum cylinder volume and the minimum cylinder volume:</p>
+<div class="math" id="equation-compratio">
+<p><span class="eqno">(4.1)<a class="headerlink" href="#equation-compratio" title="Permalink to this equation">¶</a></span><img src="_images/math/7a0d1effad39e8330c7ea0935df66b30a58a3b3e.svg" alt="r = \frac{V_{BDC}}{V_{TDC}}"/></p>
+</div><p>The <strong>displacement volume</strong> is the volume inside the cylinder displaced by the piston between BDC and TDC:</p>
+<div class="math" id="equation-dispvol">
+<p><span class="eqno">(4.2)<a class="headerlink" href="#equation-dispvol" title="Permalink to this equation">¶</a></span><img src="_images/math/4505e686f264bc2f76cd26a6d2f203123aa62e9b.svg" alt="V_d = V_{BDC} - V_{TDC}"/></p>
+</div><p>The <strong>mean effective pressure</strong> (PME) is the equivalent mean pressure acting along the piston stroke to obtain the real work.</p>
+<div class="math" id="equation-pme">
+<p><span class="eqno">(4.3)<a class="headerlink" href="#equation-pme" title="Permalink to this equation">¶</a></span><img src="_images/math/0e63840e834ef13182baef614bcda6ebbdddea45.svg" alt="PME = \frac{w_{net}}{V_d}"/></p>
+</div><div class="admonition-remark admonition">
+<p class="admonition-title">remark</p>
+<p>The PME is a practical value that permits to compare easily engines with the same <em>displacement volume</em>.</p>
+</div>
+</div>
+<div class="section" id="beau-de-rochas-otto-cycle">
+<h3><span class="section-number">4.1.1.3. </span>Beau de Rochas (Otto) cycle<a class="headerlink" href="#beau-de-rochas-otto-cycle" title="Permalink to this headline">¶</a></h3>
+<p>French ingeneer <em>Beau de Rochas</em> proposed the SI RICE in 1862, and the German engineer <em>Otto</em> build it in 1876.</p>
+<div class="figure align-center" id="id3">
+<span id="fig-chap1-ottocycle"></span><a class="reference internal image-reference" href="_images/OttoCycle.png"><img alt="_images/OttoCycle.png" src="_images/OttoCycle.png" style="width: 601.5px; height: 382.5px;" /></a>
+<p class="caption"><span class="caption-number">Figure 4.3:  </span><span class="caption-text">Real SI RICE compared to idealised <em>Beau de Rochas</em> cycle</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
+</div>
+<p>Simplifications consist on considering 4 reversible transformations:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>Compressions is isentropic.</p></li>
+<li><p>Combustion is replaced by a constant volume heating.</p></li>
+<li><p>Expansion is isentropic.</p></li>
+<li><p>Heat exhausting is performed at constant volume.</p></li>
+</ol>
+</div></blockquote>
+<p>As for any heat engine (<a class="reference internal" href="chap2_2Cycles.html#equation-thefficiency">Eq.2.9</a>), the thermal efficiency of <em>Beau de Rochas</em> cycle is:</p>
+<div class="math">
+<p><img src="_images/math/66341c43b664ef059a5e43f47e8e428d5f67e48c.svg" alt="\eta_{BdR} = 1 - \frac{|q_{41}|}{|q_{23}|}"/></p>
+</div><p>Considering the working fluid as an <strong>ideal gas</strong>, transformations 4-1 and 2-3 being at volume constant we obtain:</p>
+<div class="math">
+<p><img src="_images/math/24ce1afd75f17b1fa9f7b6a8f722977aabd4a9f5.svg" alt="\eta_{BdR} = 1 - \frac{T_4-T_1}{T_3-T_2}"/></p>
+</div><p>Because transformations 1-2 and 3-4 are isentropic and transformations 2-3 and 4-1 are isochore we can easily write:</p>
+<div class="math">
+<p><img src="_images/math/bed00e2a821b5784433f2e2fc8ba4b2da19c8ba8.svg" alt="\frac{T_1}{T_2} = \frac{V_2}{V_1}^{\gamma - 1} = \frac{V_3}{V_4}^{\gamma - 1} = \frac{T_4}{T_3}"/></p>
+</div><p>and the thermal efficiency becomes:</p>
+<div class="math" id="equation-theffbdrig">
+<p><span class="eqno">(4.4)<a class="headerlink" href="#equation-theffbdrig" title="Permalink to this equation">¶</a></span><img src="_images/math/6752a4b82665a37a8019ee3f262c9e445d7b0572.svg" alt="\eta_{BdR} = 1 - r^{1-\gamma}"/></p>
+</div><p>Thermal efficiency for the <em>Beau de Rochas</em> cycle only depends on the <em>compression ratio</em> (<a class="reference internal" href="#equation-compratio">Eq.4.1</a>) and <em>heat capacities</em> ratio <img class="math" src="_images/math/148087e85d01c2c4f13f897757ef6bd1ecf822ef.svg" alt="\gamma = c_p/c_v" style="vertical-align: -5px"/>.</p>
+<div class="figure align-center" id="id4">
+<span id="fig-chap1-etabdr"></span><a class="reference internal image-reference" href="_images/etaBdR.png"><img alt="_images/etaBdR.png" src="_images/etaBdR.png" style="width: 442.75px; height: 308.75px;" /></a>
+<p class="caption"><span class="caption-number">Figure 4.4:  </span><span class="caption-text"><em>Beau de Rochas</em> efficiency as a function of <em>compression ratio</em> in Gasoline engines.</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
+</div>
+<p>The thermal efficiency rises with the compression ratio. Passed a value of <img class="math" src="_images/math/ba23040c851c2d429485b49ea3e4355079c5c4c6.svg" alt="r" style="vertical-align: 0px"/>, the <em>combustion chamber</em> size and the pressure and temperature increase may cause auto-ignition of the mixture in an uncontrolled maneer (before the Spark declenchement). This uncontrolled combustion generates shock waves in the combustion chamber leading to engine deterioration. This is known as <strong>engine knocking</strong>.
+Typical zone of <em>compression ratio</em> for Gasoline engines are between 7 and 10 corresponding to maximum theoretical <em>thermal efficiency</em> of <img class="math" src="_images/math/481af7a2e6314768459138a087a665cfa5e7f728.svg" alt="0.6" style="vertical-align: 0px"/>. Real SI RICE engines <em>thermal efficiencies</em> do not exceed <img class="math" src="_images/math/c9cd5618d873e9c22cedc1bec5891a0d9840b0e0.svg" alt="0.3" style="vertical-align: 0px"/>.</p>
+</div>
+</div>
+<div class="section" id="compression-ignition-engine-ci-rice">
+<h2><span class="section-number">4.1.2. </span>Compression-ignition engine (CI RICE)<a class="headerlink" href="#compression-ignition-engine-ci-rice" title="Permalink to this headline">¶</a></h2>
+<p>The fundamental difference with SI RICE is that only air penetrates during the <em>intake stroke</em> of the piston. Then during the <em>compression stroke</em>, air is compressed over the auto-ignition temperature. Diesel fuel is atomised from an <strong>injector</strong> directly in the combustion chamber and ignites spontaneously.
+This process reduces considerably <em>engine knocking</em>, allowing higher <em>compression ratio</em>, and consequentely better thermal efficiency.</p>
+<div class="section" id="diesel-cycle">
+<h3><span class="section-number">4.1.2.1. </span>Diesel cycle<a class="headerlink" href="#diesel-cycle" title="Permalink to this headline">¶</a></h3>
+<p>In 1890, the German engineer <em>Rudolf Diesel</em> developped the first CI RICE. The theoretical idealised cycle corresponding to a CI RICE is the <strong>Diesel</strong> cycle.</p>
+<div class="figure align-center" id="id5">
+<span id="fig-chap1-dieselcycle"></span><a class="reference internal image-reference" href="_images/DieselCycle.png"><img alt="_images/DieselCycle.png" src="_images/DieselCycle.png" style="width: 604.5px; height: 383.09999999999997px;" /></a>
+<p class="caption"><span class="caption-number">Figure 4.5:  </span><span class="caption-text">Real CI RICE compared to idealised <em>Diesel</em> cycle</span><a class="headerlink" href="#id5" title="Permalink to this image">¶</a></p>
+</div>
+<p>Simplifications consist on considering 4 reversible transformations:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>Compressions is isentropic.</p></li>
+<li><p>Combustion is replaced by a constant pressure heating.</p></li>
+<li><p>Expansion is isentropic.</p></li>
+<li><p>Heat exhausting is performed at constant volume.</p></li>
+</ol>
+</div></blockquote>
+<p>As for any heat engine (<a class="reference internal" href="chap2_2Cycles.html#equation-thefficiency">Eq.2.9</a>), the thermal efficiency of <em>Diesel</em> cycle is:</p>
+<div class="math">
+<p><img src="_images/math/78f3eed100432bc51f7a9512899100131bd57074.svg" alt="\eta_{Diesel} = 1 - \frac{|q_{41}|}{|q_{23}|}"/></p>
+</div><p>Considering the working fluid as an <strong>ideal gas</strong>, transformation 4-1 being at constant volume and 2-3 being at constant pressure:</p>
+<div class="math">
+<p><img src="_images/math/0270fb297ed63cd25839f95b029a13d74d3789d3.svg" alt="\eta_{Diesel} = 1 - \frac{1}{\gamma}\frac{T_4-T_1}{T_3-T_2}"/></p>
+</div><p>Because transformations 1-2 and 3-4 are isentropic we can write:</p>
+<div class="math">
+<p><img src="_images/math/9765dce86e0390cccf8b851144c253c96cbc77af.svg" alt="\frac{T_1}{T_2} = \frac{V_2}{V_1}^{\gamma - 1} = {\left( \frac{V_2}{V_3} \right) }^{\gamma - 1} {\left( \frac{V_3}{V_1} \right) }^{\gamma - 1} = {\left( \frac{V_2}{V_3} \right) }^{\gamma - 1} \frac{T_4}{T_3}"/></p>
+</div><p>Then:</p>
+<div class="math">
+<p><img src="_images/math/a66ef5c800d4e796914ab015c4b35193a29681ee.svg" alt="\frac{T_4}{T_1} = {\left( \frac{V_3}{V_2} \right) }^{\gamma - 1} \frac{T_3}{T_2}"/></p>
+</div><p>Because transformation 2-3 is isobare, we have <img class="math" src="_images/math/80ed5653882e63e6b7080ca5b491ea3b0a582d31.svg" alt="\frac{T_3}{T_2}=\frac{V_3}{V_2}=r_c" style="vertical-align: -7px"/></p>
+<p>Finally, the thermal efficiency becomes:</p>
+<div class="math" id="equation-theffdieselig">
+<p><span class="eqno">(4.5)<a class="headerlink" href="#equation-theffdieselig" title="Permalink to this equation">¶</a></span><img src="_images/math/9ee0d720082e7858fef82c20c34bfff0a208d99a.svg" alt="\eta_{Diesel} = 1 - r^{1-\gamma}\left[ \frac{1}{\gamma} \frac{r_c^{\gamma} - 1}{r_c - 1}   \right]"/></p>
+</div><p>The term in [] is greater than 1, such that we determine easily that for the same <em>compression ratio</em>, we have:</p>
+<div class="math">
+<p><img src="_images/math/57e09e88fd1376fa295e254b16a2a445be84192c.svg" alt="\eta_{BdR} \geq \eta_{Diesel}"/></p>
+</div><p>The equality occurs for <img class="math" src="_images/math/e67af93dae21f9be1fcc8c0e9237eb40d8e6cb3f.svg" alt="r_c = 1" style="vertical-align: -2px"/></p>
+<div class="figure align-center" id="id6">
+<span id="fig-chap1-etadiesel"></span><a class="reference internal image-reference" href="_images/etaDiesel.png"><img alt="_images/etaDiesel.png" src="_images/etaDiesel.png" style="width: 485.25px; height: 337.25px;" /></a>
+<p class="caption"><span class="caption-number">Figure 4.6:  </span><span class="caption-text"><em>Diesel</em> cycle thermal efficiency as a function of <em>compression rate</em> in Diesel engines (for different <img class="math" src="_images/math/6d2dd5f329edbd0e6add8a19cbc45c16dd79405c.svg" alt="r_c=V_3/V_2" style="vertical-align: -4px"/>).</span><a class="headerlink" href="#id6" title="Permalink to this image">¶</a></p>
+</div>
+<div class="admonition-remark admonition">
+<p class="admonition-title">Remark</p>
+<p>For a same <em>compression ratio</em>, the thermal efficiency of Diesel engines is lower than for Gasoline engines. But, Gasoline engines accept a higher <em>compression ratio</em>.
+As a result, Diesel engines real thermal efficiency may reach <img class="math" src="_images/math/82d615b5ceeb54b7514fe1ccf9108796d70db335.svg" alt="0.4" style="vertical-align: 0px"/>.</p>
+</div>
+</div>
+</div>
+<div class="section" id="turbocharger">
+<h2><span class="section-number">4.1.3. </span>Turbocharger<a class="headerlink" href="#turbocharger" title="Permalink to this headline">¶</a></h2>
+<p>A way to improve the power delivered by a RICE consists in increasing the quantity of air entering the combustion chamber during the <em>intake stroke</em> of the piston. This can be done by adding a <em>compressor</em> between atmosphere and the RICE.
+This compressor can be powered by the engine <em>crankshaft</em> directly. In that case we talk about <strong>supercharger</strong>. When the <em>compressor</em> is coupled to a <em>turbine</em> driven by exhaust gases, we talk about <strong>turbocharger</strong>.</p>
+<div class="figure align-center" id="id7">
+<span id="fig-chap1-turbocharger"></span><a class="reference internal image-reference" href="_images/turbocharger.png"><img alt="_images/turbocharger.png" src="_images/turbocharger.png" style="width: 752.0px; height: 292.0px;" /></a>
+<p class="caption"><span class="caption-number">Figure 4.7:  </span><span class="caption-text"><em>Turbocharger</em> combining a compressor powered by a turbine. The turbine is driven by exhaust combustion gases.</span><a class="headerlink" href="#id7" title="Permalink to this image">¶</a></p>
+</div>
+<p>The cycle of the heat engine is modified. For example, we present the turbocharged Diesel cycle.</p>
+<div class="figure align-center" id="id8">
+<span id="fig-chap1-turbochargeddieselcycle"></span><a class="reference internal image-reference" href="_images/turbochargedDieselCycle.png"><img alt="_images/turbochargedDieselCycle.png" src="_images/turbochargedDieselCycle.png" style="width: 295.25px; height: 273.75px;" /></a>
+<p class="caption"><span class="caption-number">Figure 4.8:  </span><span class="caption-text">Idealized Diesel cycle using a turbocharger.</span><a class="headerlink" href="#id8" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="chap4_3GasTurbines.html" class="btn btn-neutral float-right" title="4.2. Gas Turbines" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="chap4_ThermalEngines_Chap.html" class="btn btn-neutral float-left" title="4. Heat engines" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2019, Fabien Petitpas, AMU, Polytech Marseille ME
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

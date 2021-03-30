@@ -1,0 +1,62 @@
+*************************************
+Gas heat pump and refrigeration cycle
+*************************************
+
+*Gas heat pumps* and *gas regrigerators* are basically following the reverse **Brayton cycle** (or Joule cycle).
+
+.. _Fig:chap5:BraytonReverse:
+
+.. figure:: ./_static/fig/chap5/BraytonReverse.png
+  :scale: 30%
+  :align: center
+
+  Reverse *Brayton* cycle for gas refrigeration.
+
+As for any heat pump or refrigerator, (:eq:`COPr`, and :eq:`COPhp`) the *coefficients of performance* of *Reverse Brayton cycle* are:
+
+.. math::
+
+  COP_{R,Joule} = \frac{1}{\frac{|q_{23}|}{|q_{41}|}-1} \qquad \text{and} \qquad COP_{HP,Joule} = \frac{1}{1-\frac{|q_{41}|}{|q_{23}|}}
+
+Considering the working fluid as an **ideal gas**, and because no machine is working in transformations 2-3 and 4-1, application of the balance energy equation reads:
+
+.. math::
+
+  |q_{23}| = \dot{m} c_p (T_2-T_3) \qquad \text{ and } \qquad |q_{41}| = \dot{m} c_p (T_1-T_4) 
+
+such that the COPs of *Reverse Brayton cycle* become:
+
+.. math::
+
+  COP_{R,Joule} = \frac{1}{\frac{T_2-T_3}{T_1-T_4}-1} \qquad \text{and} \qquad COP_{HP,Joule} = \frac{1}{1-\frac{T_1-T_4}{T_2-T_3}}
+
+As for gas turbine, it is possible to determine gas temperatures after the compressor and the turbine thanks to isentropic relations for ideal gases:
+
+.. math::
+
+  \frac{T_1}{T_2} = \frac{p_2}{p_1}^{\frac{1-\gamma}{\gamma}} = \frac{p_3}{p_4}^{\frac{1 - \gamma}{\gamma}} = \frac{T_4}{T_3}
+
+we finally obtain:
+
+.. math::
+  :label: COPEffBraytonIGRev
+
+  COP_{R,Joule} = \frac{1}{r_p^{\frac{\gamma-1}{\gamma}}-1} \qquad \text{and} \qquad COP_{HP,Joule} = \frac{1}{1-r_p^{\frac{1-\gamma}{\gamma}}}
+
+where :math:`r_p=\frac{p_2}{p_1}` is the **pressure ratio**.
+
+.. _Fig:chap5:COPJoule:
+
+.. figure:: ./_static/fig/chap5/COPJoule.png
+  :scale: 50%
+  :align: center
+
+  COP for *reverse Brayton cycle* (Joule cycle) for heat pump or refrigerators as a function of the pressure ratio for IG with :math:`\gamma=1.4`.
+
+:numref:`Fig:chap5:COPJoule` reveals that the performance of such machine is good for low pressure ratio.
+
+.. admonition:: Remarks
+
+  * As for gas turbine, it is possible to easily account for the adiabatic compressor and adiabatic turbine irreversibilities by using the isentropic efficiency of both components (see :numref:`Sec:chap4:RealGasTurbineCycle`).
+  * It is also possible to improve the cycle using **regeneration** (see :numref:`Sec:chap4:regeneration`)
+  * Heat pumps and Refrigerators using the *reverse Brayton cycle* have low performances and are used only for specific applications.

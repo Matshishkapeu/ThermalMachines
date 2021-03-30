@@ -1,0 +1,221 @@
+.. _Sec:chap1:BalanceEquations:
+
+**********************************
+Balance equations for open systems
+**********************************
+
+This section is a recall of results obtained in thermodynamics and fluid mechanics. We are going to obtain balance equations of mass, energy and entropy for an open system.
+
+Prerequisities
+==============
+
+General balance equation
+------------------------
+Let us consider a material volume (closed system) :math:`\mathcal{V}` as defined in :numref:`Fig:chap1:volumeControl`.
+
+.. _Fig:chap1:volumeControl:
+
+.. figure:: ./_static/fig/chap1/volumeControl.png
+  :scale: 30%
+  :align: center
+
+  A material volume representing a closed system.
+
+For any extensive variable :math:`\phi` associated to the intensive variable :math:`\eta` in this volume, we have:
+
+.. math::
+  :label: defExt
+
+  \phi=\int_{\mathcal{V}}\eta dV
+
+And the general balance equation of :math:`\phi` in the material volume :math:`\mathcal{V}` is:
+
+.. math::
+  :label: genBalance
+
+  \frac{d\phi}{dt} = \dot{\phi_E} + \dot{\phi_C}
+
+where:
+
+  * :math:`\dot{\phi_E}` represents the sum of all quantities of :math:`\phi` exchanged by time unit :math:`dt` between the control volume and exterior **but not linked with flow**.
+  * :math:`\dot{\phi_C}` represents the creation of quantity :math:`\phi` by time unit :math:`dt` in the control volume.
+
+
+Introducing equation :eq:`defExt` in :eq:`genBalance`:
+
+.. math::
+  :label: genBalance2
+
+  \frac{d}{dt} \int_{\mathcal{V}}\eta dV = \dot{\phi_E} + \dot{\phi_C}
+
+Thanks to the transport theorem, equation :eq:`genBalance2` becomes:
+
+.. math::
+  :label: intGenBalance
+
+  \int_{\mathcal{V}} \frac{\partial \eta}{\partial t} dV + \int_{\mathcal{C}} \eta \vec{u}\cdot\vec{n} dC = \dot{\phi_E} + \dot{\phi_C}
+
+where:
+
+  * :math:`\mathcal{C}` represent the contour surrounding the control volume :math:`\mathcal{V}`.
+  * :math:`\vec{u}` is the local fluid velocity.
+  * :math:`\vec{n}` is the local normal (directed to the exterior).
+
+For a machine with a fix control volume :math:`V_{machine}`, thanks to the transport theorem we also may write:
+
+.. math::
+  :label: fixControlVolume
+
+  \frac{d}{dt} \int_{V_{machine}} \eta dV = \int_{V_{machine}} \frac{\partial \eta}{\partial t} dV
+
+If we consider the machine volume exactly fits the material volume at instant :math:`t`, we can write:
+
+.. math::
+
+  \int_{V_{machine}} \frac{\partial \eta}{\partial t} dV = \int_{\mathcal{V}} \frac{\partial \eta}{\partial t} dV \qquad \text{and} \qquad \int_{C_{machine}} \eta \vec{u}\cdot\vec{n} dC = \int_{\mathcal{C}} \eta \vec{u}\cdot\vec{n} dC
+
+.. important::
+
+  And thanks to :eq:`intGenBalance`, we finally obtain the general balance equation for a fix control volume:
+
+  .. math::
+    :label: intGenBalanceControlVolume
+
+    \int_{V_{machine}} \frac{\partial \eta}{\partial t} dV + \int_{C_{machine}} \eta \vec{u}\cdot\vec{n} dC = \dot{\phi_E} + \dot{\phi_C}
+
+Steady flow
+-----------
+In practical engineering problems, when studying thermodynamic cycles of thermal machines, the flow is steady. In that case equation :eq:`intGenBalance` becomes:
+
+.. math::
+  :label: intGenBalanceSteady
+
+  \int_{C_{machine}} \eta \vec{u}\cdot\vec{n} dC = \dot{\phi_E} + \dot{\phi_C}
+
+One dimensional hypothesis in fluid sections of :math:`\mathcal{C}`
+-------------------------------------------------------------------
+It is also common in thermal machines study to consider that flow variables are constant in inflow and outflow sections of the control volume.
+
+.. _Fig:chap1:volumeControl2:
+
+.. figure:: ./_static/fig/chap1/volumeControl2.png
+  :scale: 30%
+  :align: center
+
+  Component of a thermal machine with two fluid sections.
+
+Thus, for a steady flow assumption with one dimensional hypothesis in fluid sections, we simply obtain:
+
+.. math::
+  :label: intGenBalanceSteady1D
+
+  \sum_{k=1}^n \eta_k \vec{u}_k\cdot\vec{n}_k C_{k} = \dot{\phi_E} + \dot{\phi_C}
+
+Where the contour :math:`C_{machine}` has been splited in :math:`n` fluid contours of section :math:`\mathcal{C}_{k}`.
+
+We then apply this balance equation to mass, energy and entropy extensive variables.
+
+Mass
+====
+Applying equation :eq:`intGenBalanceSteady1D` to mass conservation is very simple as we use:
+
+  * :math:`\phi = M`: the mass in the control volume,
+  * :math:`\eta = \rho`: the specific mass,
+  * :math:`\dot{\phi_E} = 0`: the mass being only exchanged thanks to the flow,
+  * :math:`\dot{\phi_C} = 0`: there is no chemical, phase change or nuclear reactions in the control volume.
+
+.. important::
+
+  The **mass balance** for an open system simply reads:
+
+  .. math::
+    :label: massEquation
+
+    \sum_{k} \dot{m_k}  = 0
+
+  Where :math:`\dot{m_k} = \rho_k \vec{u}\cdot\vec{n} C_{k}` is the mass flow rate throught :math:`C_{k}`.
+
+Momentum
+========
+Momentum balance can be usefull to determine forces acting on solid walls into systems. This is not the aim of present course, and the interested student is encouraged to go back in his fluid mechanics course to catch details on that point.
+
+Energy
+======
+We apply equation :eq:`intGenBalanceSteady1D` to energy conservation:
+
+  * :math:`\phi = E`: the total energy in the control volume,
+  * :math:`\eta = \rho e_t`: the volumic total energy,
+  * :math:`\dot{\phi_E}`: the sum of all exchanged energies per time unit
+  * :math:`\dot{\phi_C} = 0`: there is no energy creation in the control volume.
+
+The specific total energy :math:`e_t` in the volume control contains:
+
+  * the specific internal energy :math:`\epsilon`,
+  * the specific kinetic energy :math:`1/2 u^2`,
+  * the potential specific energy :math:`e_p`,
+
+The term :math:`\dot{\phi_E}` contains different contributions, we will retain:
+
+  * the rate of pressure forces work :math:`\dot{W_p}`
+  * the heat flux :math:`\dot{Q}`
+  * the rate of *technical work* echanged with a machine (pumps, turbines, etc.)
+
+such that we obtain:
+
+.. math::
+  :label: energyEquation
+
+  \sum_{k}  \dot{m}_k e_{t,k} = \dot{W_p} + \dot{Q} + \dot{W}_{t}
+
+Expression of rate of pressure forces work
+------------------------------------------
+In the control volume, pressure forces only acts on fluid contours such that we can write:
+
+.. math::
+  :label: ratePressure
+
+  \dot{W_p} = \frac{1}{dt}\sum_{k} \vec{F}_{p,k}\cdot \vec{dl}_k
+
+With the pressure force :math:`\vec{F}_{p,k} = -p_k \mathcal{C}_{k} \vec{n_k}` and the elementary displacement :math:`\vec{dl}_k = \vec{u}_k dt`, we obtain:
+
+.. math::
+  :label: ratePressure2
+
+  \dot{W_p} = -\sum_{k} p_k C_{k} \vec{n_k}\cdot \vec{u}_k
+
+Thanks to this expression, equation :eq:`energyEquation` becomes:
+
+.. math::
+  :label: energyEquation2
+
+  \sum_{k}  \dot{m}_k (e_{t,k}+\frac{p_k}{\rho_k}) = \dot{Q} + \dot{W}_{t}
+
+.. important::
+
+  We define :math:`h_t = e_{t,k}+\frac{p_k}{\rho_k}` the **total specific enthalpy** (or the **stagnation enthalpy**). Thus we have the final usefull form of energy balance for thermodynamic machines that traduces the **first principle of thermodynamics for an open system**:
+
+  .. math::
+    :label: energyEquation3
+
+    \sum_{k}  \dot{m}_k h_{t,k} = \dot{Q} + \dot{W}_{t}
+
+  * :math:`\dot{Q}` represents the heat exchanges between the system and its surrounding. 
+  * :math:`\dot{W}_{t}` is called *technical work* and is exchanged between the system and a machine.
+
+Entropy
+=======
+We apply equation :eq:`intGenBalanceSteady1D` to entropy extensive variable:
+
+  * :math:`\phi = S`: the entropy in the control volume,
+  * :math:`\eta = \rho s`: the volumic entropy,
+  * :math:`\dot{\phi_E} = \sum_i \frac{\dot{Q}_i}{T_i}`: the rate of exchanged entropies.
+  * :math:`\dot{\phi_C} = \dot{S_c}`: the rate of entropy creation thanks to non reversible processes (internal or external).
+
+.. important::
+
+  We thus obtain the **entropy balance equation** for an open system:
+
+  .. math::
+    :label: entropyEquation
+
+    \sum_{k}  \dot{m}_k s_{k} = \sum_i \frac{\dot{Q}_i}{T_i} + \dot{S_c}

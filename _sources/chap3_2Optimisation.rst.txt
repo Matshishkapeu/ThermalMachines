@@ -1,0 +1,117 @@
+.. _Sec:chap3:optimisation:
+
+*************************************
+Optimisation of Compression/Expansion
+*************************************
+
+As presented in :numref:`Sec:chap3:technicalWork`, the technical work can be represented by the aera on the left of the curve corresponding to the reversible transformation in the *Clapeyron* diagramm.
+
+.. _Fig:chap3:optimisationWork:
+
+.. figure:: ./_static/fig/chap3/optimisationWork.png
+  :scale: 30%
+  :align: center
+
+  For a compression, the required technical work is minimum for the isothermal transformation. For an expansion, the provided technical work is maximum for the isothermal transformation.
+
+The lower mechanical work needed for a compressor is the better and the bigger is the mechanical work supplied by a turbine is the better.
+
+.. important::
+
+  As shown on :numref:`Fig:chap3:optimisationWork`, it is clear that:
+
+    * For a compressor, optimisation will be obtain by **cooling**
+    * For a turbine, optimisation will be obtain by **heating**
+
+Compression optimisation
+========================
+The minimum *technical work* for a compressor corresponds to isothermal transformation. There are two techniques to approach isothermal transformation in a compressor:
+
+  * Continuous cooling of the compressor 
+  * Multi-stage compressions with intercooling
+
+Continuous cooling
+------------------
+**Continuous cooling** can be performed with surrounding the compressor with a cooling pipe. It is possible to quantify the cooling interest of a compression by comparison between the technical work needed for an isentropic and those obtained for an isothermal transformation. We define the **theoretical cooling efficiency**:
+
+.. math::
+  :label: coolingEfficiency
+
+  e_{th,cool} = \frac{w_{t}^S}{w_t^T}
+
+Under *ideal gas* assumption, using relations :eq:`techWorkIGIsent` and :eq:`workIGIsothermal`, it becomes:
+
+.. math::
+  :label: coolingEfficiencyIG
+
+  e_{th,cool} = \frac{\gamma}{\gamma-1} \frac{r_p^{\frac{\gamma-1}{\gamma}}-1}{ln (r_p)}
+
+Where :math:`r_p=p_2/p_1` represent the compression *pressure ratio*.
+
+.. _Fig:chap3:coolingEfficiency:
+
+.. figure:: ./_static/fig/chap3/coolingEfficiency.png
+  :scale: 30%
+  :align: center
+
+  For a pressure ratio of 14, the mechanical energy earned for an isothermal compression is 50% compared to an isentropic one.
+
+Efficiency of cooling is theroretical since it is difficult to ensure an isothermal compression using continuous cooling and heat transfer through the compressor carter.
+
+Multi-stage cooling
+-------------------
+**Multi-stage cooling** is often used for multi-stage compression. It consists in cooling the fluid using a heat exchanger between two compression stages.
+
+.. _Fig:chap3:twoStagesCompression:
+
+.. figure:: ./_static/fig/chap3/twoStagesCompression.png
+  :scale: 30%
+  :align: center
+
+  Two-stage compression. Transformations in compressors are polytropic (adiabatic or not) and a constant pressure heat exchange occurs between the two stages of compression. The earned work is clearly visible on the *Clapeyron* diagramm.
+
+How to choose the compression ratio of each stage ?
+
+The technical work for the global two-stage compression is:
+
+.. math::
+
+  w_{t} = w_{t}^{C_1} + w_{t}^{C_2}
+
+If the two compression stages perform a polytropic compression, thanks to :eq:`techWorkIGPolyp` we get:
+
+.. math::
+
+  w_{t} = \frac{krT_0}{k-1} \left[ \left( \frac{p_X}{p_0} \right)^{\frac{k-1}{k}} -1  \right] + \frac{krT_0}{k-1} \left[ \left( \frac{p_1}{p_X} \right)^{\frac{k-1}{k}} -1  \right]
+
+Derivation of this expression using :math:`p_X` variable leads to:
+
+.. math::
+
+  \frac{d w_{t}}{d p_X} = \frac{krT_0}{k-1} p_X^{\frac{1}{k-1}} \left[ p_0^{\frac{-k}{k-1}} - p_1^{\frac{k}{k-1}} p_X^{\frac{-2k}{k-1}}  \right]
+
+such that the technical work is minimum for:
+
+.. math::
+
+  p_X = (p_0 p_1)^{1/2} \qquad \text{i.e.} \qquad  \frac{p_X}{p_0} = \frac{p_1}{p_X}
+
+This result can be extand to multi-stages compressions.
+
+.. important::
+
+  The pressure ratio in each stage of a **multi-stage compression with intercooling** should be equal in order to minimize the technical work.
+
+.. _Fig:chap3:multiStagesCompression:
+
+.. figure:: ./_static/fig/chap3/multiStagesCompression.png
+  :scale: 30%
+  :align: center
+
+  Multi-stage compression with intercooling.
+
+Turbine optimisation
+====================
+The maximum *technical work* for a turbine correspond to isothermal transformation. This is generally obtain by multi-stage expansions with **reheat**.
+
+Conclusions are similar than those obtain with multi-stage compression with intercooling and are not developped here.

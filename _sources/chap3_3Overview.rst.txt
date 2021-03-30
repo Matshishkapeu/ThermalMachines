@@ -1,0 +1,74 @@
+****************************
+Overview of comp/exp systems
+****************************
+
+In thermal machines, we are going to find different componants that permits compression or expansion of gases (or vapors). We mainly find:
+
+	* Volumetric compressors (reciprocating compressors or rotative compressors) taht can be found in many industrial applications (pippelines, refrigerators, etc.).
+	* Dynamic compressors found in gas turbines or turbojets.
+	* Turbines.
+
+Volumic compressors
+===================
+Volumic compressors increase pressure of a closed system by changing its volume. Two family of volumic compressors exist: those using a piston and those that rotate around an axis.
+
+**Reciprocating compressor** are used in refrigerators.
+
+.. _Fig:chap3:reciprocatingComp:
+
+.. figure:: ./_static/fig/chap3/reciprocatingComp.png
+  :scale: 30%
+  :align: center
+
+  A simple action reciprocating compressor.
+
+**Rotative compressor** can be found in air compressors.
+
+.. _Fig:chap3:rotatingComp:
+
+.. figure:: ./_static/fig/chap3/rotatingComp.png
+  :scale: 20%
+  :align: center
+
+  A rotative compressor.
+
+Dynamic compressors
+===================
+
+Dynamic compression machines contains a rotary mechanical device (rotor) rotating around an axis. They are using a mechanical energy (delivered on the axis) that is convert in energy increasing the fluid pressure (temperature).
+The fluid flow is continuous in these compressors. The pressure increase is limited such that these dynamic compressors are often constituted by **multiple stages**.
+
+Dyanmics compressors can be simple **ventilators** used for ventilation or in air conditionning systems or real compressors used to increase fluid pressure.
+
+**Axial compressors** are mainly find in gas turbines (turbojets, power plants, etc.).
+
+.. _Fig:chap3:axialComp:
+
+.. figure:: ./_static/fig/chap3/axialComp.png
+  :scale: 30%
+  :align: center
+
+  Axial compressor.
+
+**Centrifugal compressors** are generally find in turbocharger for car engines.
+
+.. _Fig:chap3:centrifugalComp:
+
+.. figure:: ./_static/fig/chap3/centrifugalComp.png
+  :scale: 50%
+  :align: center
+
+  Centrifugal compressor.
+
+Turbines
+========
+
+Turbines are mainly axial and multi-stage.
+
+.. _Fig:chap3:turbine:
+
+.. figure:: ./_static/fig/chap3/turbine.png
+  :scale: 10%
+  :align: center
+
+  Turbine.

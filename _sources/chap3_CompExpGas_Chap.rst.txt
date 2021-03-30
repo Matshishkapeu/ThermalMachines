@@ -1,0 +1,28 @@
+*****************************************
+Compression / Expansion of Gas and vapors
+*****************************************
+
+In applications of thermodynamics to thermal machines, compressions and expansions of gases is of fundamental importance. These transformations occur in compressor, turbines, internal combustion engines, etc.
+Transformations in such machines are *irreversibles*, and the calculs are always performed thanks to associated reversible transformation and corresponding **efficiencies** often obtained thanks to manufacturer's data.
+
+In this section:
+
+  * We make a review on the different kind of compressions and expansions of gases (isothermal, polytropic, isentropic) and their impact on the technical work.
+  * We study the way of optimisation of such transformations.
+  * We present the a brief description of the main elements that can perform compressions or expansions of a compressible fluid:
+
+  	* **Volumetric compressors**: including *reciprocating compressors* (present in refrigerators or heat pumps) and *rotating compressors*.
+  	* **Dynamic compressors**: contains a rotary mechanical device (rotor) that increase fluid pressure continuously. This is the case of *ventillators*, *centrifugal compressors* or *axial compressors*.
+  	* **Turbines**: also contains a rotor that provide a work from decresing the fluid pressure continuously. We talk about *impulse turbine* or *reaction turbine*.
+
+.. toctree::
+  :maxdepth: 1
+  :caption: Contents:
+
+  chap3_1Transformations
+  chap3_2Optimisation
+  chap3_3Overview
+   
+
+
+

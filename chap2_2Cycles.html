@@ -1,0 +1,394 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>2.2. Cycles &mdash; Thermal machines 1.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="3. Compression / Expansion of Gas and vapors" href="chap3_CompExpGas_Chap.html" />
+    <link rel="prev" title="2.1. Energy conversion" href="chap2_1EnergyConversion.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> Thermal machines
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="chap1_balanceEquations_Chap.html">1. Balance equations</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="chap2_thermMachinesBasics_Chap.html">2. Thermal machines: Basics</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="chap2_1EnergyConversion.html">2.1. Energy conversion</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">2.2. Cycles</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#thermal-machines-cycles-and-efficiency-def">2.2.1. Thermal machines cycles and efficiency (def)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#evolutions-during-a-cycle">2.2.1.1. Evolutions during a cycle</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#energy-conversion-efficiency">2.2.1.2. Energy conversion efficiency</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#carnot-cycle">2.2.2. Carnot cycle</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#carnot-heat-engine">2.2.2.1. Carnot heat engine</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#carnot-heat-pump-refrigerators">2.2.2.2. Carnot heat pump/refrigerators</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#other-cycles">2.2.3. Other cycles</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#heat-engine-reversible-cycles">2.2.3.1. Heat engine Reversible cycles</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#heat-engine-irreversible-cycles">2.2.3.2. Heat engine irreversible cycles</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#importance-of-carnot-cycle">2.2.4. Importance of Carnot cycle</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="chap3_CompExpGas_Chap.html">3. Compression / Expansion of Gas and vapors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chap4_ThermalEngines_Chap.html">4. Heat engines</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chap5_ThermalGenerators_Chap.html">5. Heat pumps and refrigerators</a></li>
+<li class="toctree-l1"><a class="reference internal" href="zBibliography.html">6. References</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Thermal machines</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="chap2_thermMachinesBasics_Chap.html"><span class="section-number">2. </span>Thermal machines: Basics</a> &raquo;</li>
+        
+      <li><span class="section-number">2.2. </span>Cycles</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/chap2_2Cycles.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="cycles">
+<h1><span class="section-number">2.2. </span>Cycles<a class="headerlink" href="#cycles" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="thermal-machines-cycles-and-efficiency-def">
+<h2><span class="section-number">2.2.1. </span>Thermal machines cycles and efficiency (def)<a class="headerlink" href="#thermal-machines-cycles-and-efficiency-def" title="Permalink to this headline">¶</a></h2>
+<p>We consider in this section thermal machines working between two thermal reservoirs. In these machines, the <em>working fluid</em> is the thermodynamic system that exchange thermal energies between a hot reservoir (at temperature <img class="math" src="_images/math/f849365e25534a358a3295b0088a4078a8c70c25.svg" alt="T_H" style="vertical-align: -2px"/>) and a cold one (at temperature <img class="math" src="_images/math/225ac4bdc2299592497f0abd8d0f1548301d154a.svg" alt="T_C" style="vertical-align: -2px"/>).
+Following results of <a class="reference internal" href="chap2_1EnergyConversion.html#sec-chap2-energyconversion"><span class="std std-numref">Section 2.1: </span></a>, it can supply mechanical energy (it is thus a <em>heat engine</em>) or absorb mechanical energy (it can be a <em>heat pump</em> or <em>refrigerator</em>).</p>
+<div class="section" id="evolutions-during-a-cycle">
+<h3><span class="section-number">2.2.1.1. </span>Evolutions during a cycle<a class="headerlink" href="#evolutions-during-a-cycle" title="Permalink to this headline">¶</a></h3>
+<p>In a thermal machine, the <em>working fluid</em> is evolving on a thermodynamic cycle. Let us consider a transformation <img class="math" src="_images/math/6fb5559fd5ff1355351e22bd356e23e2ac363086.svg" alt="a" style="vertical-align: 0px"/> from a state 1 to a state 2 as represented on <a class="reference internal" href="#fig-chap2-cycle"><span class="std std-numref">Figure 2.5: </span></a></p>
+<div class="figure align-center" id="id1">
+<span id="fig-chap2-cycle"></span><a class="reference internal image-reference" href="_images/cycle.png"><img alt="_images/cycle.png" src="_images/cycle.png" style="width: 342.0px; height: 387.0px;" /></a>
+<p class="caption"><span class="caption-number">Figure 2.5:  </span><span class="caption-text">Entropic diagram representing thermal energy exchanged during a cycle.</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</div>
+<p>During reversible transformation from 1 to 2, the heat exchanged is positive and corresponds to the hatched area. During this transformation, the fluid is absorbing thermal energy <img class="math" src="_images/math/93296adac39ec25df33611a9d2188c87330e3c80.svg" alt="Q_{1\rightarrow 2}&gt;0" style="vertical-align: -3px"/>.</p>
+<p>For the return from state 2 to 1, the fluid will supply thermal energy <img class="math" src="_images/math/7c0b8cef1a297930ac0c26834f9943ab8144fa90.svg" alt="Q_{2\rightarrow 1}&lt;0" style="vertical-align: -3px"/>. Thus two possibilities occurs:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>The fluid follows transformation <img class="math" src="_images/math/243548a0d481b521cf87016055c58585789b8512.svg" alt="m" style="vertical-align: 0px"/> (in blue): <img class="math" src="_images/math/132cb3c5b27c0deb0bfdc95bb659c50f59461961.svg" alt="|Q_{2\rightarrow 1}|&lt;|Q_{1\rightarrow 2}|" style="vertical-align: -4px"/> such that the thermal energy exchanged during cycle is <em>positive</em>. The application of first principle immplies that the mechanical work will be negative: this is a <strong>heat engine</strong>.</p></li>
+<li><p>The fluid follows transformation <img class="math" src="_images/math/4845ae23cd4142f2a3b155fbda6b97066c9cf0b5.svg" alt="h" style="vertical-align: 0px"/> (in red): <img class="math" src="_images/math/645d307882e87a0ae2f2c634216226a9f6d1c1a4.svg" alt="|Q_{2\rightarrow 1}|&gt;|Q_{1\rightarrow 2}|" style="vertical-align: -4px"/> such that the thermal energy exchanged during cycle is <em>negative</em>. The application of first principle immplies that the mechanical work will be positive: this can be a <strong>heat pump</strong> or a <strong>refirgerators</strong>.</p></li>
+</ul>
+</div></blockquote>
+<p>From this observation, one can observe several things:</p>
+<div class="admonition-remarks admonition">
+<p class="admonition-title">Remarks</p>
+<ul class="simple">
+<li><p>When a cycle is followed clockwise in the entropic diagram (T,S), the cycle is describing a <em>heat engine</em></p></li>
+<li><p>When a cycle is followed reversed clockwise in the entropic diagram (T,S), the cycle is describing a <em>heat pump</em> or a <em>refrigerator</em></p></li>
+<li><p>Any cycle can be used as a basis to develop a thermal machine.</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="energy-conversion-efficiency">
+<h3><span class="section-number">2.2.1.2. </span>Energy conversion efficiency<a class="headerlink" href="#energy-conversion-efficiency" title="Permalink to this headline">¶</a></h3>
+<p>The economice notion of efficiency is generally defined by the ratio bewteen the <em>usefull energy provided</em> by the machine and its <em>energy absorption</em>, or in other words the ratio between benefits of a thermodynamic system and costs:</p>
+<div class="math">
+<p><img src="_images/math/304b08a931839bca4438963b494f6c4585e7aee7.svg" alt="\eta \equiv \frac{\text{benefits}}{\text{costs}}"/></p>
+</div><div class="section" id="heat-engine-and-thermal-efficiency">
+<h4><span class="section-number">2.2.1.2.1. </span>Heat engine and thermal efficiency<a class="headerlink" href="#heat-engine-and-thermal-efficiency" title="Permalink to this headline">¶</a></h4>
+<p>For a heat engine, a mechanical energy <img class="math" src="_images/math/432a2e584669c91be350ae5f98e327628e5c59ac.svg" alt="-W" style="vertical-align: -1px"/> is produced (benefit) from a thermal energy absorption from <em>hot source</em> <img class="math" src="_images/math/d2dc0776217f2cd258ab5cf59b627cd8e0fe04fa.svg" alt="Q_H" style="vertical-align: -3px"/> (cost). This defines the <strong>thermal efficiency</strong> of the <em>heat engine</em>:</p>
+<div class="math">
+<p><img src="_images/math/eab82c7ac89b5dd7a1f84c749ae0dbb004d7fb44.svg" alt="\eta_{th} = \frac{-W}{Q_H}"/></p>
+</div><p>Thanks to the first principle, it can also be written as:</p>
+<div class="math" id="equation-thefficiency">
+<p><span class="eqno">(2.9)<a class="headerlink" href="#equation-thefficiency" title="Permalink to this equation">¶</a></span><img src="_images/math/65e9be058e20f6b8532b71257e3ecd0d2e36a89c.svg" alt="\eta_{th} = \frac{Q_H + Q_C}{Q_H} = 1 + \frac{Q_C}{Q_H} = 1 - \frac{|Q_C|}{|Q_H|}"/></p>
+</div><div class="admonition-remark admonition">
+<p class="admonition-title">Remark</p>
+<ul class="simple">
+<li><p>For internal combustion engines, the thermal efficiency is about 25% for gasoline engines and 40% for diesel engines. For gas turbine, the thermal efficiency can reach 60%.</p></li>
+<li><p>A great part of chemical energy (from fuel combustion) is then dissipated in heat and released in environnement (to the <em>cold sink</em>).</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="heat-generators-and-coefficient-of-performance-cop">
+<h4><span class="section-number">2.2.1.2.2. </span>Heat generators and coefficient of performance (COP)<a class="headerlink" href="#heat-generators-and-coefficient-of-performance-cop" title="Permalink to this headline">¶</a></h4>
+<p>For a <em>heat pump</em> or <em>refrigerators</em>, a mechanical energy <img class="math" src="_images/math/c8e845d94aeb9162f1d1112f9e176900d116f75c.svg" alt="W" style="vertical-align: 0px"/> is consumed (cost) and the benefits depend on the usefull thermal energy exchanged. Because these ratio are generally greater than 1, we talk about <strong>coefficient of performance</strong>:</p>
+<p>For a <em>heat pump</em> :</p>
+<div class="math" id="equation-cophp">
+<p><span class="eqno">(2.10)<a class="headerlink" href="#equation-cophp" title="Permalink to this equation">¶</a></span><img src="_images/math/95496c78c7746f767a61db8f1772333cc2b36507.svg" alt="COP_{HP} = \frac{-Q_H}{W} = \frac{Q_H}{Q_H+Q_C} = \frac{1}{1 + \frac{Q_C}{Q_H}} = \frac{1}{1 - \frac{|Q_C|}{|Q_H|}}"/></p>
+</div><p>For a <em>refrigerator</em> :</p>
+<div class="math" id="equation-copr">
+<p><span class="eqno">(2.11)<a class="headerlink" href="#equation-copr" title="Permalink to this equation">¶</a></span><img src="_images/math/b6b7cc396d57e9070f7a9c213e0a9c93d53bf4b5.svg" alt="COP_{R} = \frac{Q_C}{W} = \frac{Q_C}{-Q_H-Q_C} = \frac{1}{-\frac{Q_H}{Q_C}-1} = \frac{1}{\frac{|Q_H|}{|Q_C|}-1}"/></p>
+</div></div>
+</div>
+</div>
+<div class="section" id="carnot-cycle">
+<h2><span class="section-number">2.2.2. </span>Carnot cycle<a class="headerlink" href="#carnot-cycle" title="Permalink to this headline">¶</a></h2>
+<p>If a thermal machine is working between two TER in a reversible maneer, then it must exchange with both TER following isothermal transformation. These two isothermal transformation can thus be linked using:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>2 isentropes: this is the <strong>Carnot cycle</strong></p></li>
+<li><p>2 isochores: this is the <strong>Stirling cycle</strong></p></li>
+<li><p>2 isobares: this is the <strong>Ericsson cycle</strong></p></li>
+</ul>
+</div></blockquote>
+<p>These three cycles are ideal cycles for a thermal machine working between two TER and serve as reference cycle providing the maximum thermal efficiencies/COP.</p>
+<div class="section" id="carnot-heat-engine">
+<span id="sec-chap2-carnot"></span><h3><span class="section-number">2.2.2.1. </span>Carnot heat engine<a class="headerlink" href="#carnot-heat-engine" title="Permalink to this headline">¶</a></h3>
+<div class="figure align-center" id="id2">
+<span id="fig-chap2-carnotcycle"></span><a class="reference internal image-reference" href="_images/CarnotCycle.png"><img alt="_images/CarnotCycle.png" src="_images/CarnotCycle.png" style="width: 587.1px; height: 315.3px;" /></a>
+<p class="caption"><span class="caption-number">Figure 2.6:  </span><span class="caption-text">Carnot cycle (for a heat engine).</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+</div>
+<p>It is easy to remark that in the reversible isothermes, we have <img class="math" src="_images/math/8a1c5fa5fcd6d39f6d71f76cfff248b7ea47d4a0.svg" alt="Q_C = T_C (S_1-S_2)" style="vertical-align: -4px"/> and <img class="math" src="_images/math/8af8464600e84c6837cb8b665350d4139e8926d3.svg" alt="Q_H = T_H (S_2-S_1)" style="vertical-align: -4px"/>, such that thanks to equation <a class="reference internal" href="#equation-thefficiency">Eq.2.9</a>, it is easy to show that:</p>
+<div class="math" id="equation-carnottheff">
+<p><span class="eqno">(2.12)<a class="headerlink" href="#equation-carnottheff" title="Permalink to this equation">¶</a></span><img src="_images/math/8e6add499d30b19dce623dc2576fa8751b9e8740.svg" alt="\eta_{th,C} = 1 - \frac{T_C}{T_H}"/></p>
+</div><p>As <img class="math" src="_images/math/5ac8d3eab5a1415b3fee6cbbf66559a378ed8246.svg" alt="T_H&gt;T_C" style="vertical-align: -2px"/>, the carnot thermal efficiency is always lower than 1.</p>
+<div class="admonition-remark admonition">
+<p class="admonition-title">Remark</p>
+<ul class="simple">
+<li><p>The Carnot thermal efficiency gives the maximum efficiency that can be reached by a heat engine between two TER.</p></li>
+<li><p>For example, the Carnot thermal efficiency of a thermal power plant beteen <img class="math" src="_images/math/fb89cfad2cf8dd74bf6867535eb01b3783576725.svg" alt="T_H = 1000 K" style="vertical-align: -2px"/> (combustion temperature) and <img class="math" src="_images/math/83a2ec8513ddcbfc3f5028d3777870a3da45f5ba.svg" alt="T_C = 300 K" style="vertical-align: -2px"/> (ambiant) is about 70%. Real thermal efficiency of such power plant reaches 40% because of non reversibility.</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="carnot-heat-pump-refrigerators">
+<span id="sec-chap2-carnotheatgen"></span><h3><span class="section-number">2.2.2.2. </span>Carnot heat pump/refrigerators<a class="headerlink" href="#carnot-heat-pump-refrigerators" title="Permalink to this headline">¶</a></h3>
+<div class="figure align-center" id="id3">
+<span id="fig-chap2-carnotcyclegen"></span><a class="reference internal image-reference" href="_images/CarnotCycleGen.png"><img alt="_images/CarnotCycleGen.png" src="_images/CarnotCycleGen.png" style="width: 595.5px; height: 318.3px;" /></a>
+<p class="caption"><span class="caption-number">Figure 2.7:  </span><span class="caption-text">Carnot cycle (for a heat generator: heat pump or refrigerator).</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
+</div>
+<p>This times, in the reversible isothermes, we have <img class="math" src="_images/math/b0196ba731607179242d25aed6204fbfc56451b0.svg" alt="Q_C = T_C (S_2-S_1)" style="vertical-align: -4px"/> and <img class="math" src="_images/math/4c8ab249bf77f6038eaf5398a74880925819f441.svg" alt="Q_H = T_H (S_1-S_2)" style="vertical-align: -4px"/>.</p>
+<p>If this is a heat pump, the coefficient of performance <a class="reference internal" href="#equation-cophp">Eq.2.10</a> becomes:</p>
+<div class="math" id="equation-carnotcophp">
+<p><span class="eqno">(2.13)<a class="headerlink" href="#equation-carnotcophp" title="Permalink to this equation">¶</a></span><img src="_images/math/33cc06ec6e4af01d522b95783f72762a4159a59c.svg" alt="COP_{HP,C} = \frac{1}{1 - \frac{T_C}{T_H}} &gt; 1"/></p>
+</div><p>If this is a refrigerator, the coefficient of performance <a class="reference internal" href="#equation-copr">Eq.2.11</a> becomes:</p>
+<div class="math" id="equation-carnotcopr">
+<p><span class="eqno">(2.14)<a class="headerlink" href="#equation-carnotcopr" title="Permalink to this equation">¶</a></span><img src="_images/math/93b06e7d1a235c1391e2c53645abe529906a8e6d.svg" alt="COP_{R,C} = \frac{1}{\frac{T_H}{T_C}-1}"/></p>
+</div><p>If the <img class="math" src="_images/math/080ada6ddf22b9589ad685f4f3eea4a3eefe6107.svg" alt="COP_{HP,C}" style="vertical-align: -5px"/> of a heat pump is greater than 1, we cannot conclude for a refrigerator.</p>
+</div>
+</div>
+<div class="section" id="other-cycles">
+<h2><span class="section-number">2.2.3. </span>Other cycles<a class="headerlink" href="#other-cycles" title="Permalink to this headline">¶</a></h2>
+<p>It is shown that the thermal efficiency of a Carnot’s cycle is the better thermal efficiency a heat engine can reach between two TER. It is let to the reader to apply the same reasonement to a heat pump or refrigerator.</p>
+<div class="section" id="heat-engine-reversible-cycles">
+<h3><span class="section-number">2.2.3.1. </span>Heat engine Reversible cycles<a class="headerlink" href="#heat-engine-reversible-cycles" title="Permalink to this headline">¶</a></h3>
+<p>If we consider any <strong>reversible cycle</strong>, there are two possibilities:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>If the cycle is working between the two TER <img class="math" src="_images/math/225ac4bdc2299592497f0abd8d0f1548301d154a.svg" alt="T_C" style="vertical-align: -2px"/> and <img class="math" src="_images/math/f849365e25534a358a3295b0088a4078a8c70c25.svg" alt="T_H" style="vertical-align: -2px"/>, then it will have the same thermal efficiency as Carnot cycle.</p></li>
+<li><p>Otherwise, it can be decomposed in an infinity of reversible cycles <img class="math" src="_images/math/7d932693f1681ad803973bc12d044ee73ae422cd.svg" alt="i" style="vertical-align: 0px"/> working between two TER whith temperatures <img class="math" src="_images/math/b8036ece0f1f7c1da0a5b735aaddfe4bcc7b6ea4.svg" alt="T_{Ci} &gt; T_C" style="vertical-align: -2px"/> and <img class="math" src="_images/math/bc46884081f9cb148640a961f31503525b39a6c5.svg" alt="T_{Hi} &lt; T_H" style="vertical-align: -2px"/> who have a thermal efficiency lower than Carnot efficiency between <img class="math" src="_images/math/225ac4bdc2299592497f0abd8d0f1548301d154a.svg" alt="T_C" style="vertical-align: -2px"/> and <img class="math" src="_images/math/f849365e25534a358a3295b0088a4078a8c70c25.svg" alt="T_H" style="vertical-align: -2px"/>. As a result, the global efficiency will be lower than Carnot’s efficiency.</p></li>
+</ol>
+</div></blockquote>
+</div>
+<div class="section" id="heat-engine-irreversible-cycles">
+<h3><span class="section-number">2.2.3.2. </span>Heat engine irreversible cycles<a class="headerlink" href="#heat-engine-irreversible-cycles" title="Permalink to this headline">¶</a></h3>
+<p>Thanks to second principle of thermodynamics, a <em>heat engine</em> that exchange between two TER during a cycle will guarantee that (equation <a class="reference internal" href="chap2_1EnergyConversion.html#equation-secondppecycle">Eq.2.4</a>):</p>
+<div class="math">
+<p><img src="_images/math/777cfc665a9e5228d3fa5b27f82dd513b85ba337.svg" alt="\frac{Q_H}{T_H} + \frac{Q_C}{T_C} \le 0 \text{ (0 if reversible cycle)}"/></p>
+</div><p>That can be rewritten as:</p>
+<div class="math">
+<p><img src="_images/math/b2ace0cd3ae8660bd7318b2306fc13549cc1e37b.svg" alt="\frac{|Q_H|}{T_H} - \frac{|Q_C|}{T_C} \le 0"/></p>
+</div><p>Or:</p>
+<div class="math">
+<p><img src="_images/math/9b480d71f1bca769be8477f88d994109870c25d1.svg" alt="-\frac{T_C}{T_H} \ge -\frac{|Q_C|}{|Q_H|}"/></p>
+</div><p>And finally, thanks to relation <a class="reference internal" href="#equation-thefficiency">Eq.2.9</a>, the thermal efficiency of a heat pump reads:</p>
+<div class="math">
+<p><img src="_images/math/0a14e038970ce61c0b4817b6aedf09d02f15a2af.svg" alt="\eta_{th} = 1 - \frac{|Q_C|}{|Q_H|} \le 1 - \frac{T_C}{T_H}"/></p>
+</div><p>In other words, the thermal efficiency of any irreversible cycle between two TER will be lower than the Carnot’s thermal efficiency.</p>
+</div>
+</div>
+<div class="section" id="importance-of-carnot-cycle">
+<h2><span class="section-number">2.2.4. </span>Importance of Carnot cycle<a class="headerlink" href="#importance-of-carnot-cycle" title="Permalink to this headline">¶</a></h2>
+<div class="admonition caution">
+<p class="admonition-title">Caution</p>
+<p><strong>Carnot cycle</strong>, as any reversible cycle working between two TER (Ericsson, Stirling, etc.) may serve as reference for real cycles describing thermal machines :</p>
+</div>
+<ul class="simple">
+<li><p>In a <em>heat engine</em>, thermal exchanged cannot be represented by isothermal transformations. It is more often isobaric/isochore transformations (or a combination of both).</p></li>
+<li><p>In a <em>heat pump</em> (or <em>refrigerator</em>), it is possible to be close to isothermal transformations during heat exchanges using phase change properties of a liquid-vapor couple (<img class="math" src="_images/math/a4e4f488c2a416507eda9a3feeddeb7417037884.svg" alt="p^{sat}(T)" style="vertical-align: -4px"/>).</p></li>
+<li><p>Whatever the system is, transformations will be non reversibles.</p></li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="chap3_CompExpGas_Chap.html" class="btn btn-neutral float-right" title="3. Compression / Expansion of Gas and vapors" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="chap2_1EnergyConversion.html" class="btn btn-neutral float-left" title="2.1. Energy conversion" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2019, Fabien Petitpas, AMU, Polytech Marseille ME
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

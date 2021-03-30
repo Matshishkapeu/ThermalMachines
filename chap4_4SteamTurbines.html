@@ -1,0 +1,346 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>4.3. Steam turbines &mdash; Thermal machines 1.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="4.4. Combined cycles / Cogeneration" href="chap4_5Cogeneration.html" />
+    <link rel="prev" title="4.2. Gas Turbines" href="chap4_3GasTurbines.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> Thermal machines
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="chap1_balanceEquations_Chap.html">1. Balance equations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chap2_thermMachinesBasics_Chap.html">2. Thermal machines: Basics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chap3_CompExpGas_Chap.html">3. Compression / Expansion of Gas and vapors</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="chap4_ThermalEngines_Chap.html">4. Heat engines</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="chap4_1RICE.html">4.1. Reciprocating internal combustion engine</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chap4_3GasTurbines.html">4.2. Gas Turbines</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">4.3. Steam turbines</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#vapor-carnot-cycle">4.3.1. Vapor Carnot cycle</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#rankine-cycle">4.3.2. Rankine cycle</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#hirn-cycle">4.3.3. Hirn cycle</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#improving-the-hirn-cycle">4.3.3.1. Improving the <em>Hirn</em> cycle</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#hirn-cycle-with-reheat">4.3.4. Hirn cycle with reheat</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#regenerative-cycle">4.3.5. Regenerative cycle</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="chap4_5Cogeneration.html">4.4. Combined cycles / Cogeneration</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="chap5_ThermalGenerators_Chap.html">5. Heat pumps and refrigerators</a></li>
+<li class="toctree-l1"><a class="reference internal" href="zBibliography.html">6. References</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Thermal machines</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="chap4_ThermalEngines_Chap.html"><span class="section-number">4. </span>Heat engines</a> &raquo;</li>
+        
+      <li><span class="section-number">4.3. </span>Steam turbines</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/chap4_4SteamTurbines.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="steam-turbines">
+<h1><span class="section-number">4.3. </span>Steam turbines<a class="headerlink" href="#steam-turbines" title="Permalink to this headline">¶</a></h1>
+<p>In the preceding section, gas turbines have been studied. We have seen that gas turbine cycles are generally linking two isentropes to other transformations (isobare, isochores, etc.). It is indeed diffult to approach isothermal transformations in such cyles (only approach with an important number of compression/expansion stages <a class="reference internal" href="chap4_3GasTurbines.html#sec-chap4-multistagegasturbine"><span class="std std-numref">Section 4.2.5: </span></a>).
+When using phase change it becomes easier as isobare are also isothermes in the equilibirum two-phase flow. Machine using phase change are named <strong>steam turbines</strong> and they are commonly found in power plants (nuclear or not) where they use <em>water</em> as working fluid.</p>
+<div class="figure align-center" id="id1">
+<span id="fig-chap4-steamturbine"></span><a class="reference internal image-reference" href="_images/steamTurbine.png"><img alt="_images/steamTurbine.png" src="_images/steamTurbine.png" style="width: 459.3px; height: 413.7px;" /></a>
+<p class="caption"><span class="caption-number">Figure 4.22:  </span><span class="caption-text">Component of a simple steam turbine.</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</div>
+<div class="section" id="vapor-carnot-cycle">
+<h2><span class="section-number">4.3.1. </span>Vapor Carnot cycle<a class="headerlink" href="#vapor-carnot-cycle" title="Permalink to this headline">¶</a></h2>
+<p>The better thermal efficiency for thermal engine is obtain thanks to the <em>Carnot</em> cycle</p>
+<div class="figure align-center" id="id2">
+<span id="fig-chap4-carnotvapor"></span><a class="reference internal image-reference" href="_images/CarnotVapor.png"><img alt="_images/CarnotVapor.png" src="_images/CarnotVapor.png" style="width: 334.5px; height: 302.09999999999997px;" /></a>
+<p class="caption"><span class="caption-number">Figure 4.23:  </span><span class="caption-text"><em>Carnot</em> cycle using phase change for a steam turbine. The cycle is included under the saturation curve.</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+</div>
+<p>As seen in <a class="reference internal" href="chap2_2Cycles.html#sec-chap2-carnot"><span class="std std-numref">Section 2.2.2.1: </span></a> the maximum efficiency with phase change between <img class="math" src="_images/math/bfdcf597972ae8a62d2786f5351e6d6b7b2b355d.svg" alt="T_{cond}" style="vertical-align: -2px"/> and <img class="math" src="_images/math/32c784ea7fccc97d98b36763d7584c80945d23c7.svg" alt="T_{evap}" style="vertical-align: -5px"/> is:</p>
+<div class="math">
+<p><img src="_images/math/9aa1fa896c2f53be59cb807f2fde7e17b6edb02b.svg" alt="\eta_{th,C} = 1 - \frac{T_{cond}}{T_{evap}}"/></p>
+</div><div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>The <em>Carnot</em> cycle cannot been used without modifications because of technical difficulties:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>It is very difficult to compress at constant entropy a two-phase mixture <img class="math" src="_images/math/e19d870aac5c6e2107a6ed98c1b8d4a3c9cf039d.svg" alt="\rightarrow" style="vertical-align: 0px"/> The fluid is entirely condensed to be compress by a pump: We obtain the <em>Rankine cycle</em> (<a class="reference internal" href="#sec-chap4-rankinecycle"><span class="std std-numref">Section 4.3.2: </span></a>).</p></li>
+<li><p>Presence of liquid droplets in the turbine will erode the blades <img class="math" src="_images/math/e19d870aac5c6e2107a6ed98c1b8d4a3c9cf039d.svg" alt="\rightarrow" style="vertical-align: 0px"/> The fluid is then entirely evaporated and the vapor is overheated: We obtain the <em>Hirn cycle</em> (<a class="reference internal" href="#sec-chap4-hirncycle"><span class="std std-numref">Section 4.3.3: </span></a>).</p></li>
+</ul>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="rankine-cycle">
+<span id="sec-chap4-rankinecycle"></span><h2><span class="section-number">4.3.2. </span>Rankine cycle<a class="headerlink" href="#rankine-cycle" title="Permalink to this headline">¶</a></h2>
+<p>To prevent the presence of liquid-vapor mixture during the compression, the fluid is entirely condensed.</p>
+<div class="figure align-center" id="id3">
+<span id="fig-chap4-rankinecycle"></span><a class="reference internal image-reference" href="_images/rankineCycle.png"><img alt="_images/rankineCycle.png" src="_images/rankineCycle.png" style="width: 342.3px; height: 315.9px;" /></a>
+<p class="caption"><span class="caption-number">Figure 4.24:  </span><span class="caption-text"><em>Rankine</em> cycle for a steam turbine.</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
+</div>
+<p>As for any heat engine (<a class="reference internal" href="chap2_2Cycles.html#equation-thefficiency">Eq.2.9</a>), the thermal efficiency for a steam turbine is:</p>
+<div class="math">
+<p><img src="_images/math/118297f83dd3e7663cf24f5216fb0d77ee94e0b6.svg" alt="\eta_{th} = 1 - \frac{|q_{41}|}{|q_{23}|}"/></p>
+</div><p>Because no machine is working in transformations 2-3 and 4-1, application of the balance energy equation reads:</p>
+<div class="math">
+<p><img src="_images/math/07d5403fa99940a303dc196b130450eef1966fdb.svg" alt="|q_{23}| = \dot{m} (h_3-h_2) \qquad \text{ and } \qquad |q_{41}| = \dot{m} (h_4-h_1)"/></p>
+</div><p>such that the thermal efficiency of steam turbines becomes:</p>
+<div class="math" id="equation-theffsteamturb">
+<p><span class="eqno">(4.15)<a class="headerlink" href="#equation-theffsteamturb" title="Permalink to this equation">¶</a></span><img src="_images/math/d20c90b806cdd88af27929e22bacece9ab34dd8e.svg" alt="\eta_{th} = 1 - \frac{h_4-h_1}{h_3-h_2}"/></p>
+</div><div class="admonition caution">
+<p class="admonition-title">Caution</p>
+<p>The fluid can not be considered as an <strong>ideal gas</strong> since a phase change occurs from liquid to vapor and reversely. In practice calculs are performed thanks to <em>thermodynamics tables</em>.</p>
+</div>
+</div>
+<div class="section" id="hirn-cycle">
+<span id="sec-chap4-hirncycle"></span><h2><span class="section-number">4.3.3. </span>Hirn cycle<a class="headerlink" href="#hirn-cycle" title="Permalink to this headline">¶</a></h2>
+<p>To limit a two important quantity of liquid droplets in the turbine, the vapor is overheated.</p>
+<div class="figure align-center" id="id4">
+<span id="fig-chap4-hirncycle"></span><a class="reference internal image-reference" href="_images/hirnCycle.png"><img alt="_images/hirnCycle.png" src="_images/hirnCycle.png" style="width: 337.5px; height: 303.3px;" /></a>
+<p class="caption"><span class="caption-number">Figure 4.25:  </span><span class="caption-text"><em>Hirn</em> cycle for a steam turbine.</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
+</div>
+<p>Expression of thermal efficiency <a class="reference internal" href="#equation-theffsteamturb">Eq.4.15</a> remains unchanged.</p>
+<div class="section" id="improving-the-hirn-cycle">
+<h3><span class="section-number">4.3.3.1. </span>Improving the <em>Hirn</em> cycle<a class="headerlink" href="#improving-the-hirn-cycle" title="Permalink to this headline">¶</a></h3>
+<p>The net specific technical work during cycle is obtain thanks to the first principle applied to the cycle:</p>
+<div class="math">
+<p><img src="_images/math/9750e3bbfbd161316aa1eb401ca054c371828336.svg" alt="w_{t,net} = -q_{cycle}"/></p>
+</div><p>The net specific work <strong>supplied</strong> by the steam turbine is thus represented by the aera inside the <em>Hirn</em> cycle in the (T,s) plane.</p>
+<div class="figure align-center" id="id5">
+<span id="fig-chap4-hirntechwork"></span><a class="reference internal image-reference" href="_images/hirnTechWork.png"><img alt="_images/hirnTechWork.png" src="_images/hirnTechWork.png" style="width: 393.3px; height: 309.3px;" /></a>
+<p class="caption"><span class="caption-number">Figure 4.26:  </span><span class="caption-text">The specific technical work supplied by the steam turbine corresponds to the aera inluded in the <em>Hirn</em> cycle.</span><a class="headerlink" href="#id5" title="Permalink to this image">¶</a></p>
+</div>
+<p>As seen before, phase change induces the use of <em>Hirn</em> cycle to prevent the presence of two-phase mixtures in the pump and in the turbine. This implies also that some portion of heat echanges in the <em>Hirn</em> cycle are not isothermal transformations (<img class="math" src="_images/math/5c2bbcce88d4dca05527e3aaa5e27f42eccfcdb4.svg" alt="2-2^l" style="vertical-align: -1px"/> and <img class="math" src="_images/math/cc8fb8cc9f28e160b29ee913d59172407c09272f.svg" alt="2^v-3" style="vertical-align: -1px"/>). Consequentely, the thermal efficiency is not as good as it can be.
+Nevertheless, some improvements permit to increase the thermal efficiency of steam turbines and are represented in <a class="reference internal" href="#fig-chap4-hirnimprovements"><span class="std std-numref">Figure 4.27: </span></a>.</p>
+<div class="figure align-center" id="id6">
+<span id="fig-chap4-hirnimprovements"></span><a class="reference internal image-reference" href="_images/hirnImprovements.png"><img alt="_images/hirnImprovements.png" src="_images/hirnImprovements.png" style="width: 669.9px; height: 264.9px;" /></a>
+<p class="caption"><span class="caption-number">Figure 4.27:  </span><span class="caption-text">Possible improvements in the <em>Hirn</em> cycle. Pink hashed zone represents earned specific technical work.</span><a class="headerlink" href="#id6" title="Permalink to this image">¶</a></p>
+</div>
+<p>Analyse of these improvements reveal that:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>Decrease condenser pressure</strong>: By decreasing the pressure in the condenser, the temperature decreases. This improvement is limited by the requested temperature needed for ensuring heat transfers between the working fluid and the cold sink (generally the exterior temperature). When water is used as working fluid, this temperature can not decrease below 25°C, corresponding to a condensation pressure of nearly 3200 Pa. Moreover, with the lower the pressure is, the more the infiltration risks are higher.</p></li>
+<li><p><strong>Increase vapor temperature</strong>: Overheating the vapor in the boiler increases the thermal efficiency and reduces the quantity of liquid droplets in the turbine. Nevertheless, it is limited by mechanical properties of blades in the turbine. The typical maximum value is 600°C.</p></li>
+<li><p><strong>Increase boiler pressure</strong>: This also improves the thermal efficiency of the steam turbine. It has the drawback to increase the amount of liquid droplets in the turbine. Today’s typicall pressure in the boiler reaches 300 Bar in power plants (less for nuclear plants).</p></li>
+</ul>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="hirn-cycle-with-reheat">
+<h2><span class="section-number">4.3.4. </span>Hirn cycle with reheat<a class="headerlink" href="#hirn-cycle-with-reheat" title="Permalink to this headline">¶</a></h2>
+<p>Increasing the average tempearture in the boiler represent an interesting direction to improve the thermal efficiency of steam turbines but is limited by the maximum temperature admitted by the turbine.
+A better way to improve the thermal efficiency is to use a multi-stage expansion with reheat between the turbines.</p>
+<div class="figure align-center" id="id7">
+<span id="fig-chap4-hirnreheat"></span><a class="reference internal image-reference" href="_images/hirnReheat.png"><img alt="_images/hirnReheat.png" src="_images/hirnReheat.png" style="width: 672.3px; height: 275.09999999999997px;" /></a>
+<p class="caption"><span class="caption-number">Figure 4.28:  </span><span class="caption-text"><em>Hirn</em> cycle with reheat between a high and low pressure turbine.</span><a class="headerlink" href="#id7" title="Permalink to this image">¶</a></p>
+</div>
+<p>The thermal efficiency becomes:</p>
+<div class="math">
+<p><img src="_images/math/3ab92fe7f7c00ec735b73b1b7d77111d3c78f9a6.svg" alt="\eta_{th,reheat} = 1 - \frac{|q_{71}|}{|q_{23}|+|q_{56}|} = 1 - \frac{h_7-h_1}{h_3-h_2+h_6-h_5}"/></p>
+</div><p>In the bigger installations, reheat allows an increase in thermal efficiency of 5%.</p>
+</div>
+<div class="section" id="regenerative-cycle">
+<h2><span class="section-number">4.3.5. </span>Regenerative cycle<a class="headerlink" href="#regenerative-cycle" title="Permalink to this headline">¶</a></h2>
+<p>In the <em>Rankine</em> (or <em>Hirn</em>) cycle, thermal efficiency is lower than the <em>Carnot</em>’s one because of the transformation <img class="math" src="_images/math/5c2bbcce88d4dca05527e3aaa5e27f42eccfcdb4.svg" alt="2-2^l" style="vertical-align: -1px"/> which is not at constant temperature. The temperature of the fluid entering the boiler is low. In order to increase the thermal efficiency, it is possible to increase this temperature by a <strong>regenerative</strong> process. This is done by extracting a part of the steam from the turbine after partial expansion. This extracted steam is then used in a <strong>heater</strong> (or <strong>regenerator</strong>) to increase the liquid temperature before entering the boiler.</p>
+<div class="figure align-center" id="id8">
+<span id="fig-chap4-hirnregen"></span><a class="reference internal image-reference" href="_images/hirnRegen.png"><img alt="_images/hirnRegen.png" src="_images/hirnRegen.png" style="width: 613.5px; height: 444.9px;" /></a>
+<p class="caption"><span class="caption-number">Figure 4.29:  </span><span class="caption-text">Regenerative <em>Hirn</em> cycle. A part of fluid (<img class="math" src="_images/math/888e7c1f4a9da1d6d7eb9cbc6b6be789b739c45c.svg" alt="\dot{m}_R" style="vertical-align: -2px"/>) is extracted from the turbine to increase the liquid temperature before entering the boiler.</span><a class="headerlink" href="#id8" title="Permalink to this image">¶</a></p>
+</div>
+<p>The thermal efficiency of the regenerative cycle is:</p>
+<div class="math">
+<p><img src="_images/math/5ea89bc184db7b165fc8c24a55a9d4796f453de8.svg" alt="\eta_{th,regen} = 1 - \frac{|q_{41}|}{|q_{23}|} = 1 - \frac{(\dot{m}-\dot{m}_R)(h_4-h_1)}{\dot{m}(h_3-h_2)}"/></p>
+</div><p>If the number of extraction is increased, the thermal efficiency increases. In the bigger installation, 7 or 8 extractions occur.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="chap4_5Cogeneration.html" class="btn btn-neutral float-right" title="4.4. Combined cycles / Cogeneration" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="chap4_3GasTurbines.html" class="btn btn-neutral float-left" title="4.2. Gas Turbines" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2019, Fabien Petitpas, AMU, Polytech Marseille ME
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

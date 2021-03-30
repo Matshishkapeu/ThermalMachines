@@ -1,0 +1,15 @@
+*****************
+Balance equations
+*****************
+
+In thermodynamics, fundamental principles have been ennounced for a mass M representing a *closed system*. Closed thermodynamics systems are usefull for a given number of applications. This is the case for all piston/cylinder systems that are separating a given mass of fluid and applying to it different transformations (heating, compression, expansion). This is typically the case for *piston compressors* used in refrigerators or for *reciprocal internal combustion engines* of cars.
+Reversely, when a system is crossed continuously by a fluid, principles should be ennounced for an *open system* as it is the case for example in *nozzles*, *gas turbines*, *heat exchangers*, *pumps*, etc. In that case, we should obtain balance equations for a control volume as it was been done in fluid mechanics course.
+
+The aim of this section is to recall principles of thermodynamics for a control volume crossed by a fluid. We talk about **Balance equations**.
+
+.. toctree::
+  :maxdepth: 1
+  :caption: Contents:
+  
+  chap1_2BalanceForControlVolume
+  chap1_3Applications
