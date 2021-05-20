@@ -81,7 +81,7 @@ As for any heat engine (:eq:`thEfficiency`), the thermal efficiency of *Brayton*
 
   \eta_{Brayton} = 1 - \frac{|q_{41}|}{|q_{23}|}
 
-Considering the working fluid as an **ideal gas**, and because no machine is working in transformations 2-3 and 4-1, application of the balance energy equation reads:
+Considering the working fluid as an **ideal gas** at constant :math:`\gamma`, and because no machine is working in transformations 2-3 and 4-1, application of the balance energy equation reads:
 
 .. math::
 
@@ -93,7 +93,7 @@ such that the thermal efficiency of *Brayton cycle* becomes:
 
   \eta_{Brayton} = 1 - \frac{T_4-T_1}{T_3-T_2}
 
-It is possible to determine gas temperatures after the compressor and the turbine thanks to isentropic relations for ideal gases:
+It is possible to determine gas temperatures after the compressor and the turbine thanks to isentropic relations for ideal gases at constant :math:`\gamma`:
 
 .. math::
   :label: IsentropicRelations
@@ -149,7 +149,7 @@ that becomes
 
   \eta_{C}^s = \frac{T_2^s-T_1}{T_2-T_1} \qquad \text{and} \qquad \eta_{T}^s = \frac{T_4-T_3}{T_4^s - T_3}
 
-Considering the working fluid as an **ideal gas**, we have:
+Considering the working fluid as an **ideal gas** at constant :math:`\gamma`, we have:
 
 .. math::
   :label: isentropicTemperatures
@@ -222,7 +222,7 @@ We defined the **regenerator effectiveness** as:
 
   \epsilon = \frac{\dot{Q}_{regen,real}}{\dot{Q}_{regen,max}} = \frac{h_5-h_2}{h_4-h_2} \leq 1
 
-Under ideal gases assumption, the *regenerator effectivness* becomes:
+Under ideal gases at constant :math:`\gamma` assumption, the *regenerator effectivness* becomes:
 
 .. math:: 
   :label: regenEff
@@ -239,7 +239,7 @@ The thermal efficiency of *Brayton cycle with regeneration* is:
 
   \eta_{Brayton,Regen} = 1 - \frac{|q_{61}|}{|q_{53}|}
 
-Considering the working fluid as an **ideal gas**, and because no machine is working in transformations 5-3 and 6-1, application of the balance energy equation reads:
+Considering the working fluid as an **ideal gas** at constant :math:`\gamma`, and because no machine is working in transformations 5-3 and 6-1, application of the balance energy equation reads:
 
 .. math::
 
@@ -315,7 +315,14 @@ Practically, two or three stages are used for both compression/expansion. Interc
 
 Turbojets
 =========
-In turbojets, the technical work provided from the turbine is used to compensate the power supplied to the compressor. Then, burnt gases are exhausted at a pressure greater than the atmospheric pressure. They can be expanded in a nozzle to produce a thrust.
+In turbojets, the technical work provided from the turbine is used to compensate the power supplied to the compressor such that we obtain:
+
+.. math::
+  :label: powerTurbojet
+
+  \dot{w}_{T} = -\dot{w}_{C}
+
+Then, burnt gases are exhausted at a pressure greater than the atmospheric pressure. They can be expanded in a nozzle to produce a thrust. In that particular case, the net power :math:`|\dot{w}_{net}|` on shaft is null.
 
 .. _Fig:chap4:turbojetSimple:
 

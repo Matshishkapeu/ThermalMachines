@@ -39,7 +39,7 @@ Continuous cooling
 
   e_{th,cool} = \frac{w_{t}^S}{w_t^T}
 
-Under *ideal gas* assumption, using relations :eq:`techWorkIGIsent` and :eq:`workIGIsothermal`, it becomes:
+Under *ideal gas* at constant :math:`\gamma` assumption, using relations :eq:`techWorkIGIsent` and :eq:`workIGIsothermal`, it becomes:
 
 .. math::
   :label: coolingEfficiencyIG

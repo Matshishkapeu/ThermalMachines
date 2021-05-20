@@ -50,7 +50,7 @@ The 4 strokes of the piston constitute a complete thermodynamic cycle. It also c
 
 Definitions
 -----------
-The **compression ratio** is defined as the ratio between the maximum cylinder volume and the minimum cylinder volume:
+The **compression ratio** in a RICE is defined as the ratio between the maximum cylinder volume and the minimum cylinder volume:
 
 .. math::
   :label: compRatio
@@ -100,7 +100,7 @@ As for any heat engine (:eq:`thEfficiency`), the thermal efficiency of *Beau de 
 
   \eta_{BdR} = 1 - \frac{|q_{41}|}{|q_{23}|}
 
-Considering the working fluid as an **ideal gas**, transformations 4-1 and 2-3 being at volume constant we obtain:
+Considering the working fluid as an **ideal gas** at constant :math:`\gamma`, transformations 4-1 and 2-3 being at volume constant we obtain:
 
 .. math::
 
@@ -162,7 +162,7 @@ As for any heat engine (:eq:`thEfficiency`), the thermal efficiency of *Diesel* 
 
   \eta_{Diesel} = 1 - \frac{|q_{41}|}{|q_{23}|}
 
-Considering the working fluid as an **ideal gas**, transformation 4-1 being at constant volume and 2-3 being at constant pressure:
+Considering the working fluid as an **ideal gas** at constant :math:`\gamma`, transformation 4-1 being at constant volume and 2-3 being at constant pressure:
 
 .. math::
 

@@ -250,13 +250,13 @@
 <p>As for any heat engine (<a class="reference internal" href="chap2_2Cycles.html#equation-thefficiency">Eq.2.9</a>), the thermal efficiency of <em>Brayton</em> cycle is:</p>
 <div class="math">
 <p><img src="_images/math/4c47d2694750d7973c18ae73bdf2dece6785cae9.svg" alt="\eta_{Brayton} = 1 - \frac{|q_{41}|}{|q_{23}|}"/></p>
-</div><p>Considering the working fluid as an <strong>ideal gas</strong>, and because no machine is working in transformations 2-3 and 4-1, application of the balance energy equation reads:</p>
+</div><p>Considering the working fluid as an <strong>ideal gas</strong> at constant <img class="math" src="_images/math/c12a6ff3f5c72542615142d78a9b6968787a4563.svg" alt="\gamma" style="vertical-align: -3px"/>, and because no machine is working in transformations 2-3 and 4-1, application of the balance energy equation reads:</p>
 <div class="math">
 <p><img src="_images/math/26c28150dfbd8963cc18fc211d9ac25f0198cff4.svg" alt="|\dot{Q}_{23}| = \dot{m} c_p (T_3-T_2) \qquad \text{ and } \qquad |\dot{Q}_{41}| = \dot{m} c_p (T_4-T_1)"/></p>
 </div><p>such that the thermal efficiency of <em>Brayton cycle</em> becomes:</p>
 <div class="math">
 <p><img src="_images/math/d817db4d0bc7e369641fdffe3533f34b19f14ec3.svg" alt="\eta_{Brayton} = 1 - \frac{T_4-T_1}{T_3-T_2}"/></p>
-</div><p>It is possible to determine gas temperatures after the compressor and the turbine thanks to isentropic relations for ideal gases:</p>
+</div><p>It is possible to determine gas temperatures after the compressor and the turbine thanks to isentropic relations for ideal gases at constant <img class="math" src="_images/math/c12a6ff3f5c72542615142d78a9b6968787a4563.svg" alt="\gamma" style="vertical-align: -3px"/>:</p>
 <div class="math" id="equation-isentropicrelations">
 <p><span class="eqno">(4.6)<a class="headerlink" href="#equation-isentropicrelations" title="Permalink to this equation">¶</a></span><img src="_images/math/a961b02d05fb5335058a69c95426d7f9a8621ae1.svg" alt="\frac{T_1}{T_2} = \frac{p_2}{p_1}^{\frac{1 - \gamma}{\gamma}} = \frac{p_3}{p_4}^{\frac{1 - \gamma}{\gamma}} = \frac{T_4}{T_3}"/></p>
 </div><p>we finally obtain:</p>
@@ -288,7 +288,7 @@
 </div><p>that becomes</p>
 <div class="math" id="equation-isentropicefficiencies">
 <p><span class="eqno">(4.8)<a class="headerlink" href="#equation-isentropicefficiencies" title="Permalink to this equation">¶</a></span><img src="_images/math/899ac35afc9e1e50a96c4e75f0c22dbd9d0a9d42.svg" alt="\eta_{C}^s = \frac{T_2^s-T_1}{T_2-T_1} \qquad \text{and} \qquad \eta_{T}^s = \frac{T_4-T_3}{T_4^s - T_3}"/></p>
-</div><p>Considering the working fluid as an <strong>ideal gas</strong>, we have:</p>
+</div><p>Considering the working fluid as an <strong>ideal gas</strong> at constant <img class="math" src="_images/math/c12a6ff3f5c72542615142d78a9b6968787a4563.svg" alt="\gamma" style="vertical-align: -3px"/>, we have:</p>
 <div class="math" id="equation-isentropictemperatures">
 <p><span class="eqno">(4.9)<a class="headerlink" href="#equation-isentropictemperatures" title="Permalink to this equation">¶</a></span><img src="_images/math/8bda44f40d99b3d60ef34b682b31353fb7a0e0dc.svg" alt="T_2^s = T_1 r_p^{\frac{\gamma-1}{\gamma}} \qquad \text{and} \qquad T_4^s = T_3 r_p^{\frac{1-\gamma}{\gamma}}"/></p>
 </div><div class="admonition important">
@@ -331,7 +331,7 @@
 </div><p>We defined the <strong>regenerator effectiveness</strong> as:</p>
 <div class="math">
 <p><img src="_images/math/725eb60d9c4a1cbd33e4c1a9ae0828732d50c34e.svg" alt="\epsilon = \frac{\dot{Q}_{regen,real}}{\dot{Q}_{regen,max}} = \frac{h_5-h_2}{h_4-h_2} \leq 1"/></p>
-</div><p>Under ideal gases assumption, the <em>regenerator effectivness</em> becomes:</p>
+</div><p>Under ideal gases at constant <img class="math" src="_images/math/c12a6ff3f5c72542615142d78a9b6968787a4563.svg" alt="\gamma" style="vertical-align: -3px"/> assumption, the <em>regenerator effectivness</em> becomes:</p>
 <div class="math" id="equation-regeneff">
 <p><span class="eqno">(4.11)<a class="headerlink" href="#equation-regeneff" title="Permalink to this equation">¶</a></span><img src="_images/math/3a4faae96d76d02b9ad5af7193ce738e2f2c49dc.svg" alt="\epsilon = \frac{T_5-T_2}{T_4-T_2} \leq 1"/></p>
 </div><p>Typical value of <img class="math" src="_images/math/c6908095356566956c47d5f117512e5bedb1c5c8.svg" alt="epsilon" style="vertical-align: -3px"/> are lower than <img class="math" src="_images/math/a2e3e3d510ff13d8f57420f21ead9361c3b5d92b.svg" alt="0.7" style="vertical-align: 0px"/>.</p>
@@ -341,7 +341,7 @@
 <p>The thermal efficiency of <em>Brayton cycle with regeneration</em> is:</p>
 <div class="math">
 <p><img src="_images/math/826de90d80f01f3d401349fd7ceb6dd98ee03864.svg" alt="\eta_{Brayton,Regen} = 1 - \frac{|q_{61}|}{|q_{53}|}"/></p>
-</div><p>Considering the working fluid as an <strong>ideal gas</strong>, and because no machine is working in transformations 5-3 and 6-1, application of the balance energy equation reads:</p>
+</div><p>Considering the working fluid as an <strong>ideal gas</strong> at constant <img class="math" src="_images/math/c12a6ff3f5c72542615142d78a9b6968787a4563.svg" alt="\gamma" style="vertical-align: -3px"/>, and because no machine is working in transformations 5-3 and 6-1, application of the balance energy equation reads:</p>
 <div class="math">
 <p><img src="_images/math/608449f9545365a60d33e492cd19161d58c19bb3.svg" alt="|\dot{Q}_{53}| = \dot{m} c_p (T_5-T_2) \qquad \text{ and } \qquad |\dot{Q}_{61}| = \dot{m} c_p (T_6-T_1)"/></p>
 </div><p>such that the thermal efficiency of <em>Brayton cycle with regeneration</em> becomes:</p>
@@ -384,14 +384,17 @@
 </div>
 <div class="section" id="turbojets">
 <h2><span class="section-number">4.2.6. </span>Turbojets<a class="headerlink" href="#turbojets" title="Permalink to this headline">¶</a></h2>
-<p>In turbojets, the technical work provided from the turbine is used to compensate the power supplied to the compressor. Then, burnt gases are exhausted at a pressure greater than the atmospheric pressure. They can be expanded in a nozzle to produce a thrust.</p>
+<p>In turbojets, the technical work provided from the turbine is used to compensate the power supplied to the compressor such that we obtain:</p>
+<div class="math" id="equation-powerturbojet">
+<p><span class="eqno">(4.14)<a class="headerlink" href="#equation-powerturbojet" title="Permalink to this equation">¶</a></span><img src="_images/math/3d35be1e2424938399b4e7ccbfdc39a90c61f1a8.svg" alt="\dot{w}_{T} = -\dot{w}_{C}"/></p>
+</div><p>Then, burnt gases are exhausted at a pressure greater than the atmospheric pressure. They can be expanded in a nozzle to produce a thrust. In that particular case, the net power <img class="math" src="_images/math/6e09ba87b4b3baa348f01dd388f109484a994a1d.svg" alt="|\dot{w}_{net}|" style="vertical-align: -4px"/> on shaft is null.</p>
 <div class="figure align-center" id="id13">
 <span id="fig-chap4-turbojetsimple"></span><a class="reference internal image-reference" href="_images/turbojetSimple.png"><img alt="_images/turbojetSimple.png" src="_images/turbojetSimple.png" style="width: 520.5px; height: 270.3px;" /></a>
 <p class="caption"><span class="caption-number">Figure 4.21:  </span><span class="caption-text">Schematic representation of a simple turbojet.</span><a class="headerlink" href="#id13" title="Permalink to this image">¶</a></p>
 </div>
 <p>The thrust provided by the turbojet can be determine by momentum balance:</p>
 <div class="math" id="equation-thrust">
-<p><span class="eqno">(4.14)<a class="headerlink" href="#equation-thrust" title="Permalink to this equation">¶</a></span><img src="_images/math/6f34bd245e67d7eb8e94afa993116a7e03af3e43.svg" alt="F = \dot{m} (V_{out}-V_{in})"/></p>
+<p><span class="eqno">(4.15)<a class="headerlink" href="#equation-thrust" title="Permalink to this equation">¶</a></span><img src="_images/math/6f34bd245e67d7eb8e94afa993116a7e03af3e43.svg" alt="F = \dot{m} (V_{out}-V_{in})"/></p>
 </div></div>
 </div>
 

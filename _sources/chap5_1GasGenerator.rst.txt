@@ -18,7 +18,7 @@ As for any heat pump or refrigerator, (:eq:`COPr`, and :eq:`COPhp`) the *coeffic
 
   COP_{R,Joule} = \frac{1}{\frac{|q_{23}|}{|q_{41}|}-1} \qquad \text{and} \qquad COP_{HP,Joule} = \frac{1}{1-\frac{|q_{41}|}{|q_{23}|}}
 
-Considering the working fluid as an **ideal gas**, and because no machine is working in transformations 2-3 and 4-1, application of the balance energy equation reads:
+Considering the working fluid as an **ideal gas** at constant :math:`\gamma`, and because no machine is working in transformations 2-3 and 4-1, application of the balance energy equation reads:
 
 .. math::
 
@@ -30,7 +30,7 @@ such that the COPs of *Reverse Brayton cycle* become:
 
   COP_{R,Joule} = \frac{1}{\frac{T_2-T_3}{T_1-T_4}-1} \qquad \text{and} \qquad COP_{HP,Joule} = \frac{1}{1-\frac{T_1-T_4}{T_2-T_3}}
 
-As for gas turbine, it is possible to determine gas temperatures after the compressor and the turbine thanks to isentropic relations for ideal gases:
+As for gas turbine, it is possible to determine gas temperatures after the compressor and the turbine thanks to isentropic relations for ideal gases at constant :math:`\gamma`:
 
 .. math::
 

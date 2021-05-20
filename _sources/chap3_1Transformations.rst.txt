@@ -89,17 +89,17 @@ A representation of these transformations in the *Clapeyron* diagram is presente
 
   Isotherme, Polytropic and Isentropic reversible compressions in (p,v).
 
-For **ideal gas** equation of state, the expressions of specific works are recalled hereafter.
+For **ideal gas** (IG) equation of state at constant :math:`\gamma`, the expressions of specific works are recalled hereafter.
 
-Isothermal transformation
--------------------------
+Isothermal transformation IG (constant :math:`\gamma`)
+------------------------------------------------------
 .. math::
   :label: workIGIsothermal
 
   w_{12}^T = w_{t,12}^T = rT ln \left( \frac{p_2}{p_1} \right)
 
-Isentropic transformation
--------------------------
+Isentropic transformation IG (constant :math:`\gamma`)
+------------------------------------------------------
 .. math::
   :label: workIGIsent
 
@@ -113,8 +113,8 @@ and
   w_{t,12}^s = \frac{\gamma rT_1}{\gamma-1} \left[ \left( \frac{p_2}{p_1} \right)^{\frac{\gamma-1}{\gamma}} -1  \right]
 
 
-Polytropic transformation
--------------------------
+Polytropic transformation IG (constant :math:`\gamma`)
+------------------------------------------------------
 .. math::
   :label: workIGPolyp
 
@@ -171,7 +171,7 @@ Because the transformations are adiabatics, the *isentropic efficiencies* for co
 .. admonition:: Simplifications
 
   - When Kinetic energy variations are negligible
-  - When the working fluid is consiered as an *ideal gas*
+  - When the working fluid is consiered as an *ideal gas* at constant :math:`\gamma`
 
   *Isentropic efficiencies* become:
 
@@ -216,7 +216,7 @@ Such that the *polytropic efficiencies* express as:
 .. admonition:: Simplifications
 
   - When Kinetic energy variations are negligible
-  - When the working fluid is consiered as an *ideal gas*
+  - When the working fluid is consiered as an *ideal gas* at constant :math:`\gamma`
 
   The technical work for a polytropic transformation is given by relation :eq:`techWorkIGPolyp`, and the real technical work expresses as:
 
